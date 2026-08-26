@@ -1,0 +1,4 @@
+# Secrets : jamais dans le depot
+.env
+.env.*
+!.env.example
