@@ -59,6 +59,19 @@ Rendu et crawl des 166 URL des sitemaps, puis test de chaque image referencee.
 | Fichiers manquants distincts referencees | 119 |
 | Emplacements d'images casses | 1262 |
 
+Repartition de ces 119 fichiers :
+
+| Cas | Fichiers | Emplacements |
+|---|---|---|
+| Reparables en base (cas A et B) | 36 | 684 |
+| A restaurer depuis une sauvegarde (cas C) | 83 | 578 |
+
+Le script repare donc un peu plus de la moitie des emplacements casses sans
+qu'aucun fichier n'ait besoin d'etre restaure.
+
+Les 83 fichiers perdus se concentrent sur quelques dossiers :
+`2025/09` (24), `2025/08` (20), `2026/01` (17), `2024/04` (9), `2023/10` (7).
+
 Les fichiers les plus penalisants sont ceux des gabarits partages, presents
 sur presque toutes les pages :
 
