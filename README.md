@@ -25,7 +25,14 @@ Le script teste d'abord que `/wp-json/` repond, puis l'authentification sur
 
 ## Acces reseau
 
-Depuis une session Claude Code distante, l'appel echoue avec un 403 sur le
-CONNECT si le domaine n'est pas autorise par la politique reseau de
-l'environnement. Il faut ajouter `alphababy.fr` aux domaines autorises.
+`alphababy.fr` est autorise par la politique reseau de l'environnement : le
+script s'execute sans erreur depuis une session Claude Code distante. Si un
+autre domaine est ajoute plus tard, l'appel echoue avec un 403 sur le CONNECT
+tant qu'il n'est pas ajoute aux domaines autorises.
 Voir https://code.claude.com/docs/en/claude-code-on-the-web
+
+## Perimetre verifie
+
+Le compte utilise est administrateur. Les espaces de noms suivants repondent en
+200 avec le mot de passe d'application : `wp/v2` (articles, pages, medias,
+utilisateurs), `wc/v3` (produits, commandes) et `rankmath/v1`.
