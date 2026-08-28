@@ -41,7 +41,65 @@ Réglages du site utilisés par les JSON : kit global `#14`, couleurs
 polices LilitaOne pour les H2 et Raleway pour le corps, rayon de bordure 15 px.
 Les couleurs sont référencées en globales, elles suivront donc le kit.
 
-## Procédure d'intégration
+## Etat de l'integration
+
+Faite par API le 28/08/2026. Modele Elementor **#8977 « Modèle catégorie
+Family Day »**, type `product-archive`, cree avec
+`scripts/wp-elementor-push.py create-archive`.
+
+- Contenu verifie sur le site : 70 elements, 1 H1, 15 H2, FAQ en accordeon
+  de 8 questions, 5 listes a puces, 3 boutons.
+- Loop grid `#f54fd5c` reinseree telle quelle : `template_id=1641`,
+  `post_query_query_id='products_filtered'`, `post_query_post_type='current_query'`.
+  Le formulaire de filtres continue donc de cibler la bonne requete.
+- Shortcode des filtres `#0e5ef82` reinsere tel quel.
+- H1 passe du titre d'archive dynamique au texte
+  « Family Day en entreprise : une organisation clé en main ».
+- Widget « Description de l'archive » `#29df642` retire, remplace par la
+  nouvelle introduction.
+- **Conditions d'affichage vides** : le modele est inerte, la page en ligne
+  est inchangee tant que la condition n'est pas posee.
+
+Sauvegarde du template d'origine `#3948` avant modification :
+`elementor/_archive-3948-actuel.json`. Le template `#3948` lui-meme n'a pas
+ete touche.
+
+### Mise en ligne
+
+```bash
+set -a && . ./.env && set +a
+python3 scripts/wp-elementor-push.py set-condition 8977
+```
+
+Pose la condition « Archive produits > Catégorie de produit > Family day »
+(terme #133). C'est la convention deja en place sur le site : `#8975` cible
+Arbre de Noel (#131), `#4392` cible Entreprise (#130), `#4385` cible En
+famille (#119). Elementor donne la priorite a la condition la plus precise,
+donc `#8977` prend le dessus sur `#3948` uniquement sur cette categorie.
+
+Retour arriere : reposer des conditions vides sur `#8977`, ou depublier le
+modele. La page reprend aussitot le rendu de `#3948`.
+
+### Apercu local
+
+```bash
+python3 scripts/preview-elementor.py \
+  elementor/_archive-family-day-fusionne.json apercu.html
+```
+
+Reconstitue le rendu a partir du JSON, avec les polices et la palette du kit
+global. Elementor ne permet pas de previsualiser publiquement un modele de
+bibliotheque.
+
+### Reste a faire manuellement
+
+- **Title et meta description**, dans Rank Math sur le terme de categorie :
+  Produits > Categories > Family day > Modifier > onglet Rank Math.
+  - Titre : `Family Day en Entreprise | Organisation Clé en Main - AlphaBaby`
+  - Meta description : `Organisez le Family Day de votre entreprise avec AlphaBaby : animations, ateliers et thèmes sur mesure pour vos collaborateurs et leurs familles. Devis gratuit.`
+- Vider le cache WP Rocket apres la mise en ligne.
+
+## Procedure manuelle, si l'API n'est pas disponible
 
 1. **Sauvegarder.** Modèles > Theme Builder > Archive produit > template
    actuel > Exporter. Conserver le fichier hors du site.

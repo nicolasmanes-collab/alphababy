@@ -221,10 +221,15 @@ def insert_content(existing):
             yield el
             yield from walk(el.get("elements", []))
 
+    def settings_of(el):
+        """PHP serialise parfois des reglages vides en liste, pas en objet."""
+        s = el.get("settings")
+        return s if isinstance(s, dict) else {}
+
     # H1 statique a la place du titre d'archive dynamique
     for el in walk(out):
         if el.get("widgetType") == "heading" and \
-                el.get("settings", {}).get("header_size") == "h1":
+                settings_of(el).get("header_size") == "h1":
             el["settings"]["title"] = NEW_H1
             el["settings"].pop("__dynamic__", None)
             print(f"  H1 #{el['id']} remplace")
@@ -288,7 +293,7 @@ def cmd_create_archive():
 
     print("\n== Creation du modele d'archive ==")
     code, body = call("POST", "/elementor/v1/template-library/templates", {
-        "title": "Archive produit - Family Day",
+        "title": "Modèle catégorie Family Day",
         "type": "product-archive",
         "content": content,
     })
@@ -296,10 +301,84 @@ def cmd_create_archive():
         sys.exit("ECHEC : " + json.dumps(body, ensure_ascii=False)[:600])
     tid = body.get("template_id") or body.get("id")
     print(f"  modele cree : #{tid}")
-    print("\nProchaine etape : definir la condition d'affichage sur la"
-          f" categorie produit #{TERM_ID}, puis publier le modele.")
-    print("Elementor > Modeles > Theme Builder > Archive produit >"
-          " 'Archive produit - Family Day' > Conditions d'affichage.")
+    print("  aucune condition d'affichage posee : le modele est inerte,"
+          " la page en ligne reste inchangee.")
+    print(f"\nEtapes suivantes :"
+          f"\n  wp-elementor-push.py verify {tid}"
+          f"\n  wp-elementor-push.py set-condition {tid}   (apres validation)")
+
+
+def cmd_verify():
+    """Relit un modele et controle l'integrite du contenu."""
+    require_credentials()
+    if len(sys.argv) < 3:
+        sys.exit("usage : wp-elementor-push.py verify <template_id>")
+    tid = sys.argv[2]
+    code, body = call("GET", f"/wp/v2/elementor_library/{tid}?context=edit")
+    if code != 200:
+        sys.exit(json.dumps(body, ensure_ascii=False)[:400])
+    data = extract_data(body)
+    if data is None:
+        sys.exit("contenu Elementor illisible")
+
+    flat = []
+
+    def walk(els):
+        for el in els:
+            flat.append(el)
+            walk(el.get("elements", []))
+
+    walk(data)
+    widgets = [e.get("widgetType") for e in flat if e.get("widgetType")]
+    ids = [e["id"] for e in flat]
+    grids = [e for e in flat if e.get("widgetType") == "loop-grid"]
+
+    def count_tag(tag):
+        return sum(1 for e in flat
+                   if e.get("settings", {}).get("header_size") == tag)
+
+    print(f"  statut                 : {body.get('status')}")
+    print(f"  elements               : {len(flat)}")
+    print(f"  IDs uniques            : {len(ids) == len(set(ids))}")
+    print(f"  H1                     : "
+          f"{[e['settings'].get('title') for e in flat if e.get('settings', {}).get('header_size') == 'h1']}")
+    print(f"  H2 / H3                : {count_tag('h2')} / {count_tag('h3')}")
+    print(f"  shortcode des filtres  : {'shortcode' in widgets}")
+    print(f"  loop-grid              : {len(grids)}")
+    for g in grids:
+        s = g["settings"]
+        print(f"    template_id          : {s.get('template_id')}")
+        print(f"    post_query_query_id  : {s.get('post_query_query_id')!r}")
+        print(f"    post_query_post_type : {s.get('post_query_post_type')!r}")
+    print(f"  accordeon FAQ          : {widgets.count('nested-accordion')}")
+    print(f"  listes a puces         : {widgets.count('icon-list')}")
+    print(f"  boutons                : {widgets.count('button')}")
+    print(f"  description d'archive  : "
+          f"{'woocommerce-archive-description' in widgets}")
+
+
+def cmd_set_condition():
+    """Pose la condition d'affichage sur la categorie produit family-day."""
+    require_credentials()
+    if len(sys.argv) < 3:
+        sys.exit("usage : wp-elementor-push.py set-condition <template_id>")
+    tid = sys.argv[2]
+    conditions = [{
+        "type": "include",
+        "name": "product_archive",
+        "sub_name": "product_cat",
+        "sub_id": str(TERM_ID),
+        "sub": "product_cat",
+        "subId": str(TERM_ID),
+    }]
+    code, body = call(
+        "PUT", f"/elementor/v1/site-editor/templates-conditions/{tid}",
+        {"conditions": conditions})
+    print("  ", json.dumps(body, ensure_ascii=False)[:400])
+    if code not in (200, 201):
+        sys.exit("ECHEC de la pose de condition")
+    print(f"\nCondition posee : archive produits > categorie #{TERM_ID}"
+          " (family-day)")
 
 
 if __name__ == "__main__":
@@ -308,4 +387,6 @@ if __name__ == "__main__":
         "probe": cmd_probe,
         "push-blocks": cmd_push_blocks,
         "create-archive": cmd_create_archive,
+        "verify": cmd_verify,
+        "set-condition": cmd_set_condition,
     }.get(mode, lambda: sys.exit(f"mode inconnu : {mode}"))()

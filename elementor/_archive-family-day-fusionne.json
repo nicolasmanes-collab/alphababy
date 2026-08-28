@@ -1,0 +1,2116 @@
+[
+  {
+    "id": "4a07436",
+    "elType": "container",
+    "settings": {
+      "flex_direction": "column",
+      "margin": {
+        "unit": "px",
+        "top": "50",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    "elements": [
+      {
+        "id": "b310804",
+        "elType": "container",
+        "settings": {
+          "flex_gap": {
+            "column": "0",
+            "row": "0",
+            "isLinked": true,
+            "unit": "px",
+            "size": 0
+          },
+          "background_background": "classic",
+          "background_color": "#EE743A",
+          "border_radius": {
+            "unit": "px",
+            "top": "15",
+            "right": "15",
+            "bottom": "15",
+            "left": "15",
+            "isLinked": true
+          },
+          "padding": {
+            "unit": "px",
+            "top": "10",
+            "right": "20",
+            "bottom": "10",
+            "left": "20",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "e4addc3",
+            "elType": "widget",
+            "settings": {
+              "title": "Family Day en entreprise : une organisation clé en main",
+              "header_size": "h1",
+              "title_color": "#FFFFFF"
+            },
+            "elements": [],
+            "widgetType": "heading"
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  },
+  {
+    "id": "1c7f93d",
+    "elType": "container",
+    "settings": {
+      "flex_direction": "column",
+      "margin": {
+        "unit": "px",
+        "top": "25",
+        "right": "0",
+        "bottom": "100",
+        "left": "0",
+        "isLinked": false
+      },
+      "margin_mobile": {
+        "unit": "px",
+        "top": "30",
+        "right": "0",
+        "bottom": "100",
+        "left": "0",
+        "isLinked": false
+      },
+      "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    "elements": [
+      {
+        "id": "b56ade8",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "boxed",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 20,
+            "column": "20",
+            "row": "20",
+            "isLinked": true
+          },
+          "margin": {
+            "unit": "px",
+            "top": "25",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "e4df388",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Envie d’organiser un Family Day pour votre entreprise et d’offrir à vos collaborateurs et à leurs familles une vraie journée de partage, sans passer des heures à tout organiser ? AlphaBaby prend en charge l’organisation de votre Family Day de A à Z : animations, ateliers, décoration et goodies, pour un évènement d’entreprise clé en main.</p><p>Chaque année, ce type d’évènement (aussi appelé Kids Day ou jour de la famille en entreprise) rassemble collaborateurs, conjoints et enfants autour d’une journée festive et conviviale. C’est devenu une véritable tradition dans la vie de nombreuses entreprises, CSE, COS et CCAS, qui y voient un moyen simple de renforcer les liens au sein de leurs équipes.</p><p>Que vous souhaitiez une animation ludique dans vos locaux, un évènement en plein air ou une formule sur mesure autour du thème de votre choix, notre agence évènementielle construit avec vous le programme adapté à votre entreprise et à votre budget.</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "d46f6ea",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Demandez votre devis gratuit",
+              "link": {
+                "url": "https://alphababy.fr/contact/",
+                "is_external": "",
+                "nofollow": "",
+                "custom_attributes": ""
+              },
+              "align": "left",
+              "size": "md",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_weight": "600",
+              "border_radius": {
+                "unit": "px",
+                "top": "15",
+                "right": "15",
+                "bottom": "15",
+                "left": "15",
+                "isLinked": true
+              },
+              "text_padding": {
+                "unit": "px",
+                "top": "16",
+                "right": "32",
+                "bottom": "16",
+                "left": "32",
+                "isLinked": false
+              },
+              "__globals__": {
+                "background_color": "globals/colors?id=primary",
+                "button_text_color": "globals/colors?id=65cf053",
+                "hover_color": "globals/colors?id=65cf053",
+                "button_background_hover_color": "globals/colors?id=secondary"
+              }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "0e5ef82",
+        "elType": "widget",
+        "settings": {
+          "shortcode": "[product_filter_form]"
+        },
+        "elements": [],
+        "widgetType": "shortcode"
+      },
+      {
+        "id": "87f0c28",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "boxed",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 0,
+            "column": "0",
+            "row": "0",
+            "isLinked": true
+          },
+          "margin": {
+            "unit": "px",
+            "top": "30",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "a4a0471",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Nos formules Family Day",
+              "header_size": "h2",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 26,
+                "sizes": []
+              },
+              "__globals__": {
+                "title_color": "globals/colors?id=text"
+              },
+              "align": "center"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "f54fd5c",
+        "elType": "widget",
+        "settings": {
+          "alternate_templates": [
+            {
+              "template_id": null,
+              "_id": "648bccf"
+            }
+          ],
+          "product_query_include": [],
+          "pagination_page_limit": "5",
+          "pagination_prev_label": "Précédent",
+          "pagination_next_label": "Suivant",
+          "text": "Charger plus",
+          "load_more_no_posts_custom_message": "Plus de publications à afficher",
+          "nothing_found_message_text": "It seems we can’t find what you’re looking for.",
+          "template_id": 1641,
+          "product_query_include_term_ids": [],
+          "columns": 4,
+          "equal_height": "yes",
+          "columns_mobile": 1,
+          "posts_per_page": 12,
+          "column_gap": {
+            "unit": "px",
+            "size": 0,
+            "sizes": []
+          },
+          "row_gap": {
+            "unit": "px",
+            "size": 50,
+            "sizes": []
+          },
+          "columns_tablet_extra": 3,
+          "row_gap_tablet": {
+            "unit": "px",
+            "size": 30,
+            "sizes": []
+          },
+          "pagination_type": "numbers_and_prev_next",
+          "pagination_typography_typography": "custom",
+          "pagination_typography_font_family": "Raleway",
+          "pagination_typography_font_size": {
+            "unit": "px",
+            "size": 22,
+            "sizes": []
+          },
+          "pagination_typography_font_weight": "600",
+          "pagination_spacing": {
+            "unit": "px",
+            "size": 15,
+            "sizes": []
+          },
+          "pagination_spacing_top": {
+            "unit": "px",
+            "size": 75,
+            "sizes": []
+          },
+          "_margin_mobile": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          },
+          "_padding_mobile": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          },
+          "product_query_post_type": "current_query",
+          "post_query_post_type": "current_query",
+          "post_query_query_id": "products_filtered"
+        },
+        "elements": [],
+        "widgetType": "loop-grid"
+      },
+      {
+        "id": "ee6831d",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "boxed",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 20,
+            "column": "20",
+            "row": "20",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#F6F1E5",
+          "border_radius": {
+            "unit": "px",
+            "top": "15",
+            "right": "15",
+            "bottom": "15",
+            "left": "15",
+            "isLinked": true
+          },
+          "padding": {
+            "unit": "px",
+            "top": "40",
+            "right": "40",
+            "bottom": "40",
+            "left": "40",
+            "isLinked": true
+          },
+          "margin": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "50",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "c534d46",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Pourquoi les entreprises nous font confiance",
+              "header_size": "h2",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 26,
+                "sizes": []
+              },
+              "__globals__": {
+                "title_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "4b210a3",
+            "elType": "widget",
+            "widgetType": "icon-list",
+            "settings": {
+              "icon_list": [
+                {
+                  "text": "Une agence spécialiste de l’animation enfants depuis 1996",
+                  "selected_icon": {
+                    "value": "fas fa-check",
+                    "library": "fa-solid"
+                  },
+                  "_id": "603082e"
+                },
+                {
+                  "text": "Une note de 5/5 sur plus de 250 avis Google",
+                  "selected_icon": {
+                    "value": "fas fa-check",
+                    "library": "fa-solid"
+                  },
+                  "_id": "ec01c60"
+                },
+                {
+                  "text": "Des formules clé en main, de la préparation à la coordination le jour J",
+                  "selected_icon": {
+                    "value": "fas fa-check",
+                    "library": "fa-solid"
+                  },
+                  "_id": "66f1f04"
+                },
+                {
+                  "text": "Des animateurs professionnels, formés et passionnés",
+                  "selected_icon": {
+                    "value": "fas fa-check",
+                    "library": "fa-solid"
+                  },
+                  "_id": "9134655"
+                },
+                {
+                  "text": "Un devis personnalisé, adapté à votre budget et à vos attentes",
+                  "selected_icon": {
+                    "value": "fas fa-check",
+                    "library": "fa-solid"
+                  },
+                  "_id": "1454d12"
+                },
+                {
+                  "text": "Des évènements sur mesure : Family Day, arbre de Noël, lancement de produit",
+                  "selected_icon": {
+                    "value": "fas fa-check",
+                    "library": "fa-solid"
+                  },
+                  "_id": "d6c519b"
+                }
+              ],
+              "space_between": {
+                "unit": "px",
+                "size": 12,
+                "sizes": []
+              },
+              "icon_size": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "icon_typography_typography": "custom",
+              "icon_typography_font_family": "Raleway",
+              "icon_typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "__globals__": {
+                "icon_color": "globals/colors?id=primary",
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "70e510c",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Notre offre s’adapte à chaque occasion et à chaque structure, avec un tarif adapté aux besoins spécifiques de votre entreprise. Dans le cadre de leur politique sociale, de nombreux CSE organisent d’ailleurs cet évènement chaque année.</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "2106695",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "boxed",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 18,
+            "column": "18",
+            "row": "18",
+            "isLinked": true
+          },
+          "margin": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "50",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "7fb74d7",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Qu’est-ce qu’un Family Day en entreprise ?",
+              "header_size": "h2",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 26,
+                "sizes": []
+              },
+              "__globals__": {
+                "title_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "fe13700",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Un Family Day est un évènement organisé par une entreprise pour ses salariés, leurs conjoints et leurs enfants. Aussi appelé Kids Day ou journée de la famille, il consiste à ouvrir, le temps d’une journée porte ouverte, l’environnement de travail habituel aux proches des collaborateurs.</p><p>Contrairement à une soirée d’entreprise classique, le Family Day place les enfants au cœur de la journée, avec un programme d’animations ludiques pensé pour tous les âges. C’est l’occasion, pour les familles, de découvrir l’entreprise, ses métiers et son quotidien, dans un cadre convivial plutôt qu’institutionnel.</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "5f4f370",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Pourquoi organiser un Family Day en entreprise ?",
+              "header_size": "h2",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 26,
+                "sizes": []
+              },
+              "__globals__": {
+                "title_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "c6b79ab",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Le Family Day n’est pas qu’une simple journée festive, à la différence d’une soirée d’entreprise classique. C’est une occasion de remercier les salariés pour leur engagement tout au long de l’année, de renforcer les liens et la cohésion au sein des équipes.</p><p>Ce moment de partage crée du lien entre collaborateurs, valorise la culture d’entreprise et nourrit le sentiment d’appartenance. Il permet aussi d’associer les familles à la vie de l’entreprise et de rappeler l’attention portée à l’équilibre entre vie professionnelle et vie personnelle, ce qui contribue à l’image de l’employeur et à la motivation des équipes.</p><p>Après une année de travail, il est légitime de vouloir marquer le coup. C’est une initiative corporate et fédératrice, qui réunit salariés et familles autour d’un même esprit d’équipe et d’un moment de team building. Placer chaque collaborateur au cœur de ce moment renforce sa reconnaissance et contribue à une image de marque employeur attractive. Pour beaucoup de directions, c’est autant un choix stratégique qu’un moment de plaisir partagé.</p><p>Parmi les avantages d’un Family Day pour l’entreprise : un impact positif sur la marque employeur, une meilleure communication interne, un climat social apaisé et un accueil chaleureux des familles de collaborateurs qui, souvent, n’ont jamais mis les pieds dans les locaux de l’entreprise.</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "361bb70",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Comment organiser un Family Day d’entreprise ?",
+              "header_size": "h2",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 26,
+                "sizes": []
+              },
+              "__globals__": {
+                "title_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "fefe2da",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>L’organisation d’un Family Day se prépare généralement plusieurs semaines en amont. Avec AlphaBaby, vous n’avez qu’une chose à faire : nous présenter vos besoins. Nous construisons avec vous le programme et gérons le reste.</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "dbe6f7d",
+            "elType": "widget",
+            "widgetType": "icon-list",
+            "settings": {
+              "icon_list": [
+                {
+                  "text": "Définir l’objectif et le nombre de participants attendus",
+                  "selected_icon": {
+                    "value": "fas fa-circle-check",
+                    "library": "fa-solid"
+                  },
+                  "_id": "70858d7"
+                },
+                {
+                  "text": "Fixer un budget et une date",
+                  "selected_icon": {
+                    "value": "fas fa-circle-check",
+                    "library": "fa-solid"
+                  },
+                  "_id": "8685f01"
+                },
+                {
+                  "text": "Choisir un lieu adapté : locaux de l’entreprise, salle de réception ou espace extérieur",
+                  "selected_icon": {
+                    "value": "fas fa-circle-check",
+                    "library": "fa-solid"
+                  },
+                  "_id": "4f90bf9"
+                },
+                {
+                  "text": "Sélectionner le type d’événement et la formule souhaitée",
+                  "selected_icon": {
+                    "value": "fas fa-circle-check",
+                    "library": "fa-solid"
+                  },
+                  "_id": "6dc0dc8"
+                },
+                {
+                  "text": "Prévoir les animations, les goodies et la décoration",
+                  "selected_icon": {
+                    "value": "fas fa-circle-check",
+                    "library": "fa-solid"
+                  },
+                  "_id": "f4c6dc2"
+                },
+                {
+                  "text": "Confier la coordination du jour J à notre équipe",
+                  "selected_icon": {
+                    "value": "fas fa-circle-check",
+                    "library": "fa-solid"
+                  },
+                  "_id": "0dbb4f6"
+                }
+              ],
+              "space_between": {
+                "unit": "px",
+                "size": 12,
+                "sizes": []
+              },
+              "icon_size": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "icon_typography_typography": "custom",
+              "icon_typography_font_family": "Raleway",
+              "icon_typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "__globals__": {
+                "icon_color": "globals/colors?id=primary",
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "c101f8f",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Un délai de préparation suffisant est généralement nécessaire pour gérer chaque point technique dans de bonnes conditions. Dès le premier contact, notre agence agit comme un véritable partenaire, en charge de la gestion administrative comme de la coordination logistique. Résultat : une journée sans stress, où vous profitez de l’évènement autant que vos équipes.</p><p>Chaque étape est pensée pour vous simplifier la vie : de la définition du besoin jusqu’à la remise en état du lieu après l’évènement, notre équipe reste votre interlocuteur unique, du premier contact au jour J.</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "462fd5c",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Quelles animations pour un Family Day d’entreprise ?",
+              "header_size": "h2",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 26,
+                "sizes": []
+              },
+              "__globals__": {
+                "title_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "20c7bbe",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Le choix des animations fait toute la différence pour créer une ambiance festive et fédératrice. AlphaBaby propose plusieurs formules, à la carte ou clé en main :</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "17b7857",
+            "elType": "widget",
+            "widgetType": "icon-list",
+            "settings": {
+              "icon_list": [
+                {
+                  "text": "Family Day sur mesure, une animation créée autour de vos valeurs",
+                  "selected_icon": {
+                    "value": "fas fa-check",
+                    "library": "fa-solid"
+                  },
+                  "_id": "882e85f",
+                  "link": {
+                    "url": "https://alphababy.fr/family-day-sur-mesure/",
+                    "is_external": "",
+                    "nofollow": "",
+                    "custom_attributes": ""
+                  }
+                },
+                {
+                  "text": "Family Day fête foraine, avec des stands de jeux façon kermesse",
+                  "selected_icon": {
+                    "value": "fas fa-check",
+                    "library": "fa-solid"
+                  },
+                  "_id": "ff1d9da",
+                  "link": {
+                    "url": "https://alphababy.fr/family-day-une-journee-a-la-fete-foraine/",
+                    "is_external": "",
+                    "nofollow": "",
+                    "custom_attributes": ""
+                  }
+                },
+                {
+                  "text": "Family Day Jeux Olympiques, avec des défis sportifs et un esprit d’équipe",
+                  "selected_icon": {
+                    "value": "fas fa-check",
+                    "library": "fa-solid"
+                  },
+                  "_id": "3a85577",
+                  "link": {
+                    "url": "https://alphababy.fr/family-day-une-journee-aux-jeux-olympiques/",
+                    "is_external": "",
+                    "nofollow": "",
+                    "custom_attributes": ""
+                  }
+                }
+              ],
+              "space_between": {
+                "unit": "px",
+                "size": 12,
+                "sizes": []
+              },
+              "icon_size": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "icon_typography_typography": "custom",
+              "icon_typography_font_family": "Raleway",
+              "icon_typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "__globals__": {
+                "icon_color": "globals/colors?id=primary",
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "3811671",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Chaque formule peut être personnalisée selon le thème et les valeurs de votre entreprise, pour un évènement unique à chaque édition. Selon vos envies, nous proposons aussi des animations sportives, des animations musicales, un atelier de sculpture de ballons ou un atelier maquillage pour les enfants, animés par une équipe habituée au jeune public. Nos ateliers créatifs peuvent également s’orienter vers la découverte, avec par exemple des ateliers sciences pour enfants, pour varier les activités enfants proposées lors de votre Family Day. Nous intervenons aussi bien pour un Family Day que pour un séminaire ou la privatisation de vos locaux.</p><p>Une idée précise en tête, une question sur nos formules ou sur le prix des animations ? <a href=\"https://alphababy.fr/contact/\">Contactez-nous</a>, nous construisons la formule avec vous.</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "6fa1c58",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Quel lieu choisir pour votre Family Day ?",
+              "header_size": "h2",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 26,
+                "sizes": []
+              },
+              "__globals__": {
+                "title_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "a176ee0",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Le lieu joue un rôle essentiel dans la réussite de votre évènement. Plusieurs options s’offrent à vous selon la taille de votre entreprise et le nombre de participants :</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "e320f3b",
+            "elType": "widget",
+            "widgetType": "icon-list",
+            "settings": {
+              "icon_list": [
+                {
+                  "text": "Vos locaux professionnels, pour un cadre familier et chaleureux",
+                  "selected_icon": {
+                    "value": "fas fa-location-dot",
+                    "library": "fa-solid"
+                  },
+                  "_id": "7d64898"
+                },
+                {
+                  "text": "Une salle de réception privatisée, moderne et accessible",
+                  "selected_icon": {
+                    "value": "fas fa-location-dot",
+                    "library": "fa-solid"
+                  },
+                  "_id": "0f767ea"
+                },
+                {
+                  "text": "Un espace extérieur ou un nouvel espace évènementiel en plein air",
+                  "selected_icon": {
+                    "value": "fas fa-location-dot",
+                    "library": "fa-solid"
+                  },
+                  "_id": "bbdcc6a"
+                },
+                {
+                  "text": "Un parc, un jardin ou un lieu de caractère, pour une ambiance plus grande et festive",
+                  "selected_icon": {
+                    "value": "fas fa-location-dot",
+                    "library": "fa-solid"
+                  },
+                  "_id": "f71eb2d"
+                }
+              ],
+              "space_between": {
+                "unit": "px",
+                "size": 12,
+                "sizes": []
+              },
+              "icon_size": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "icon_typography_typography": "custom",
+              "icon_typography_font_family": "Raleway",
+              "icon_typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "__globals__": {
+                "icon_color": "globals/colors?id=primary",
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "6af410e",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>AlphaBaby vous conseille dans le choix du lieu en fonction de votre budget, de la capacité souhaitée et de vos envies. Qu’il s’agisse d’un petit comité ou d’un grand groupe, chaque participant trouve sa place. À Paris comme dans le reste de l’Île-de-France, en centre-ville comme en périphérie, ces prestations ne sont pas réservées uniquement aux grandes entreprises : nous adaptons chaque formule au public concerné et à la taille de votre structure.</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "7a39f2e",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Quel budget prévoir pour un Family Day d’entreprise ?",
+              "header_size": "h2",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 26,
+                "sizes": []
+              },
+              "__globals__": {
+                "title_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "edb6d3f",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Le budget d’un Family Day varie selon plusieurs critères : le nombre de collaborateurs et de familles, le type d’animations choisi, le lieu retenu et les prestations complémentaires comme le traiteur ou les goodies. Le prix des animations dépend aussi du nombre d’animateurs mobilisés et de la durée de la prestation. Nos formules démarrent à partir de 2 500 € pour la formule Jeux Olympiques, et à partir de 3 500 € pour les formules sur mesure et fête foraine.</p><p>Une organisation en amont permet de mieux anticiper les frais et d’ajuster les prestations à votre enveloppe budgétaire.</p><p>AlphaBaby établit une estimation personnalisée pour chaque projet, sans engagement de votre part. Vous savez à quoi vous attendre, sans mauvaise surprise.</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "1f3bae2",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Recevoir mon estimation gratuite",
+              "link": {
+                "url": "https://alphababy.fr/contact/",
+                "is_external": "",
+                "nofollow": "",
+                "custom_attributes": ""
+              },
+              "align": "left",
+              "size": "md",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_weight": "600",
+              "border_radius": {
+                "unit": "px",
+                "top": "15",
+                "right": "15",
+                "bottom": "15",
+                "left": "15",
+                "isLinked": true
+              },
+              "text_padding": {
+                "unit": "px",
+                "top": "16",
+                "right": "32",
+                "bottom": "16",
+                "left": "32",
+                "isLinked": false
+              },
+              "__globals__": {
+                "background_color": "globals/colors?id=primary",
+                "button_text_color": "globals/colors?id=65cf053",
+                "hover_color": "globals/colors?id=65cf053",
+                "button_background_hover_color": "globals/colors?id=secondary"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "f995fb6",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Quelles idées d’activités pour un Family Day inoubliable ?",
+              "header_size": "h2",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 26,
+                "sizes": []
+              },
+              "__globals__": {
+                "title_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "d5740a1",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Voici quelques idées de Family Day qui plaisent particulièrement aux familles :</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "06224ae",
+            "elType": "widget",
+            "widgetType": "icon-list",
+            "settings": {
+              "icon_list": [
+                {
+                  "text": "Stands façon kermesse (chamboule-tout, pêche aux canards, piscine à balles, mini-tournoi de football), pour une ambiance familiale et bon enfant",
+                  "selected_icon": {
+                    "value": "fas fa-star",
+                    "library": "fa-solid"
+                  },
+                  "_id": "a9e8432"
+                },
+                {
+                  "text": "Ateliers créatifs et ateliers découverte, à partager entre parents et enfants",
+                  "selected_icon": {
+                    "value": "fas fa-star",
+                    "library": "fa-solid"
+                  },
+                  "_id": "e272225"
+                },
+                {
+                  "text": "Olympiades d’entreprise, avec des défis sportifs par équipe",
+                  "selected_icon": {
+                    "value": "fas fa-star",
+                    "library": "fa-solid"
+                  },
+                  "_id": "16eb080"
+                },
+                {
+                  "text": "Animation musicale et coin photo, pour prolonger le souvenir de la journée",
+                  "selected_icon": {
+                    "value": "fas fa-star",
+                    "library": "fa-solid"
+                  },
+                  "_id": "f339094"
+                },
+                {
+                  "text": "Structures gonflables, pour le plaisir des plus petits",
+                  "selected_icon": {
+                    "value": "fas fa-star",
+                    "library": "fa-solid"
+                  },
+                  "_id": "1fd2c8b"
+                }
+              ],
+              "space_between": {
+                "unit": "px",
+                "size": 12,
+                "sizes": []
+              },
+              "icon_size": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "icon_typography_typography": "custom",
+              "icon_typography_font_family": "Raleway",
+              "icon_typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "__globals__": {
+                "icon_color": "globals/colors?id=primary",
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "2849b63",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Ces activités ludiques favorisent le partage et l’esprit de convivialité entre collègues et familles. Ouvertes à tous les publics, elles permettent aux plus petits comme aux plus grands de découvrir de nouvelles activités, lors d’une véritable réunion de famille au sein de l’entreprise.</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "3f29e14",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Comment impliquer les collaborateurs dans un Family Day ?",
+              "header_size": "h2",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 26,
+                "sizes": []
+              },
+              "__globals__": {
+                "title_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "ca61efe",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>L’implication des salariés commence en amont de l’évènement, par exemple en recueillant leur avis sur le thème ou la formule via un sondage interne. Le jour J, certains collaborateurs peuvent aussi participer activement, en encadrant un atelier, en accueillant les familles à leur arrivée ou en accompagnant un groupe d’enfants tout au long du programme.</p><p>Cette participation renforce le sentiment d’appartenance et transforme le Family Day en projet collectif, porté par l’équipe elle-même plutôt que subi comme un évènement organisé d’en haut.</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "0257ab4",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Comment rendre votre Family Day mémorable ?",
+              "header_size": "h2",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 26,
+                "sizes": []
+              },
+              "__globals__": {
+                "title_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "3e7eb9e",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Le souvenir d’un beau Family Day se construit dans les détails : une décoration soignée, des animateurs chaleureux, des goodies personnalisés et une formule pensée pour vos valeurs.</p><p>AlphaBaby veille à garantir une ambiance festive du début à la fin, avec une équipe d’intervenants professionnels qui assure la qualité et la fluidité de chaque moment. Chaque réalisation est pensée spécialement pour votre entreprise, pour de belles retrouvailles et des moments conviviaux entre collègues. Le résultat : une expérience conviviale et inoubliable, dont vos collaborateurs et leurs familles se souviendront longtemps.</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "c726abd",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Pourquoi choisir AlphaBaby pour le Family Day de votre entreprise ?",
+              "header_size": "h2",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 26,
+                "sizes": []
+              },
+              "__globals__": {
+                "title_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "3ff0b41",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Depuis 1996, AlphaBaby accompagne les familles et les entreprises dans l’organisation d’évènements festifs. Notre équipe d’animateurs professionnels met son savoir-faire au service de votre Family Day, quel que soit le nombre de participants.</p><p>Nos animateurs bénéficient d’une formation continue et d’un vrai savoir-faire technique, au service d’un évènement social réussi. De nombreuses entreprises et CSE nous font confiance et nous recommandent, année après année, avec une note de 5/5 sur plus de 250 avis Google.</p><p>Nous proposons des formules clé en main, de la préparation à la coordination logistique, pour un évènement simple à organiser et une expérience de qualité garantie.</p><p>Notre connaissance du jeune public et notre matériel (structures gonflables, stands de jeux) nous permettent de réunir collaborateurs, conjoints et enfants autour d’un évènement sans stress, avec une communication fluide à chaque étape.</p><p>Découvrez aussi nos autres services pour vos évènements d’entreprise : l’<a href=\"https://alphababy.fr/entreprise-evenementiel-noel-ile-de-france/\">arbre de Noël d’entreprise</a> ou l’<a href=\"https://alphababy.fr/entreprise-anniversaire-ile-de-france/\">anniversaire d’entreprise</a>.</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "0ba2910",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Un Family Day partout en Île-de-France",
+              "header_size": "h2",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 26,
+                "sizes": []
+              },
+              "__globals__": {
+                "title_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "2aa3a4a",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Que votre entreprise soit basée à Paris, en petite ou en grande couronne, notre agence évènementielle se déplace dans toute l’Île-de-France pour organiser votre Family Day. Nous adaptons chaque prestation à la taille de vos locaux, au nombre de participants et aux spécificités de votre secteur d’activité.</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "4fdf5de",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "boxed",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 20,
+            "column": "20",
+            "row": "20",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#F6F1E5",
+          "border_radius": {
+            "unit": "px",
+            "top": "15",
+            "right": "15",
+            "bottom": "15",
+            "left": "15",
+            "isLinked": true
+          },
+          "padding": {
+            "unit": "px",
+            "top": "40",
+            "right": "40",
+            "bottom": "40",
+            "left": "40",
+            "isLinked": true
+          },
+          "margin": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "50",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "81c929c",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "FAQ : tout savoir sur le Family Day en entreprise",
+              "header_size": "h2",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 26,
+                "sizes": []
+              },
+              "__globals__": {
+                "title_color": "globals/colors?id=text"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "126d772",
+            "elType": "widget",
+            "widgetType": "nested-accordion",
+            "settings": {
+              "items": [
+                {
+                  "item_title": "Comment organiser un Family Day en entreprise ?",
+                  "_id": "8d8f7d6"
+                },
+                {
+                  "item_title": "Quelles animations pour un Family Day ?",
+                  "_id": "9a8f004"
+                },
+                {
+                  "item_title": "Quels sont les tarifs pour un Family Day ?",
+                  "_id": "91d0a2f"
+                },
+                {
+                  "item_title": "Pourquoi organiser un Family Day ?",
+                  "_id": "dfccea0"
+                },
+                {
+                  "item_title": "Quel est l’objectif d’un Family Day ?",
+                  "_id": "21eae27"
+                },
+                {
+                  "item_title": "Quelles idées d’activités pour un Family Day ?",
+                  "_id": "8257ac8"
+                },
+                {
+                  "item_title": "Comment impliquer les collaborateurs dans un Family Day ?",
+                  "_id": "bd178a9"
+                },
+                {
+                  "item_title": "Comment rendre le Family Day mémorable ?",
+                  "_id": "2bd1c49"
+                }
+              ],
+              "title_tag": "h3",
+              "default_state": "all_collapsed",
+              "title_typography_typography": "custom",
+              "title_typography_font_family": "Raleway",
+              "title_typography_font_size": {
+                "unit": "px",
+                "size": 19,
+                "sizes": []
+              },
+              "title_typography_font_weight": "600",
+              "header_padding": {
+                "unit": "px",
+                "top": "18",
+                "right": "20",
+                "bottom": "18",
+                "left": "20",
+                "isLinked": false
+              },
+              "content_padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "20",
+                "bottom": "18",
+                "left": "20",
+                "isLinked": false
+              },
+              "__globals__": {
+                "title_normal_color": "globals/colors?id=text"
+              }
+            },
+            "elements": [
+              {
+                "id": "da59335",
+                "elType": "container",
+                "isInner": true,
+                "settings": {
+                  "content_width": "full",
+                  "flex_gap": {
+                    "unit": "px",
+                    "size": 0,
+                    "column": "0",
+                    "row": "0",
+                    "isLinked": true
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "9a7515a",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<p>Il faut définir un objectif, un budget et une date, choisir un lieu adapté, puis sélectionner la formule et les animations souhaitées. AlphaBaby prend en charge l’organisation de bout en bout, de la préparation à la coordination le jour J, pour un évènement sans stress pour vos équipes.</p>",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Raleway",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 17,
+                        "sizes": []
+                      },
+                      "typography_line_height": {
+                        "unit": "em",
+                        "size": 1.7,
+                        "sizes": []
+                      },
+                      "__globals__": {
+                        "text_color": "globals/colors?id=text"
+                      }
+                    },
+                    "elements": []
+                  }
+                ]
+              },
+              {
+                "id": "e51903a",
+                "elType": "container",
+                "isInner": true,
+                "settings": {
+                  "content_width": "full",
+                  "flex_gap": {
+                    "unit": "px",
+                    "size": 0,
+                    "column": "0",
+                    "row": "0",
+                    "isLinked": true
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "4811096",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<p>Family Day sur mesure, fête foraine façon kermesse ou Jeux Olympiques : les formules s’adaptent à l’âge des participants et à l’ambiance souhaitée. Chaque formule peut être complétée par des animations sportives, musicales ou créatives.</p>",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Raleway",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 17,
+                        "sizes": []
+                      },
+                      "typography_line_height": {
+                        "unit": "em",
+                        "size": 1.7,
+                        "sizes": []
+                      },
+                      "__globals__": {
+                        "text_color": "globals/colors?id=text"
+                      }
+                    },
+                    "elements": []
+                  }
+                ]
+              },
+              {
+                "id": "6c82dc1",
+                "elType": "container",
+                "isInner": true,
+                "settings": {
+                  "content_width": "full",
+                  "flex_gap": {
+                    "unit": "px",
+                    "size": 0,
+                    "column": "0",
+                    "row": "0",
+                    "isLinked": true
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "84615bb",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<p>Le prix des animations dépend du nombre de participants, du type de prestation et du lieu choisi. Nos formules démarrent à partir de 2 500 €. Une estimation personnalisée est établie pour chaque projet, sur devis, sans engagement de votre part.</p>",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Raleway",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 17,
+                        "sizes": []
+                      },
+                      "typography_line_height": {
+                        "unit": "em",
+                        "size": 1.7,
+                        "sizes": []
+                      },
+                      "__globals__": {
+                        "text_color": "globals/colors?id=text"
+                      }
+                    },
+                    "elements": []
+                  }
+                ]
+              },
+              {
+                "id": "392e8fc",
+                "elType": "container",
+                "isInner": true,
+                "settings": {
+                  "content_width": "full",
+                  "flex_gap": {
+                    "unit": "px",
+                    "size": 0,
+                    "column": "0",
+                    "row": "0",
+                    "isLinked": true
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "fbd8170",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<p>Pour remercier les salariés, renforcer les liens et la cohésion d’équipe, valoriser la culture d’entreprise et créer un moment de partage avec les familles des collaborateurs. C’est aussi un des avantages du Family Day pour l’image de l’employeur.</p>",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Raleway",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 17,
+                        "sizes": []
+                      },
+                      "typography_line_height": {
+                        "unit": "em",
+                        "size": 1.7,
+                        "sizes": []
+                      },
+                      "__globals__": {
+                        "text_color": "globals/colors?id=text"
+                      }
+                    },
+                    "elements": []
+                  }
+                ]
+              },
+              {
+                "id": "9c3a714",
+                "elType": "container",
+                "isInner": true,
+                "settings": {
+                  "content_width": "full",
+                  "flex_gap": {
+                    "unit": "px",
+                    "size": 0,
+                    "column": "0",
+                    "row": "0",
+                    "isLinked": true
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "5809db9",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<p>Renforcer le sentiment d’appartenance des salariés, en leur permettant, ainsi qu’à leurs familles, de vivre une journée porte ouverte au sein de l’entreprise, dans un cadre convivial plutôt qu’institutionnel, propice à la découverte de l’entreprise.</p>",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Raleway",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 17,
+                        "sizes": []
+                      },
+                      "typography_line_height": {
+                        "unit": "em",
+                        "size": 1.7,
+                        "sizes": []
+                      },
+                      "__globals__": {
+                        "text_color": "globals/colors?id=text"
+                      }
+                    },
+                    "elements": []
+                  }
+                ]
+              },
+              {
+                "id": "752c0ba",
+                "elType": "container",
+                "isInner": true,
+                "settings": {
+                  "content_width": "full",
+                  "flex_gap": {
+                    "unit": "px",
+                    "size": 0,
+                    "column": "0",
+                    "row": "0",
+                    "isLinked": true
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "2e49aa7",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<p>Stands façon kermesse, ateliers créatifs, jeux en bois, photo souvenir ou défis sportifs en équipe : varier les activités ludiques rend l’évènement plus original et convivial, pour petits et grands.</p>",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Raleway",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 17,
+                        "sizes": []
+                      },
+                      "typography_line_height": {
+                        "unit": "em",
+                        "size": 1.7,
+                        "sizes": []
+                      },
+                      "__globals__": {
+                        "text_color": "globals/colors?id=text"
+                      }
+                    },
+                    "elements": []
+                  }
+                ]
+              },
+              {
+                "id": "8e7f615",
+                "elType": "container",
+                "isInner": true,
+                "settings": {
+                  "content_width": "full",
+                  "flex_gap": {
+                    "unit": "px",
+                    "size": 0,
+                    "column": "0",
+                    "row": "0",
+                    "isLinked": true
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "4169053",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<p>En les associant en amont au choix du thème ou de la formule, par exemple via un sondage interne, et en leur proposant de participer activement le jour J, en encadrant un atelier ou en accueillant les familles.</p>",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Raleway",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 17,
+                        "sizes": []
+                      },
+                      "typography_line_height": {
+                        "unit": "em",
+                        "size": 1.7,
+                        "sizes": []
+                      },
+                      "__globals__": {
+                        "text_color": "globals/colors?id=text"
+                      }
+                    },
+                    "elements": []
+                  }
+                ]
+              },
+              {
+                "id": "b3a0e62",
+                "elType": "container",
+                "isInner": true,
+                "settings": {
+                  "content_width": "full",
+                  "flex_gap": {
+                    "unit": "px",
+                    "size": 0,
+                    "column": "0",
+                    "row": "0",
+                    "isLinked": true
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "5446c91",
+                    "elType": "widget",
+                    "widgetType": "text-editor",
+                    "settings": {
+                      "editor": "<p>En soignant la décoration, en confiant l’animation à des professionnels et en offrant des goodies personnalisés. Chaque détail, du programme au lieu choisi, contribue à créer un souvenir inoubliable pour les familles.</p>",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Raleway",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 17,
+                        "sizes": []
+                      },
+                      "typography_line_height": {
+                        "unit": "em",
+                        "size": 1.7,
+                        "sizes": []
+                      },
+                      "__globals__": {
+                        "text_color": "globals/colors?id=text"
+                      }
+                    },
+                    "elements": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "df78c33",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "boxed",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 18,
+            "column": "18",
+            "row": "18",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#EE743A",
+          "border_radius": {
+            "unit": "px",
+            "top": "15",
+            "right": "15",
+            "bottom": "15",
+            "left": "15",
+            "isLinked": true
+          },
+          "padding": {
+            "unit": "px",
+            "top": "45",
+            "right": "40",
+            "bottom": "45",
+            "left": "40",
+            "isLinked": false
+          },
+          "margin": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "50",
+            "left": "0",
+            "isLinked": false
+          },
+          "flex_align_items": "center"
+        },
+        "elements": [
+          {
+            "id": "1b6b4dd",
+            "elType": "widget",
+            "widgetType": "heading",
+            "settings": {
+              "title": "Parlons de votre Family Day",
+              "header_size": "h2",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 26,
+                "sizes": []
+              },
+              "__globals__": {
+                "title_color": "globals/colors?id=65cf053"
+              },
+              "align": "center"
+            },
+            "elements": []
+          },
+          {
+            "id": "5bb9de2",
+            "elType": "widget",
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Dites-nous ce que vous avez en tête. Nous vous répondons avec un programme et un devis personnalisé, gratuit et sans engagement.</p>",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.7,
+                "sizes": []
+              },
+              "__globals__": {
+                "text_color": "globals/colors?id=65cf053"
+              },
+              "align": "center"
+            },
+            "elements": []
+          },
+          {
+            "id": "7a1219b",
+            "elType": "widget",
+            "widgetType": "button",
+            "settings": {
+              "text": "Demander mon devis gratuit",
+              "link": {
+                "url": "https://alphababy.fr/contact/",
+                "is_external": "",
+                "nofollow": "",
+                "custom_attributes": ""
+              },
+              "align": "center",
+              "size": "md",
+              "typography_typography": "custom",
+              "typography_font_family": "Raleway",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_weight": "600",
+              "border_radius": {
+                "unit": "px",
+                "top": "15",
+                "right": "15",
+                "bottom": "15",
+                "left": "15",
+                "isLinked": true
+              },
+              "text_padding": {
+                "unit": "px",
+                "top": "16",
+                "right": "32",
+                "bottom": "16",
+                "left": "32",
+                "isLinked": false
+              },
+              "__globals__": {
+                "background_color": "globals/colors?id=65cf053",
+                "button_text_color": "globals/colors?id=primary",
+                "hover_color": "globals/colors?id=65cf053",
+                "button_background_hover_color": "globals/colors?id=secondary"
+              }
+            },
+            "elements": []
+          }
+        ]
+      }
+    ],
+    "isInner": false
+  }
+]
