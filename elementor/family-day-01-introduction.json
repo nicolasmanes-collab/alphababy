@@ -1,0 +1,105 @@
+{
+  "version": "0.4",
+  "title": "Family Day entreprise - 01 Introduction",
+  "type": "container",
+  "content": [
+    {
+      "id": "b56ade8",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20,
+          "column": "20",
+          "row": "20",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "25",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "e4df388",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Envie d’organiser un Family Day pour votre entreprise et d’offrir à vos collaborateurs et à leurs familles une vraie journée de partage, sans passer des heures à tout organiser ? AlphaBaby prend en charge l’organisation de votre Family Day de A à Z : animations, ateliers, décoration et goodies, pour un évènement d’entreprise clé en main.</p><p>Chaque année, ce type d’évènement (aussi appelé Kids Day ou jour de la famille en entreprise) rassemble collaborateurs, conjoints et enfants autour d’une journée festive et conviviale. C’est devenu une véritable tradition dans la vie de nombreuses entreprises, CSE, COS et CCAS, qui y voient un moyen simple de renforcer les liens au sein de leurs équipes.</p><p>Que vous souhaitiez une animation ludique dans vos locaux, un évènement en plein air ou une formule sur mesure autour du thème de votre choix, notre agence évènementielle construit avec vous le programme adapté à votre entreprise et à votre budget.</p>",
+            "typography_typography": "custom",
+            "typography_font_family": "Raleway",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 17,
+              "sizes": []
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.7,
+              "sizes": []
+            },
+            "__globals__": {
+              "text_color": "globals/colors?id=text"
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "d46f6ea",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "Demandez votre devis gratuit",
+            "link": {
+              "url": "https://alphababy.fr/contact/",
+              "is_external": "",
+              "nofollow": "",
+              "custom_attributes": ""
+            },
+            "align": "left",
+            "size": "md",
+            "typography_typography": "custom",
+            "typography_font_family": "Raleway",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 18,
+              "sizes": []
+            },
+            "typography_font_weight": "600",
+            "border_radius": {
+              "unit": "px",
+              "top": "15",
+              "right": "15",
+              "bottom": "15",
+              "left": "15",
+              "isLinked": true
+            },
+            "text_padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "32",
+              "bottom": "16",
+              "left": "32",
+              "isLinked": false
+            },
+            "__globals__": {
+              "background_color": "globals/colors?id=primary",
+              "button_text_color": "globals/colors?id=65cf053",
+              "hover_color": "globals/colors?id=65cf053",
+              "button_background_hover_color": "globals/colors?id=secondary"
+            }
+          },
+          "elements": []
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}
