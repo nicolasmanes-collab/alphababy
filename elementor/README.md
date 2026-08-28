@@ -57,12 +57,30 @@ Family Day »**, type `product-archive`, cree avec
   « Family Day en entreprise : une organisation clé en main ».
 - Widget « Description de l'archive » `#29df642` retire, remplace par la
   nouvelle introduction.
-- **Conditions d'affichage vides** : le modele est inerte, la page en ligne
-  est inchangee tant que la condition n'est pas posee.
+- **Condition d'affichage posee** le 28/08/2026 : « Archive produits >
+  Catégorie de produit > Family day » (terme #133). La page en ligne rend
+  bien le modele #8977, verifie sur `/entreprise/family-day/`.
 
 Sauvegarde du template d'origine `#3948` avant modification :
 `elementor/_archive-3948-actuel.json`. Le template `#3948` lui-meme n'a pas
 ete touche.
+
+### Controles apres mise en ligne
+
+- modele rendu sur la page : `#8977`
+- H1 unique, 15 H2, 8 H3 (les questions de la FAQ)
+- accordeon Elementor `n-accordion` fonctionnel : `<details>`, `<summary>`,
+  attributs ARIA, tout replie par defaut
+- formulaire de filtres present, loop grid avec ses 3 vignettes
+- les 6 liens du nouveau contenu repondent en 200
+- categorie temoin `/entreprise/spectacles/` toujours rendue par `#3948`,
+  5 vignettes, inchangee
+
+Non verifie : le parcours reel des filtres dans un navigateur. Chromium ne
+joint pas le site depuis l'environnement d'execution distant. Un GET direct
+avec les parametres de filtre renvoie 0 vignette, mais c'est aussi le cas sur
+`/entreprise/spectacles/` qui n'a pas ete modifiee, donc le comportement est
+identique avant et apres. A confirmer d'un clic sur la page.
 
 ### Mise en ligne
 
