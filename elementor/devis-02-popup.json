@@ -1,0 +1,309 @@
+{
+  "version": "0.4",
+  "title": "Popup - Demande de devis",
+  "type": "popup",
+  "content": [
+    {
+      "id": "d3v1s10",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 12,
+          "column": "12",
+          "row": "12",
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "30",
+          "right": "30",
+          "bottom": "30",
+          "left": "30",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "20",
+          "right": "18",
+          "bottom": "20",
+          "left": "18",
+          "isLinked": false
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "15",
+          "right": "15",
+          "bottom": "15",
+          "left": "15",
+          "isLinked": true
+        },
+        "background_background": "classic",
+        "__globals__": {
+          "background_color": "globals/colors?id=65cf053"
+        }
+      },
+      "elements": [
+        {
+          "id": "d3v1s11",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Demande de devis",
+            "header_size": "h2",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Lilita One",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 32,
+              "sizes": []
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 26,
+              "sizes": []
+            },
+            "__globals__": {
+              "title_color": "globals/colors?id=secondary"
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "d3v1s12",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Dites-nous en quelques mots ce que vous souhaitez, nous vous répondons rapidement avec un devis personnalisé.</p>",
+            "align": "center",
+            "typography_typography": "custom",
+            "typography_font_family": "Raleway",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 16,
+              "sizes": []
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.6,
+              "sizes": []
+            },
+            "__globals__": {
+              "text_color": "globals/colors?id=text"
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "d3v1s20",
+          "elType": "widget",
+          "widgetType": "form",
+          "settings": {
+            "form_name": "Demande de devis produit",
+            "form_fields": [
+              {
+                "_id": "prenom",
+                "custom_id": "prenom",
+                "field_type": "text",
+                "field_label": "Prénom",
+                "width": "50",
+                "required": "true",
+                "placeholder": "Prénom *"
+              },
+              {
+                "_id": "nom",
+                "custom_id": "nom",
+                "field_type": "text",
+                "field_label": "Nom",
+                "width": "50",
+                "required": "true",
+                "placeholder": "Nom *"
+              },
+              {
+                "_id": "email",
+                "custom_id": "email",
+                "field_type": "email",
+                "field_label": "Email",
+                "width": "50",
+                "required": "true",
+                "placeholder": "Email *"
+              },
+              {
+                "_id": "telephone",
+                "custom_id": "telephone",
+                "field_type": "tel",
+                "field_label": "Téléphone",
+                "width": "50",
+                "required": "true",
+                "placeholder": "Téléphone *"
+              },
+              {
+                "_id": "date_fete",
+                "custom_id": "date_fete",
+                "field_type": "date",
+                "field_label": "Date de la fête",
+                "width": "50",
+                "required": "",
+                "placeholder": "Date de la fête"
+              },
+              {
+                "_id": "nb_enfants",
+                "custom_id": "nb_enfants",
+                "field_type": "number",
+                "field_label": "Nombre d'enfants",
+                "width": "50",
+                "required": "",
+                "placeholder": "Nombre d'enfants",
+                "min": "1"
+              },
+              {
+                "_id": "demande",
+                "custom_id": "demande",
+                "field_type": "textarea",
+                "field_label": "Votre demande",
+                "width": "100",
+                "required": "true",
+                "placeholder": "Votre demande : ville, horaire souhaité, âge des enfants, options, questions…",
+                "rows": "4"
+              },
+              {
+                "_id": "rgpd",
+                "custom_id": "rgpd",
+                "field_type": "acceptance",
+                "field_label": "Consentement",
+                "width": "100",
+                "required": "true",
+                "acceptance_text": "J'accepte d'être recontacté(e) par AlphaBaby au sujet de ma demande."
+              },
+              {
+                "_id": "produit",
+                "custom_id": "produit",
+                "field_type": "hidden",
+                "field_label": "Prestation",
+                "width": "100",
+                "field_value": "",
+                "__dynamic__": {
+                  "field_value": "[elementor-tag id=\"prd0001\" name=\"post-title\" settings=\"%7B%7D\"]"
+                }
+              }
+            ],
+            "button_text": "Envoyer ma demande",
+            "button_size": "md",
+            "button_width": "100",
+            "button_align": "center",
+            "step_next_label": "Suivant",
+            "step_previous_label": "Précédent",
+            "submit_actions": [
+              "email"
+            ],
+            "email_to": "alphababy94@alphababy.fr",
+            "email_subject": "Demande de devis : [field id=\"produit\"]",
+            "email_content": "<p>Nouvelle demande de devis envoyée depuis le site.</p>[all-fields]",
+            "email_content_type": "html",
+            "email_from_name": "Site AlphaBaby",
+            "email_reply_to": "[field id=\"email\"]",
+            "form_metadata": [
+              "date",
+              "time",
+              "page_url"
+            ],
+            "success_message": "Merci, votre demande est bien reçue. Nous revenons vers vous très vite. Pour une réponse immédiate : 01 30 10 19 10.",
+            "error_message": "Une erreur est survenue, merci de réessayer ou de nous appeler au 01 30 10 19 10.",
+            "required_field_message": "Ce champ est obligatoire.",
+            "mark_required": "yes",
+            "label_position": "none",
+            "field_typography_typography": "custom",
+            "field_typography_font_family": "Raleway",
+            "field_typography_font_size": {
+              "unit": "px",
+              "size": 16,
+              "sizes": []
+            },
+            "field_border_radius": {
+              "unit": "px",
+              "top": "10",
+              "right": "10",
+              "bottom": "10",
+              "left": "10",
+              "isLinked": true
+            },
+            "button_typography_typography": "custom",
+            "button_typography_font_family": "Raleway",
+            "button_typography_font_size": {
+              "unit": "px",
+              "size": 18,
+              "sizes": []
+            },
+            "button_typography_font_weight": "700",
+            "button_typography_text_transform": "uppercase",
+            "button_border_radius": {
+              "unit": "px",
+              "top": "15",
+              "right": "15",
+              "bottom": "15",
+              "left": "15",
+              "isLinked": true
+            },
+            "button_text_padding": {
+              "unit": "px",
+              "top": "16",
+              "right": "30",
+              "bottom": "16",
+              "left": "30",
+              "isLinked": false
+            },
+            "__globals__": {
+              "button_background_color": "globals/colors?id=primary",
+              "button_text_color": "globals/colors?id=65cf053",
+              "button_background_hover_color": "globals/colors?id=secondary",
+              "button_hover_color": "globals/colors?id=65cf053"
+            }
+          },
+          "elements": []
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "a11y_navigation": "yes",
+    "width": {
+      "unit": "px",
+      "size": 640,
+      "sizes": []
+    },
+    "width_mobile": {
+      "unit": "vw",
+      "size": 92,
+      "sizes": []
+    },
+    "height": "fit_to_content",
+    "horizontal_position": "center",
+    "vertical_position": "center",
+    "position": "center center",
+    "close_button": "yes",
+    "close_button_position": "outside",
+    "prevent_scroll": "yes",
+    "entrance_animation": "fadeInUp",
+    "entrance_animation_duration": {
+      "unit": "px",
+      "size": 0.6,
+      "sizes": []
+    },
+    "overlay_background_background": "classic",
+    "overlay_background_color": "rgba(0,0,0,0.6)",
+    "border_radius": {
+      "unit": "px",
+      "top": "15",
+      "right": "15",
+      "bottom": "15",
+      "left": "15",
+      "isLinked": true
+    },
+    "triggers": {},
+    "timing": {}
+  }
+}
