@@ -7,6 +7,7 @@ Etapes, dans l'ordre :
   create-popup          cree le popup « Demande de devis » (inerte tant qu'il
                         n'a pas de condition d'affichage)
   set-popup-condition N publie le popup sur tout le site
+  update-popup N        remet a jour le contenu du popup N
   insert-buttons N [id] insere le bloc de boutons en haut de la fiche produit,
                         avec le lien d'ouverture du popup N
   restore [id]          remet la fiche produit dans son etat sauvegarde
@@ -16,6 +17,7 @@ Authentification par mot de passe d'application (Basic auth).
 Variables attendues : WP_URL, WP_USER, WP_APP_PASSWORD.
 """
 import base64
+import importlib.util
 import json
 import os
 import re
@@ -32,7 +34,13 @@ APP_PASSWORD = os.environ.get("WP_APP_PASSWORD", "")
 PRODUIT_TEST = 6424          # DEMON HUNTERS KPOP
 CLASSE_BLOC_PRODUIT = "page-produit"
 CLASSE_BLOC_CTA = "bloc-cta-produit"
-POPUP_PLACEHOLDER = "__POPUP_ID__"
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+_spec = importlib.util.spec_from_file_location(
+    "builder", pathlib.Path(__file__).resolve().parent
+    / "build-elementor-devis.py")
+builder = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(builder)
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 ELEMENTOR_DIR = ROOT / "elementor"
@@ -142,7 +150,43 @@ def ecrire_donnees(pid, elements, source):
     if code not in (200, 201):
         print("  ", json.dumps(body, ensure_ascii=False)[:600])
         return False
+    vider_caches(pid)
     return True
+
+
+def vider_caches(pid):
+    """Supprime le HTML et le CSS pre-calcules par Elementor pour cette fiche.
+
+    Sans cela, la page continue de servir l'ancien rendu : Elementor met en
+    cache le HTML des elements dans _elementor_element_cache.
+    """
+    cibles = {"_elementor_element_cache", "_elementor_css",
+              "_elementor_page_assets"}
+    code, body = call("GET", f"/wc/v3/products/{pid}", quiet=True)
+    if code != 200 or not isinstance(body, dict):
+        print("   caches Elementor non vides : lecture WooCommerce refusee")
+        return False
+    payload = [{"key": md["key"], "id": md["id"], "value": None}
+               for md in body.get("meta_data", []) if md.get("key") in cibles]
+    restant = []
+    if payload:
+        code, body = call("PUT", f"/wc/v3/products/{pid}",
+                          {"meta_data": payload}, quiet=True)
+        restant = [md.get("key") for md in body.get("meta_data", [])
+                   if md.get("key") in cibles] \
+            if isinstance(body, dict) else ["?"]
+        print(f"   caches de la fiche vides : {[m['key'] for m in payload]}"
+              f"{' RESTANT ' + str(restant) if restant else ''}")
+    vider_cache_global()
+    return not restant
+
+
+def vider_cache_global():
+    """Purge le cache Elementor du site (CSS et HTML pre-calcules)."""
+    code, _ = call("DELETE", "/elementor/v1/cache", quiet=True)
+    print(f"   cache Elementor du site : "
+          f"{'vide' if code == 200 else 'echec HTTP ' + str(code)}")
+    return code == 200
 
 
 def aplatir(elements, sortie=None):
@@ -153,33 +197,26 @@ def aplatir(elements, sortie=None):
     return sortie
 
 
+def classes_de(el):
+    """Classes CSS d'un element. Les conteneurs utilisent css_classes,
+    les widgets _css_classes. Un element sans reglage renvoie une liste."""
+    reglages = el.get("settings")
+    if not isinstance(reglages, dict):
+        return ""
+    valeurs = [reglages.get("css_classes"), reglages.get("_css_classes")]
+    return " ".join(v for v in valeurs if isinstance(v, str))
+
+
 def position_insertion(elements):
     """Index du bloc produit principal, ou 1 par defaut."""
     for i, el in enumerate(elements):
-        classes = (el.get("settings") or {}).get("_css_classes", "")
-        if CLASSE_BLOC_PRODUIT in classes:
+        if CLASSE_BLOC_PRODUIT in classes_de(el):
             return i
     return min(1, len(elements))
 
 
 def deja_present(elements):
-    return any(CLASSE_BLOC_CTA in ((el.get("settings") or {})
-               .get("_css_classes", "")) for el in aplatir(elements))
-
-
-def injecter_popup_id(bloc, popup_id):
-    """Remplace le marqueur du lien popup par l'ID reel."""
-    lien = base64.b64encode(
-        json.dumps({"id": str(popup_id), "toggle": False},
-                   separators=(",", ":")).encode("utf-8")).decode("ascii")
-    brut = json.dumps(bloc, ensure_ascii=False)
-    ancien = base64.b64encode(
-        json.dumps({"id": POPUP_PLACEHOLDER, "toggle": False},
-                   separators=(",", ":")).encode("utf-8")).decode("ascii")
-    brut = brut.replace(ancien, lien)
-    if lien not in brut:
-        sys.exit("marqueur __POPUP_ID__ introuvable dans le bloc de boutons")
-    return json.loads(brut)
+    return any(CLASSE_BLOC_CTA in classes_de(el) for el in aplatir(elements))
 
 
 # ---------------------------------------------------------------------------
@@ -202,8 +239,8 @@ def cmd_probe():
                  " procedure manuelle (elementor/README-devis.md)")
     print(f"   source : {source}, {len(elements)} conteneurs racine")
     for i, el in enumerate(elements):
-        classes = (el.get("settings") or {}).get("_css_classes", "")
-        print(f"     [{i}] #{el.get('id')} {el.get('elType')} {classes}")
+        print(f"     [{i}] #{el.get('id')} {el.get('elType')} "
+              f"{classes_de(el)}")
     print(f"   bloc CTA deja present : {deja_present(elements)}")
     print(f"   insertion prevue en position {position_insertion(elements)}")
     chemin = sauvegarde_path(pid)
@@ -256,6 +293,35 @@ def cmd_set_popup_condition():
           " bouton.")
 
 
+def cmd_update_popup():
+    """Reecrit le contenu d'un popup deja cree, sans changer son ID."""
+    require_credentials()
+    if len(sys.argv) < 3 or not sys.argv[2].isdigit():
+        sys.exit("usage : wp-devis-push.py update-popup <popup_id>")
+    tid = sys.argv[2]
+    popup = charger("devis-02-popup.json")
+    brut = json.dumps(popup["content"], ensure_ascii=False,
+                      separators=(",", ":"))
+    code, body = call("POST", f"/wp/v2/elementor_library/{tid}",
+                      {"meta": {"_elementor_data": brut,
+                                "_elementor_page_settings":
+                                    popup["page_settings"]}})
+    if code not in (200, 201):
+        sys.exit("ECHEC : " + json.dumps(body, ensure_ascii=False)[:600])
+    vider_cache_global()
+    print(f"  popup #{tid} mis a jour")
+
+
+def personnaliser_bloc(bloc, popup_id):
+    """Remplace le marqueur par le lien d'ouverture du popup reel."""
+    ancien = builder.popup_link(builder.POPUP_PLACEHOLDER)
+    nouveau = builder.popup_link(popup_id)
+    brut = json.dumps(bloc, ensure_ascii=False).replace(ancien, nouveau)
+    if nouveau not in brut:
+        sys.exit("lien marqueur introuvable dans le bloc de boutons")
+    return json.loads(brut)
+
+
 def cmd_insert_buttons():
     require_credentials()
     if len(sys.argv) < 3 or not sys.argv[2].isdigit():
@@ -275,8 +341,8 @@ def cmd_insert_buttons():
     if deja_present(elements):
         sys.exit("le bloc de boutons est deja present sur cette fiche")
 
-    bloc = injecter_popup_id(charger("devis-01-boutons.json")["content"],
-                             popup_id)
+    bloc = personnaliser_bloc(charger("devis-01-boutons.json")["content"],
+                              popup_id)
     pos = position_insertion(elements)
     fusion = elements[:pos] + bloc + elements[pos:]
     print(f"  insertion en position {pos}, "
@@ -323,13 +389,20 @@ def cmd_verify():
     with urllib.request.urlopen(req, timeout=90, context=_ctx()) as r:
         html = r.read().decode("utf-8", "replace")
     print(f"  page : {url} ({len(html)} octets)")
-    print(f"  bloc CTA           : {CLASSE_BLOC_CTA in html}")
-    print(f"  lien telephone     : {'tel:+33130101910' in html}")
-    print(f"  action popup       : "
-          f"{'elementor-action%3Aaction%3Dpopup' in html or 'popup:open' in html}")
-    print(f"  formulaire devis   : {'Demande de devis' in html}")
-    ids = set(re.findall(r'data-id="([0-9a-z]+)"', html))
-    print(f"  IDs de widgets     : {len(ids)} uniques")
+    marqueurs = {
+        "bloc CTA": CLASSE_BLOC_CTA in html,
+        "lien telephone": "tel:+33130101910" in html,
+        "lien d'action popup": 'href="#elementor-action:action=popup:open'
+                               in html,
+        "popup rendu": 'data-elementor-type="popup"' in html,
+        "formulaire": 'name="Demande de devis produit"' in html,
+    }
+    for nom, present in marqueurs.items():
+        print(f"  {nom:22}: {present}")
+    motif = r'name="form_fields\[produit\]"[^>]*value="([^"]*)"'
+    trouve = re.search(motif, html)
+    print(f"  {'prestation transmise':22}: "
+          f"{trouve.group(1) if trouve else 'ABSENTE'}")
 
 
 if __name__ == "__main__":
@@ -337,6 +410,7 @@ if __name__ == "__main__":
     {
         "probe": cmd_probe,
         "create-popup": cmd_create_popup,
+        "update-popup": cmd_update_popup,
         "set-popup-condition": cmd_set_popup_condition,
         "insert-buttons": cmd_insert_buttons,
         "restore": cmd_restore,

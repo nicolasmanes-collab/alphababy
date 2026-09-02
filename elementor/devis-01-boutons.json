@@ -37,7 +37,7 @@
           "left": "15",
           "isLinked": false
         },
-        "_css_classes": "bloc-cta-produit"
+        "css_classes": "bloc-cta-produit"
       },
       "elements": [
         {
@@ -183,88 +183,11 @@
           },
           "elements": [
             {
-              "id": "d3v1s04",
+              "id": "d3v1s05",
               "elType": "widget",
-              "widgetType": "button",
+              "widgetType": "html",
               "settings": {
-                "text": "Demande de devis",
-                "link": {
-                  "url": "#elementor-action:action=popup:open&settings=eyJpZCI6Il9fUE9QVVBfSURfXyIsInRvZ2dsZSI6ZmFsc2V9",
-                  "is_external": "",
-                  "nofollow": "",
-                  "custom_attributes": ""
-                },
-                "align": "center",
-                "size": "md",
-                "selected_icon": {
-                  "value": "fas fa-envelope-open-text",
-                  "library": "fa-solid"
-                },
-                "icon_indent": {
-                  "unit": "px",
-                  "size": 10,
-                  "sizes": []
-                },
-                "typography_typography": "custom",
-                "typography_font_family": "Raleway",
-                "typography_font_size": {
-                  "unit": "px",
-                  "size": 18,
-                  "sizes": []
-                },
-                "typography_font_size_tablet": {
-                  "unit": "px",
-                  "size": 16,
-                  "sizes": []
-                },
-                "typography_font_size_mobile": {
-                  "unit": "px",
-                  "size": 15,
-                  "sizes": []
-                },
-                "typography_font_weight": "700",
-                "typography_text_transform": "uppercase",
-                "typography_letter_spacing": {
-                  "unit": "px",
-                  "size": 0.5,
-                  "sizes": []
-                },
-                "border_radius": {
-                  "unit": "px",
-                  "top": "15",
-                  "right": "15",
-                  "bottom": "15",
-                  "left": "15",
-                  "isLinked": true
-                },
-                "text_padding": {
-                  "unit": "px",
-                  "top": "18",
-                  "right": "34",
-                  "bottom": "18",
-                  "left": "34",
-                  "isLinked": false
-                },
-                "text_padding_mobile": {
-                  "unit": "px",
-                  "top": "14",
-                  "right": "18",
-                  "bottom": "14",
-                  "left": "18",
-                  "isLinked": false
-                },
-                "_element_width": "initial",
-                "_element_custom_width": {
-                  "unit": "%",
-                  "size": 100,
-                  "sizes": []
-                },
-                "__globals__": {
-                  "background_color": "globals/colors?id=secondary",
-                  "button_text_color": "globals/colors?id=65cf053",
-                  "hover_color": "globals/colors?id=65cf053",
-                  "button_background_hover_color": "globals/colors?id=primary"
-                }
+                "html": "<style>\n.cta-devis{display:flex}\n.cta-devis-lien{flex:1;display:inline-flex;align-items:center;\njustify-content:center;gap:10px;background:var(--e-global-color-secondary,#80A681);\ncolor:var(--e-global-color-65cf053,#fff);border-radius:15px;padding:18px 34px;\nfont-family:\"Raleway\",sans-serif;font-weight:700;font-size:18px;\nline-height:1.2;text-transform:uppercase;letter-spacing:.5px;\ntext-align:center;text-decoration:none;transition:background .2s}\n.cta-devis-lien:hover,.cta-devis-lien:focus{\nbackground:var(--e-global-color-primary,#EE743A);\ncolor:var(--e-global-color-65cf053,#fff)}\n@media (max-width:1024px){.cta-devis-lien{font-size:16px}}\n@media (max-width:767px){.cta-devis-lien{font-size:15px;padding:14px 18px}}\n</style><div class=\"cta-devis\"><a class=\"cta-devis-lien\" href=\"#elementor-action:action=popup:open&settings=eyJpZCI6Il9fUE9QVVBfSURfXyIsInRvZ2dsZSI6ZmFsc2V9\"><svg class=\"cta-devis-icone\" viewBox=\"0 0 512 512\" width=\"20\" height=\"20\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z\"/></svg><span>Demande de devis</span></a></div>"
               },
               "elements": []
             }

@@ -198,7 +198,8 @@
             "step_next_label": "Suivant",
             "step_previous_label": "Précédent",
             "submit_actions": [
-              "email"
+              "email",
+              "email2"
             ],
             "email_to": "alphababy94@alphababy.fr",
             "email_subject": "Demande de devis : [field id=\"produit\"]",
@@ -211,11 +212,18 @@
               "time",
               "page_url"
             ],
+            "email_to_2": "[field id=\"email\"]",
+            "email_subject_2": "Votre demande de devis AlphaBaby",
+            "email_content_2": "<p>Bonjour [field id=\"prenom\"],</p><p>Nous avons bien reçu votre demande de devis et nous revenons vers vous très vite.</p><p>Voici le récapitulatif de ce que vous nous avez transmis :</p>[all-fields]<p>Une question d'ici là ? Appelez-nous au 01 30 10 19 10, du lundi au vendredi de 9h30 à 17h30.</p><p>À très bientôt,<br>L'équipe AlphaBaby<br>Créateur de fêtes depuis 1996</p>",
+            "email_content_type_2": "html",
+            "email_from_name_2": "AlphaBaby",
+            "email_reply_to_2": "alphababy94@alphababy.fr",
+            "form_metadata_2": [],
             "success_message": "Merci, votre demande est bien reçue. Nous revenons vers vous très vite. Pour une réponse immédiate : 01 30 10 19 10.",
             "error_message": "Une erreur est survenue, merci de réessayer ou de nous appeler au 01 30 10 19 10.",
             "required_field_message": "Ce champ est obligatoire.",
             "mark_required": "yes",
-            "label_position": "none",
+            "show_labels": "",
             "field_typography_typography": "custom",
             "field_typography_font_family": "Raleway",
             "field_typography_font_size": {
@@ -285,7 +293,6 @@
     "vertical_position": "center",
     "position": "center center",
     "close_button": "yes",
-    "close_button_position": "outside",
     "prevent_scroll": "yes",
     "entrance_animation": "fadeInUp",
     "entrance_animation_duration": {

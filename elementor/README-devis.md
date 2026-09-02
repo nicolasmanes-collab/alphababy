@@ -1,21 +1,25 @@
 # Fiches produits : bouton appel + demande de devis
 
-Objectif : ajouter en haut de chaque fiche produit deux boutons, « Une question ?
-Appelez-nous » (appel direct) et « Demande de devis » (formulaire), et recevoir
-les demandes sur **alphababy94@alphababy.fr**.
+Deux boutons en haut de la fiche produit : appel direct au 01 30 10 19 10, et
+« Demande de devis » qui ouvre un popup contenant un formulaire. Les demandes
+partent sur **alphababy94@alphababy.fr**, et le client reçoit un accusé de
+réception.
 
-Page de test : `https://alphababy.fr/anniversaire-demon-hunter-kpop-ile-de-france/`
-(produit `#6424`, DEMON HUNTERS KPOP).
+Fiche de test en ligne depuis le 02/09/2026 :
+`https://alphababy.fr/anniversaire-demon-hunter-kpop-ile-de-france/`
+(produit `#6424`, DEMON HUNTERS KPOP). Popup **#8994 « Popup - Demande de
+devis »**, affiché sur tout le site, ouvert uniquement au clic.
 
 ## Ce que contient ce dossier
 
 | Fichier | Contenu | Où il va |
 |---|---|---|
 | `devis-01-boutons.json` | Conteneur avec les 2 boutons | Fiche produit, juste au-dessus du bloc `page-produit` |
-| `devis-02-popup.json` | Popup « Demande de devis » : titre, phrase d'accroche, formulaire | Modèles > Popups |
+| `devis-02-popup.json` | Popup : titre, accroche, formulaire | Modèles > Popups |
+| `_produit-<id>-avant.json` | Sauvegarde de la fiche avant modification | Sert au retour arrière |
 
 Générés par `scripts/build-elementor-devis.py`. Pour changer un texte, un champ
-ou une couleur : éditer le script, puis le relancer.
+ou une couleur : éditer le script, le relancer, puis republier.
 
 ```bash
 python3 scripts/build-elementor-devis.py
@@ -25,56 +29,87 @@ python3 scripts/build-elementor-devis.py
 
 - Les fiches produits ne passent pas par un modèle Theme Builder « Produit
   unique ». Chaque produit porte son propre contenu Elementor
-  (`data-elementor-type="product-post"`, `data-elementor-id="6424"`). Le bloc de
-  boutons est donc à insérer **fiche par fiche**, d'où le script qui prend un ID
-  de produit en argument.
-- Structure du haut de la fiche `#6424` : conteneur `7b3d5cb9` (bordure beige),
-  puis conteneur `d526eb2` de classe `page-produit`. Le bloc de boutons
-  s'intercale entre les deux, repéré par la classe `page-produit`, pas par l'ID,
-  pour rester valable sur les autres fiches.
-- Elementor Pro est actif : le widget Form et les popups sont disponibles.
-  Fluent Forms est aussi installé, mais le formulaire de la page Contact est un
-  formulaire Elementor Pro. Le popup reste donc sur la même brique.
+  (`data-elementor-type="product-post"`). Le bloc de boutons s'insère donc
+  fiche par fiche, d'où le script qui prend un ID de produit en argument.
+- Sur `#6424`, le haut de page est le conteneur `7b3d5cb9` (bordure beige) puis
+  le conteneur `d526eb2` de classe `page-produit`. Le bloc s'intercale entre les
+  deux. Il est repéré par la classe `page-produit`, pas par l'ID, pour rester
+  valable sur les autres fiches.
+- Elementor Pro est actif : widget Form et popups disponibles. Fluent Forms est
+  installé mais le formulaire de la page Contact est un formulaire Elementor
+  Pro, on reste donc sur la même brique.
 - Couleurs globales du kit `#14` : `primary #EE743A`, `secondary #80A681`,
-  `text #222222`, blanc `65cf053`, beige `7f6e0fa`. Polices Lilita One pour les
-  titres, Raleway pour le corps. Rayon 15 px. Le JSON référence les couleurs en
-  globales, elles suivront le kit.
+  `text #222222`, blanc `65cf053`, beige `7f6e0fa`. Lilita One pour les titres,
+  Raleway pour le corps, rayon 15 px.
+
+### Deux contraintes qui expliquent la forme du code
+
+**1. Le bouton devis est un widget HTML, pas un widget bouton.**
+
+Elementor n'ouvre un popup que sur un lien dont le `href` commence par
+`#elementor-action` ou `%23elementor-action` (sélecteur du module `url-actions`,
+`elementor/assets/js/frontend.min.js`). Or :
+
+- dans un widget bouton, WordPress passe l'URL par `esc_url`, qui vide le href :
+  il lit `#elementor-action` comme un protocole inconnu ;
+- la variante encodée `%23elementor-action%3A…` que produit l'éditeur Elementor
+  est refusée par le pare-feu de l'hébergement, voir le point 2.
+
+Le contenu d'un widget HTML est rendu tel quel, sans `esc_url`. Le lien d'action
+y reste donc en clair et Elementor le reconnaît. Le style du bouton est embarqué
+dans le même widget, avec les couleurs du kit en variables CSS.
+
+**2. Le pare-feu d'o2switch bloque certaines écritures de l'API REST.**
+
+Réponse `503` avec une page « Test de sécurité / Security check », sur
+`/wp-json/wp/v2/*` comme sur `/wp-json/elementor/v1/*`, quel que soit le format
+d'envoi (JSON, JSON avec `%`, formulaire encodé). Motifs relevés :
+
+| Contenu envoyé | Résultat |
+|---|---|
+| Deux séquences `%XX` ou plus (`%3A`, `%3D`, `%26`) | bloqué |
+| Une balise `<script>` | bloqué |
+| `<a href="…">` contenant `&amp;` | bloqué |
+| Le lien d'action en clair `#elementor-action:action=popup:open&settings=…` | passe |
+
+S'y ajoutent des blocages intermittents sur des contenus anodins : en cas de
+`503` ou de `Connection reset`, relancer la commande, elle finit par passer.
+
+Si o2switch assouplit cette règle sur `/wp-json`, le bouton pourra redevenir un
+widget bouton Elementor classique. Ce n'est pas nécessaire, tout fonctionne en
+l'état.
 
 ## Les deux boutons
 
 - **Orange** : « Une question ? Appelez-nous : 01 30 10 19 10 », lien
-  `tel:+33130101910`. Sur mobile, l'appel part directement.
-- **Vert** : « Demande de devis », lien d'action Elementor
-  `#elementor-action:action=popup:open&settings=…`. L'ID du popup est injecté au
-  moment de l'insertion, il n'est pas écrit en dur dans le JSON (marqueur
-  `__POPUP_ID__`).
+  `tel:+33130101910`. Sur mobile l'appel part directement.
+- **Vert** : « Demande de devis », ouvre le popup `#8994`.
 - Côte à côte sur desktop et tablette, l'un sous l'autre sur mobile.
 
 ## Le formulaire
 
-Champs visibles : Prénom, Nom, Email, Téléphone (obligatoires), Date de la fête,
-Nombre d'enfants, Votre demande (obligatoire, en texte libre), case de
-consentement.
+Champs : Prénom, Nom, Email, Téléphone (obligatoires), Date de la fête, Nombre
+d'enfants, Votre demande (obligatoire), case de consentement. Plus un champ
+caché `produit`, rempli par la balise dynamique « Titre de l'article ».
 
-Champ caché : `produit`, rempli par la balise dynamique « Titre de l'article ».
+Contrôlé sur la page en ligne : le champ caché renvoie bien `DEMON HUNTERS
+KPOP`, le titre du produit, pas celui du popup.
 
-Envoi : action e-mail Elementor vers `alphababy94@alphababy.fr`.
+Deux envois à la validation :
 
-- Objet : `Demande de devis : DEMON HUNTERS KPOP`
-- Corps : une phrase d'introduction puis `[all-fields]`, c'est à dire tous les
-  champs remplis, plus les métadonnées Date, Heure et **URL de la page**.
-- `Répondre à` : l'adresse e-mail du client, pour répondre en un clic.
-- L'expéditeur reste l'adresse par défaut du site, pour ne pas casser
-  l'authentification SPF du domaine.
+1. **Vers l'agence**, `alphababy94@alphababy.fr`
+   - Objet : `Demande de devis : DEMON HUNTERS KPOP`
+   - Corps : une phrase d'introduction puis tous les champs, plus la date,
+     l'heure et l'URL de la page d'où part la demande.
+   - `Répondre à` : l'adresse du client, pour répondre en un clic.
+2. **Vers le client**, accusé de réception avec le récapitulatif de sa demande
+   et le numéro de téléphone de l'agence.
 
-L'URL de la page est la source fiable pour savoir de quelle prestation il s'agit.
-Le champ `produit` est un confort de lecture : à contrôler sur le premier envoi
-de test, une balise dynamique dans un popup peut renvoyer le titre du popup au
-lieu de celui du produit. Si c'est le cas, le champ est à retirer du script,
-l'URL suffit.
+L'expéditeur reste l'adresse par défaut du site, pour ne pas casser
+l'authentification SPF du domaine.
 
-Pas de captcha pour l'instant. Si du spam arrive, activer reCAPTCHA v3 dans
-Elementor > Réglages > Intégrations, puis ajouter le champ au formulaire.
+Pas de captcha. Si du spam arrive, activer reCAPTCHA v3 dans Elementor >
+Réglages > Intégrations, puis ajouter le champ au formulaire.
 
 ## Mise en ligne par l'API
 
@@ -84,62 +119,58 @@ dans `.env` (voir le README à la racine).
 ```bash
 set -a && . ./.env && set +a
 
-# 1. Diagnostic, sauvegarde de la fiche avant modification
+# Diagnostic, sauvegarde de la fiche avant modification
 python3 scripts/wp-devis-push.py probe 6424
 
-# 2. Création du popup, il reste inerte à ce stade
+# Le popup, une seule fois pour tout le site
 python3 scripts/wp-devis-push.py create-popup
-
-# 3. Publication du popup sur tout le site (il ne s'ouvre qu'au clic)
 python3 scripts/wp-devis-push.py set-popup-condition <popup_id>
 
-# 4. Insertion des boutons dans la fiche produit
+# Les boutons, sur une fiche
 python3 scripts/wp-devis-push.py insert-buttons <popup_id> 6424
 
-# 5. Controle du rendu publie
+# Controle du rendu publie
 python3 scripts/wp-devis-push.py verify 6424
 ```
 
-Puis vider le cache WP Rocket et régénérer le CSS Elementor
-(Elementor > Outils > Régénérer les fichiers CSS).
+`update-popup <popup_id>` republie le contenu et les réglages du popup sans
+changer son ID, après une modification du script de génération.
+
+Chaque écriture vide les caches Elementor : les métas `_elementor_css`,
+`_elementor_page_assets` et `_elementor_element_cache` de la fiche, puis le
+cache global via `DELETE /wp-json/elementor/v1/cache`. Sans cela la page
+continue de servir l'ancien rendu. Vider aussi WP Rocket au moindre doute.
 
 Retour arrière : `python3 scripts/wp-devis-push.py restore 6424` remet la fiche
-telle qu'elle était, à partir de `_produit-6424-avant.json`. Le popup se
-désactive en retirant sa condition d'affichage ou en le dépubliant.
+telle qu'elle était. Le popup se désactive en retirant sa condition d'affichage
+ou en le dépubliant.
 
 ## Généralisation aux autres fiches
 
-Le popup est créé une seule fois pour tout le site. Pour chaque nouvelle fiche,
-il ne reste que l'étape 4 avec le bon ID de produit :
+Le popup existe déjà, il ne reste qu'une commande par fiche :
 
 ```bash
-python3 scripts/wp-devis-push.py insert-buttons <popup_id> <produit_id>
+python3 scripts/wp-devis-push.py insert-buttons 8994 <produit_id>
+python3 scripts/wp-devis-push.py verify <produit_id>
 ```
 
 Le script refuse d'insérer deux fois le bloc sur la même fiche, il repère la
 classe `bloc-cta-produit`.
 
-## Procédure manuelle, si l'API n'est pas disponible
+## Contrôles faits
 
-1. **Popup.** Modèles > Popups > Ajouter. Importer `devis-02-popup.json` ou
-   recréer le formulaire à la main. Réglages du popup : largeur 640 px, hauteur
-   ajustée au contenu, centré, bouton de fermeture, aucun déclencheur.
-   Conditions d'affichage : « Tout le site ». Publier et noter l'ID du popup,
-   visible dans l'URL d'édition.
-2. **Boutons.** Ouvrir la fiche produit avec Elementor, insérer un conteneur en
-   haut, au-dessus du bloc `page-produit`, avec les deux boutons.
-   - Bouton 1, lien `tel:+33130101910`.
-   - Bouton 2 : onglet Contenu > Lien, coller
-     `#elementor-action:action=popup:open&settings=…`. Plus simple depuis
-     l'éditeur : choisir Dynamique > Popup > Ouvrir un popup, puis sélectionner
-     « Popup - Demande de devis ».
-3. **Contrôles.** Envoyer une vraie demande de test et vérifier la réception sur
-   `alphababy94@alphababy.fr`, l'objet, le nom de la prestation et l'URL.
-4. Vider le cache WP Rocket.
+- Rendu de la page en ligne : bloc présent, lien `tel:` correct, lien d'action
+  du popup intact, popup rendu dans la page, champ `produit` rempli avec le
+  titre du produit.
+- Ouverture du popup au clic, vérifiée dans un navigateur sur une copie locale
+  de la page servie en localhost, avec les scripts Elementor du site : le popup
+  s'affiche et le formulaire est visible. Chromium ne joint pas alphababy.fr
+  depuis l'environnement d'exécution, d'où la copie locale.
 
-## À valider
+## Reste à faire
 
-- Le libellé exact des boutons.
-- La liste des champs du formulaire.
-- L'adresse de réception, et si une copie doit partir vers une autre boîte.
-- Faut-il aussi un e-mail de confirmation automatique au client ?
+- **Envoyer une vraie demande de test** depuis la page et vérifier la réception
+  sur `alphababy94@alphababy.fr`, l'objet, le nom de la prestation et l'URL.
+  L'envoi depuis l'environnement d'exécution est bloqué par le pare-feu, ce
+  test se fait depuis un navigateur.
+- Décider de la liste des fiches à traiter ensuite.

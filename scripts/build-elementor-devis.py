@@ -18,7 +18,6 @@ OUT = ROOT / "elementor"
 TELEPHONE = "01 30 10 19 10"
 TEL_LIEN = "tel:+33130101910"
 EMAIL_DEVIS = "alphababy94@alphababy.fr"
-POPUP_PLACEHOLDER = "__POPUP_ID__"
 
 BLANC = "globals/colors?id=65cf053"
 PRIMAIRE = "globals/colors?id=primary"
@@ -27,12 +26,60 @@ TEXTE = "globals/colors?id=text"
 BEIGE = "globals/colors?id=7f6e0fa"
 
 
+# Marqueur remplace a l'insertion par scripts/wp-devis-push.py.
+POPUP_PLACEHOLDER = "__POPUP_ID__"
+
+ICONE_PATH = "M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"
+
+
 def popup_link(popup_id):
-    """Lien d'ouverture d'un popup Elementor Pro."""
+    """Lien d'ouverture d'un popup Elementor Pro.
+
+    Elementor n'ecoute que les liens dont le href commence par
+    `#elementor-action` ou `%23elementor-action` (voir le selecteur du module
+    url-actions dans frontend.min.js). Deux contraintes se croisent ici :
+
+    - dans un widget bouton, WordPress passe l'URL a esc_url, qui vide le href
+      parce qu'il lit `#elementor-action` comme un protocole inconnu ;
+    - la variante encodee `%23elementor-action%3A...` que produit l'editeur
+      Elementor est refusee en 503 par le pare-feu d'o2switch, qui bloque les
+      sequences %XX multiples. Aucune route de l'API REST ne l'accepte.
+
+    D'ou le choix d'un widget HTML : son contenu est rendu tel quel, sans
+    esc_url, donc le lien d'action peut rester en clair.
+    """
     reglages = json.dumps({"id": str(popup_id), "toggle": False},
                           separators=(",", ":"))
     jeton = base64.b64encode(reglages.encode("utf-8")).decode("ascii")
     return f"#elementor-action:action=popup:open&settings={jeton}"
+
+
+ICONE_ENVELOPPE = ("<svg class=\"cta-devis-icone\" viewBox=\"0 0 512 512\" "
+                   "width=\"20\" height=\"20\" fill=\"currentColor\" "
+                   "aria-hidden=\"true\"><path d=\"__PATH__\"/></svg>")
+
+STYLE_DEVIS = """<style>
+.cta-devis{display:flex}
+.cta-devis-lien{flex:1;display:inline-flex;align-items:center;
+justify-content:center;gap:10px;background:var(--e-global-color-secondary,#80A681);
+color:var(--e-global-color-65cf053,#fff);border-radius:15px;padding:18px 34px;
+font-family:"Raleway",sans-serif;font-weight:700;font-size:18px;
+line-height:1.2;text-transform:uppercase;letter-spacing:.5px;
+text-align:center;text-decoration:none;transition:background .2s}
+.cta-devis-lien:hover,.cta-devis-lien:focus{
+background:var(--e-global-color-primary,#EE743A);
+color:var(--e-global-color-65cf053,#fff)}
+@media (max-width:1024px){.cta-devis-lien{font-size:16px}}
+@media (max-width:767px){.cta-devis-lien{font-size:15px;padding:14px 18px}}
+</style>"""
+
+
+def bouton_devis_html(popup_id):
+    """Bouton devis en widget HTML, seule forme qui garde le lien d'action."""
+    return (STYLE_DEVIS + "<div class=\"cta-devis\">"
+            f"<a class=\"cta-devis-lien\" href=\"{popup_link(popup_id)}\">"
+            + ICONE_ENVELOPPE.replace("__PATH__", ICONE_PATH)
+            + "<span>Demande de devis</span></a></div>")
 
 
 def px(valeur, lie=True):
@@ -102,7 +149,7 @@ def bloc_boutons():
                          "row": "15", "isLinked": False},
             "padding": padding(10, 20, 25, 20),
             "padding_mobile": padding(5, 15, 20, 15),
-            "_css_classes": "bloc-cta-produit",
+            "css_classes": "bloc-cta-produit",
         },
         "elements": [
             {
@@ -135,10 +182,15 @@ def bloc_boutons():
                     "padding": px(0),
                 },
                 "elements": [
-                    bouton("d3v1s04", "Demande de devis",
-                           popup_link(POPUP_PLACEHOLDER),
-                           "fas fa-envelope-open-text",
-                           SECONDAIRE, PRIMAIRE),
+                    {
+                        "id": "d3v1s05",
+                        "elType": "widget",
+                        "widgetType": "html",
+                        "settings": {
+                            "html": bouton_devis_html(POPUP_PLACEHOLDER),
+                        },
+                        "elements": [],
+                    },
                 ],
             },
         ],
@@ -212,7 +264,7 @@ def widget_formulaire():
             "button_align": "center",
             "step_next_label": "Suivant",
             "step_previous_label": "Précédent",
-            "submit_actions": ["email"],
+            "submit_actions": ["email", "email2"],
             "email_to": EMAIL_DEVIS,
             "email_subject": "Demande de devis : [field id=\"produit\"]",
             "email_content": (
@@ -223,6 +275,25 @@ def widget_formulaire():
             "email_from_name": "Site AlphaBaby",
             "email_reply_to": "[field id=\"email\"]",
             "form_metadata": ["date", "time", "page_url"],
+            "email_to_2": "[field id=\"email\"]",
+            "email_subject_2": "Votre demande de devis AlphaBaby",
+            "email_content_2": (
+                "<p>Bonjour [field id=\"prenom\"],</p>"
+                "<p>Nous avons bien reçu votre demande de devis et nous "
+                "revenons vers vous très vite.</p>"
+                "<p>Voici le récapitulatif de ce que vous nous avez "
+                "transmis :</p>"
+                "[all-fields]"
+                "<p>Une question d'ici là ? Appelez-nous au "
+                f"{TELEPHONE}, du lundi au vendredi de 9h30 à 17h30.</p>"
+                "<p>À très bientôt,<br>L'équipe AlphaBaby<br>"
+                "Créateur de fêtes depuis 1996</p>"
+            ),
+            "email_content_type_2": "html",
+            "email_from_name_2": "AlphaBaby",
+            "email_reply_to_2": EMAIL_DEVIS,
+            "form_metadata_2": [],
+
             "success_message": "Merci, votre demande est bien reçue. "
                                "Nous revenons vers vous très vite. Pour une "
                                f"réponse immédiate : {TELEPHONE}.",
@@ -230,7 +301,7 @@ def widget_formulaire():
                              f"de nous appeler au {TELEPHONE}.",
             "required_field_message": "Ce champ est obligatoire.",
             "mark_required": "yes",
-            "label_position": "none",
+            "show_labels": "",
             "field_typography_typography": "custom",
             "field_typography_font_family": "Raleway",
             "field_typography_font_size": {"unit": "px", "size": 16,
@@ -326,7 +397,7 @@ def bloc_popup():
             "vertical_position": "center",
             "position": "center center",
             "close_button": "yes",
-            "close_button_position": "outside",
+            
             "prevent_scroll": "yes",
             "entrance_animation": "fadeInUp",
             "entrance_animation_duration": {"unit": "px", "size": 0.6,
