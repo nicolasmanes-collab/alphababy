@@ -1,0 +1,2292 @@
+[
+  {
+    "id": "7e56bcb3",
+    "elType": "container",
+    "settings": {
+      "flex_direction": "column",
+      "content_width": "full",
+      "background_background": "classic",
+      "background_image": {
+        "url": "",
+        "id": "",
+        "size": "",
+        "alt": "",
+        "source": "library"
+      },
+      "margin": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+      },
+      "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+      },
+      "margin_mobile": {
+        "unit": "px",
+        "top": "-2",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    "elements": [
+      {
+        "id": "1826e174",
+        "elType": "widget",
+        "settings": {
+          "image": {
+            "url": "http://alphababy.fr/wp-content/uploads/2023/10/bordure_beige.webp",
+            "id": 173,
+            "size": "",
+            "alt": "",
+            "source": "library"
+          },
+          "image_size": "full"
+        },
+        "elements": [],
+        "widgetType": "image"
+      }
+    ],
+    "isInner": false
+  },
+  {
+    "id": "75ddb104",
+    "elType": "container",
+    "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+        "unit": "px",
+        "size": 0,
+        "column": "0",
+        "row": "0"
+      },
+      "css_classes": "page-produit",
+      "width_mobile": {
+        "unit": "px",
+        "size": 1600,
+        "sizes": []
+      },
+      "flex_direction_mobile": "column",
+      "flex_justify_content_mobile": "flex-start",
+      "flex_align_items_mobile": "center",
+      "margin_mobile": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+      },
+      "padding_mobile": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+      }
+    },
+    "elements": [
+      {
+        "id": "37bb702e",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "column",
+          "content_width": "full",
+          "width": {
+            "unit": "%",
+            "size": 70
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          },
+          "margin_mobile": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          },
+          "padding_mobile": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          },
+          "css_classes": "bloc-gauche",
+          "width_tablet": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "25fd6a46",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "css_classes": "bloc-infos-produits"
+            },
+            "elements": [
+              {
+                "id": "3fa76ed6",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "unit": "%",
+                    "size": 50,
+                    "sizes": []
+                  },
+                  "flex_direction": "column",
+                  "css_classes": "bloc-description"
+                },
+                "elements": [
+                  {
+                    "id": "520e26a8",
+                    "elType": "widget",
+                    "settings": {
+                      "slides": [
+                        {
+                          "heading": "",
+                          "description": "",
+                          "button_text": "",
+                          "background_color": "#833ca3",
+                          "_id": "73903c6",
+                          "background_image": {
+                            "url": "http://alphababy.fr/wp-content/uploads/2025/03/20.webp",
+                            "id": 3124,
+                            "size": "",
+                            "alt": "",
+                            "source": "library"
+                          }
+                        },
+                        {
+                          "heading": "",
+                          "description": "",
+                          "button_text": "",
+                          "background_color": "#4054b2",
+                          "_id": "07cb3ec",
+                          "background_image": {
+                            "url": "https://alphababy.fr/wp-content/uploads/2025/03/19-1.webp",
+                            "id": 8553,
+                            "size": "",
+                            "alt": "",
+                            "source": "library"
+                          }
+                        }
+                      ],
+                      "navigation": "none",
+                      "pause_on_interaction": "",
+                      "autoplay_speed": 3000,
+                      "slides_height_mobile": {
+                        "unit": "px",
+                        "size": 250,
+                        "sizes": []
+                      },
+                      "_css_classes": "img-produit",
+                      "slides_name": "Diapositives",
+                      "content_animation": ""
+                    },
+                    "elements": [],
+                    "widgetType": "slides"
+                  },
+                  {
+                    "id": "2e3c590e",
+                    "elType": "widget",
+                    "settings": {
+                      "__dynamic__": {
+                        "title": "[elementor-tag id=\"\" name=\"woocommerce-product-title-tag\" settings=\"%7B%22product_id%22%3Afalse%2C%22before%22%3A%22%22%2C%22after%22%3A%22%22%2C%22fallback%22%3A%22%22%7D\"]"
+                      },
+                      "title": "Ajoutez votre titre ici",
+                      "title_color": "#80A681",
+                      "typography_typography": "custom",
+                      "typography_font_family": "LilitaOne",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 50,
+                        "sizes": []
+                      },
+                      "typography_font_weight": "500",
+                      "typography_letter_spacing": {
+                        "unit": "px",
+                        "size": 2.5,
+                        "sizes": []
+                      },
+                      "typography_font_size_mobile": {
+                        "unit": "px",
+                        "size": 38,
+                        "sizes": []
+                      },
+                      "_margin_mobile": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "_padding_mobile": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "hide_desktop": "hidden-desktop",
+                      "hide_tablet_extra": "hidden-tablet_extra",
+                      "hide_tablet": "hidden-tablet",
+                      "_css_classes": "titre-produit-mobile"
+                    },
+                    "elements": [],
+                    "widgetType": "woocommerce-product-title"
+                  },
+                  {
+                    "id": "c1d3957",
+                    "elType": "widget",
+                    "settings": {
+                      "rating_value": 4.1,
+                      "_margin_mobile": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "_padding_mobile": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "hide_desktop": "hidden-desktop",
+                      "hide_tablet_extra": "hidden-tablet_extra",
+                      "hide_tablet": "hidden-tablet",
+                      "_css_classes": "review"
+                    },
+                    "elements": [],
+                    "widgetType": "rating"
+                  },
+                  {
+                    "id": "9be88d3",
+                    "elType": "widget",
+                    "settings": {
+                      "star_color": "#EE743A",
+                      "hide_desktop": "hidden-desktop",
+                      "hide_tablet_extra": "hidden-tablet_extra",
+                      "hide_tablet": "hidden-tablet"
+                    },
+                    "elements": [],
+                    "widgetType": "woocommerce-product-rating"
+                  },
+                  {
+                    "id": "35648116",
+                    "elType": "widget",
+                    "settings": {
+                      "icon_list": [
+                        {
+                          "text": "<strong>Tranche d'âge :</strong> 4 à 6 ans ",
+                          "selected_icon": {
+                            "value": "fas fa-child",
+                            "library": "fa-solid"
+                          },
+                          "_id": "a1f22ab"
+                        },
+                        {
+                          "text": "<strong>Durée :</strong> 2h30",
+                          "selected_icon": {
+                            "value": "far fa-clock",
+                            "library": "fa-regular"
+                          },
+                          "_id": "11c3b95"
+                        },
+                        {
+                          "text": "<strong>Nombre d’invités :</strong> jusqu’à 10",
+                          "selected_icon": {
+                            "value": "fas fa-list-ol",
+                            "library": "fa-solid"
+                          },
+                          "_id": "b1a9940"
+                        },
+                        {
+                          "_id": "09a4f52",
+                          "text": "<strong>LIEU :</strong> intérieur / extérieur si la météo le permet ",
+                          "selected_icon": {
+                            "value": "fas fa-map-marker-alt",
+                            "library": "fa-solid"
+                          }
+                        },
+                        {
+                          "_id": "a2807a9",
+                          "text": "<strong>Zone géographique :</strong> PARIS - ÎLE&nbsp;DE FRANCE",
+                          "selected_icon": {
+                            "value": "fas fa-street-view",
+                            "library": "fa-solid"
+                          }
+                        }
+                      ],
+                      "space_between": {
+                        "unit": "px",
+                        "size": 3,
+                        "sizes": []
+                      },
+                      "space_between_mobile": {
+                        "unit": "px",
+                        "size": 15,
+                        "sizes": []
+                      },
+                      "icon_align": "left",
+                      "icon_size": {
+                        "unit": "px",
+                        "size": 20,
+                        "sizes": []
+                      },
+                      "icon_size_mobile": {
+                        "unit": "px",
+                        "size": 25,
+                        "sizes": []
+                      },
+                      "text_indent": {
+                        "unit": "px",
+                        "size": 5,
+                        "sizes": []
+                      },
+                      "icon_self_align": "left",
+                      "icon_self_vertical_align": "flex-start",
+                      "icon_typography_typography": "custom",
+                      "icon_typography_font_family": "Roboto",
+                      "icon_typography_font_size_mobile": {
+                        "unit": "px",
+                        "size": 18,
+                        "sizes": []
+                      },
+                      "icon_typography_font_weight": "400",
+                      "text_color": "#000000",
+                      "_css_classes": "infos-utiles"
+                    },
+                    "elements": [],
+                    "widgetType": "icon-list"
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "6594af89",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "unit": "%",
+                    "size": 50,
+                    "sizes": []
+                  },
+                  "flex_direction": "column",
+                  "css_classes": "bloc-reservation"
+                },
+                "elements": [
+                  {
+                    "id": "750801f",
+                    "elType": "widget",
+                    "settings": {
+                      "__dynamic__": {
+                        "title": "[elementor-tag id=\"\" name=\"woocommerce-product-title-tag\" settings=\"%7B%22product_id%22%3Afalse%2C%22before%22%3A%22%22%2C%22after%22%3A%22%22%2C%22fallback%22%3A%22%22%7D\"]"
+                      },
+                      "title": "Ajoutez votre titre ici",
+                      "title_color": "#80A681",
+                      "typography_typography": "custom",
+                      "typography_font_family": "LilitaOne",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 50,
+                        "sizes": []
+                      },
+                      "typography_font_weight": "500",
+                      "typography_letter_spacing": {
+                        "unit": "px",
+                        "size": 2.5,
+                        "sizes": []
+                      },
+                      "typography_font_size_mobile": {
+                        "unit": "px",
+                        "size": 38,
+                        "sizes": []
+                      },
+                      "_margin_mobile": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "_padding_mobile": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "hide_mobile": "hidden-mobile",
+                      "_css_classes": "titre-produit"
+                    },
+                    "elements": [],
+                    "widgetType": "woocommerce-product-title"
+                  },
+                  {
+                    "id": "565d6844",
+                    "elType": "widget",
+                    "settings": {
+                      "rating_value": 4.1,
+                      "_margin_mobile": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "_padding_mobile": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "hide_mobile": "hidden-mobile",
+                      "_css_classes": "notation"
+                    },
+                    "elements": [],
+                    "widgetType": "rating"
+                  },
+                  {
+                    "id": "5c28317b",
+                    "elType": "widget",
+                    "settings": {
+                      "star_color": "#EE743A",
+                      "hide_mobile": "hidden-mobile",
+                      "_css_classes": "evaluation-produit"
+                    },
+                    "elements": [],
+                    "widgetType": "woocommerce-product-rating"
+                  },
+                  {
+                    "id": "37c03b8b",
+                    "elType": "widget",
+                    "widgetType": "nested-accordion",
+                    "settings": {
+                      "items": [
+                        {
+                          "item_title": "Descriptif",
+                          "_id": "07903a3"
+                        },
+                        {
+                          "item_title": "Le programme",
+                          "_id": "a48dc23"
+                        },
+                        {
+                          "item_title": "Ce qui est inclus",
+                          "_id": "a870aa1"
+                        },
+                        {
+                          "_id": "ea194b9",
+                          "item_title": "Les options"
+                        }
+                      ],
+                      "accordion_item_title_position_horizontal": "start",
+                      "accordion_item_title_position_horizontal_mobile": "center",
+                      "accordion_item_title_icon_position": "end",
+                      "accordion_item_title_icon_position_mobile": "end",
+                      "accordion_item_title_space_between": {
+                        "unit": "px",
+                        "size": 5,
+                        "sizes": []
+                      },
+                      "accordion_background_normal_background": "classic",
+                      "accordion_background_normal_color": "#EE743A",
+                      "accordion_background_hover_background": "classic",
+                      "accordion_background_hover_color": "#80A681",
+                      "accordion_background_active_background": "classic",
+                      "accordion_background_active_color": "#80A681",
+                      "accordion_border_radius": {
+                        "unit": "px",
+                        "top": "10",
+                        "right": "10",
+                        "bottom": "10",
+                        "left": "10",
+                        "isLinked": true
+                      },
+                      "normal_title_color": "#FFFDFD",
+                      "hover_title_color": "#FFFFFF",
+                      "active_title_color": "#FFFFFF",
+                      "title_active_stroke_text_stroke_type": "yes",
+                      "content_border_border": "none",
+                      "_css_classes": "bloc-accordeon-produit"
+                    },
+                    "elements": [
+                      {
+                        "id": "279d1bb2",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "élément N°1",
+                          "content_width": "full"
+                        },
+                        "elements": [
+                          {
+                            "id": "7f061451",
+                            "elType": "container",
+                            "settings": {
+                              "flex_direction": "column"
+                            },
+                            "elements": [
+                              {
+                                "id": "62b05167",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<p>Rencontrez la plus téméraire de nos princesse, VAÏANA ! </p>",
+                                  "text_color": "#EE743A",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                  },
+                                  "typography_font_weight": "600",
+                                  "_css_classes": "accroche"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              },
+                              {
+                                "id": "44dbf14d",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<p>Avec la princesse Vaïana, l'aventure sera au rendez-vous. </p><p>Toujours prête à se dépasser pour sauver son peuple elle aura besoin d'aide aux côtés de ses nouveaux amis </p>",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18,
+                                    "sizes": []
+                                  },
+                                  "typography_font_weight": "600",
+                                  "_css_classes": "descriptif"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      },
+                      {
+                        "id": "1d615795",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "élément N°2",
+                          "content_width": "full"
+                        },
+                        "elements": [
+                          {
+                            "id": "489f023",
+                            "elType": "container",
+                            "settings": {
+                              "flex_direction": "column"
+                            },
+                            "elements": [
+                              {
+                                "id": "22dea4c0",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<ul><li>L’animatrice arrive une demi-heure avant le début de la fête. Pendant ce temps elle met en place les activités et son matériel.</li><li>Accueil chaleureux des enfants avec musique d’ambiance (Il faudra mettre à disposition une enceinte pour diffuser de la musique).</li><li>Séance de maquillage/grimage sur le thème choisi, ou selon le souhait des enfants</li><li>Party time ! Place à la musique, avec un cours de danse polynésienne </li><li>Atelier créatif pour être 100% dans le thème : création de colliers de fleurs </li><li>La Princesse donne une mission aux enfants, ils l’accomplissent tous ensemble et reçoivent une petite récompense.</li><li>Pause goûter en musique, « Joyeux anniversaire » chanté par les enfants sous la direction musicale de la princesse en personne, ouverture des cadeaux.</li><li>Spectacle de magie interactif et dynamique</li><li>Sculpture sur ballon</li><li>Fin de notre prestation</li></ul>",
+                                  "text_color": "#222222",
+                                  "_css_classes": "liste-orange"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      },
+                      {
+                        "id": "750354a8",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "élément N°3",
+                          "content_width": "full"
+                        },
+                        "elements": [
+                          {
+                            "id": "14108bf3",
+                            "elType": "container",
+                            "settings": {
+                              "flex_direction": "column"
+                            },
+                            "elements": [
+                              {
+                                "id": "47119a0a",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<ul><li>La présence d’une animatrice diplômée BAFA ou d’une comédienne certifiée par la formation Alphababy</li><li>Une animatrice déguisée haut et jupe , et  accessoires)</li><li>Produits de maquillage allergénique</li><li>Atelier créatif </li><li>Spectacle de magie</li><li>Ballons et pompes pour les gonfler</li><li>Aide pendant le goûter et l’ouverture des cadeaux</li><li>Remise d’un diplôme</li></ul>",
+                                  "text_color": "#222222",
+                                  "_css_classes": "liste-orange"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      },
+                      {
+                        "id": "1cf3a2a",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "Élément n° 4"
+                        },
+                        "elements": [
+                          {
+                            "id": "8110f1e",
+                            "elType": "container",
+                            "settings": {
+                              "flex_direction": "column"
+                            },
+                            "elements": [
+                              {
+                                "id": "a6c2284",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<ul><li>Passage d’une mascotte</li><li>Une demi-heure supplémentaire</li><li>Une piñata sur le thème choisi</li><li>Décoration sur le thème choisi</li><li>Machine à barbes à papa</li><li>Une animation chasse aux trésors</li><li>Un ballon explosif</li><li>Goûter personnalisé sur le thème</li><li>Un petit gadget/cadeau offert à chaque enfant</li><li>Atelier créatif : customisation d’une couronne en carton rigide avec élastique</li><li>Un spectacle de marionnettes</li><li>Bouquet de ballon à l’hélium sur le thème des princesses</li></ul>",
+                                  "_css_classes": "liste-orange"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      }
+                    ]
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "58006cb3",
+            "elType": "container",
+            "settings": {
+              "flex_direction": "column",
+              "content_width": "full",
+              "width": {
+                "unit": "%",
+                "size": 100
+              },
+              "flex_gap": {
+                "column": "0",
+                "row": "0",
+                "isLinked": true,
+                "unit": "px",
+                "size": 0
+              },
+              "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              },
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              },
+              "padding_mobile": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              },
+              "css_classes": "bloc-conseils"
+            },
+            "elements": [
+              {
+                "id": "556d4fae",
+                "elType": "widget",
+                "settings": {
+                  "image": {
+                    "url": "http://alphababy.fr/wp-content/uploads/2023/10/bordure_verte_haut.webp",
+                    "id": 277,
+                    "size": "",
+                    "alt": "",
+                    "source": "library"
+                  },
+                  "image_size": "full",
+                  "_margin": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                  },
+                  "_padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                  }
+                },
+                "elements": [],
+                "widgetType": "image"
+              },
+              {
+                "id": "3ab80987",
+                "elType": "container",
+                "settings": {
+                  "flex_direction": "column",
+                  "background_background": "classic",
+                  "background_color": "#80A681",
+                  "margin": {
+                    "unit": "px",
+                    "top": "-2",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": false
+                  },
+                  "padding": {
+                    "unit": "px",
+                    "top": "50",
+                    "right": "20",
+                    "bottom": "100",
+                    "left": "20",
+                    "isLinked": false
+                  },
+                  "padding_mobile": {
+                    "unit": "px",
+                    "top": "10",
+                    "right": "10",
+                    "bottom": "10",
+                    "left": "10",
+                    "isLinked": false
+                  },
+                  "content_width": "full",
+                  "width_mobile": {
+                    "unit": "%",
+                    "size": "",
+                    "sizes": []
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "73b147ea",
+                    "elType": "widget",
+                    "settings": {
+                      "title": "LES TROIS CONSEILS ALPHABABY",
+                      "align": "center",
+                      "title_color": "#FDCD69",
+                      "typography_typography": "custom",
+                      "typography_font_family": "LilitaOne",
+                      "typography_font_weight": "600",
+                      "typography_letter_spacing": {
+                        "unit": "px",
+                        "size": 2.5,
+                        "sizes": []
+                      }
+                    },
+                    "elements": [],
+                    "widgetType": "heading"
+                  },
+                  {
+                    "id": "266cc451",
+                    "elType": "widget",
+                    "settings": {
+                      "title": "POUR UN ANNIVERSAIRE RÉUSSI !",
+                      "align": "center",
+                      "title_color": "#FFFFFF",
+                      "typography_typography": "custom",
+                      "typography_font_family": "LilitaOne",
+                      "typography_font_weight": "600",
+                      "typography_letter_spacing": {
+                        "unit": "px",
+                        "size": 2.5,
+                        "sizes": []
+                      }
+                    },
+                    "elements": [],
+                    "widgetType": "heading"
+                  },
+                  {
+                    "id": "36ca7b0c",
+                    "elType": "container",
+                    "settings": {
+                      "flex_direction": "column",
+                      "margin": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "padding": {
+                        "unit": "px",
+                        "top": "40",
+                        "right": "40",
+                        "bottom": "40",
+                        "left": "40",
+                        "isLinked": true
+                      },
+                      "flex_align_items": "center",
+                      "background_background": "classic",
+                      "background_image": {
+                        "url": "http://alphababy.fr/wp-content/uploads/2023/10/fond1.webp",
+                        "id": 120,
+                        "size": "",
+                        "alt": "",
+                        "source": "library"
+                      },
+                      "background_position": "center center",
+                      "background_repeat": "no-repeat",
+                      "background_size": "cover",
+                      "border_radius": {
+                        "unit": "px",
+                        "top": "50",
+                        "right": "50",
+                        "bottom": "50",
+                        "left": "50",
+                        "isLinked": true
+                      },
+                      "animation": "fadeInUp",
+                      "border_radius_mobile": {
+                        "unit": "px",
+                        "top": "25",
+                        "right": "25",
+                        "bottom": "25",
+                        "left": "25",
+                        "isLinked": true
+                      },
+                      "content_width": "full",
+                      "width_mobile": {
+                        "unit": "%",
+                        "size": "",
+                        "sizes": []
+                      },
+                      "padding_mobile": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      }
+                    },
+                    "elements": [
+                      {
+                        "id": "24615408",
+                        "elType": "container",
+                        "settings": {
+                          "flex_direction": "row",
+                          "flex_justify_content": "space-evenly",
+                          "flex_align_items": "flex-start",
+                          "content_width": "full",
+                          "width_mobile": {
+                            "unit": "%",
+                            "size": "",
+                            "sizes": []
+                          },
+                          "margin_mobile": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                          },
+                          "padding_mobile": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                          }
+                        },
+                        "elements": [
+                          {
+                            "id": "50a4e75b",
+                            "elType": "container",
+                            "settings": {
+                              "flex_justify_content": "flex-start",
+                              "flex_align_items": "center",
+                              "css_classes": "infos-pratiques",
+                              "margin": {
+                                "unit": "px",
+                                "top": "0",
+                                "right": "0",
+                                "bottom": "0",
+                                "left": "0",
+                                "isLinked": true
+                              },
+                              "padding": {
+                                "unit": "px",
+                                "top": "20",
+                                "right": "20",
+                                "bottom": "20",
+                                "left": "20",
+                                "isLinked": true
+                              },
+                              "content_width": "full",
+                              "width_mobile": {
+                                "unit": "%",
+                                "size": 100,
+                                "sizes": []
+                              }
+                            },
+                            "elements": [
+                              {
+                                "id": "2182bf58",
+                                "elType": "widget",
+                                "settings": {
+                                  "image": {
+                                    "url": "http://alphababy.fr/wp-content/uploads/2023/10/reserver.webp",
+                                    "id": 123,
+                                    "size": "",
+                                    "alt": "",
+                                    "source": "library"
+                                  },
+                                  "image_size": "full",
+                                  "image_custom_dimension": {
+                                    "width": "",
+                                    "height": "100"
+                                  },
+                                  "align": "center"
+                                },
+                                "elements": [],
+                                "widgetType": "image"
+                              },
+                              {
+                                "id": "66e7a3db",
+                                "elType": "widget",
+                                "settings": {
+                                  "title": "QUAND RÉSERVER?",
+                                  "title_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                  },
+                                  "typography_font_weight": "600",
+                                  "align": "center",
+                                  "header_size": "h3"
+                                },
+                                "elements": [],
+                                "widgetType": "heading"
+                              },
+                              {
+                                "id": "648522d",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<ul><li>L’idéal est de réserver 1 mois à l’avance , surtout pour une formule avec des options personnalisées.</li><li>Il est néanmoins toujours possible de réserver une prestation 48h à l’avance, ou même la veille de l’évènement, sous réserve de disponibilité d’un animateur/trice.</li><li>Contactez-nous pour nous faire part de votre projet</li></ul>",
+                                  "align": "center",
+                                  "text_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_weight": "400"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true
+                          },
+                          {
+                            "id": "8cb4c58",
+                            "elType": "container",
+                            "settings": {
+                              "flex_justify_content": "flex-start",
+                              "flex_align_items": "center",
+                              "css_classes": "infos-pratiques",
+                              "margin": {
+                                "unit": "px",
+                                "top": "0",
+                                "right": "0",
+                                "bottom": "0",
+                                "left": "0",
+                                "isLinked": true
+                              },
+                              "padding": {
+                                "unit": "px",
+                                "top": "20",
+                                "right": "20",
+                                "bottom": "20",
+                                "left": "20",
+                                "isLinked": true
+                              }
+                            },
+                            "elements": [
+                              {
+                                "id": "46319f9d",
+                                "elType": "widget",
+                                "settings": {
+                                  "image": {
+                                    "url": "http://alphababy.fr/wp-content/uploads/2023/10/horaires.webp",
+                                    "id": 122,
+                                    "size": "",
+                                    "alt": "",
+                                    "source": "library"
+                                  },
+                                  "image_size": "full",
+                                  "image_custom_dimension": {
+                                    "width": "",
+                                    "height": "100"
+                                  },
+                                  "align": "center"
+                                },
+                                "elements": [],
+                                "widgetType": "image"
+                              },
+                              {
+                                "id": "4dd63c03",
+                                "elType": "widget",
+                                "settings": {
+                                  "title": "LES HORAIRES DE MA FÊTE",
+                                  "title_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                  },
+                                  "typography_font_weight": "600",
+                                  "align": "center",
+                                  "header_size": "h3"
+                                },
+                                "elements": [],
+                                "widgetType": "heading"
+                              },
+                              {
+                                "id": "18764257",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<ul><li>Vous pouvez choisir un créneau de 2h30 ou de  3 heures d’animation dans l’après-midi, ou en matinée.</li></ul><p> </p><ul><li>Un créneau le soir est également possible mais une majoration de 10% de l’heure sera à prévoir.</li></ul><p> </p><ul><li>Des créneaux réduits pour les plus petits sont également possibles.</li></ul>",
+                                  "align": "center",
+                                  "text_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_weight": "400"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true
+                          },
+                          {
+                            "id": "6c321af8",
+                            "elType": "container",
+                            "settings": {
+                              "flex_justify_content": "flex-start",
+                              "flex_align_items": "center",
+                              "css_classes": "infos-pratiques",
+                              "margin": {
+                                "unit": "px",
+                                "top": "0",
+                                "right": "0",
+                                "bottom": "0",
+                                "left": "0",
+                                "isLinked": true
+                              },
+                              "padding": {
+                                "unit": "px",
+                                "top": "20",
+                                "right": "20",
+                                "bottom": "20",
+                                "left": "20",
+                                "isLinked": true
+                              }
+                            },
+                            "elements": [
+                              {
+                                "id": "6bcfb8f9",
+                                "elType": "widget",
+                                "settings": {
+                                  "image": {
+                                    "url": "http://alphababy.fr/wp-content/uploads/2023/10/enfants.webp",
+                                    "id": 119,
+                                    "size": "",
+                                    "alt": "",
+                                    "source": "library"
+                                  },
+                                  "image_size": "full",
+                                  "image_custom_dimension": {
+                                    "width": "",
+                                    "height": "100"
+                                  },
+                                  "align": "center"
+                                },
+                                "elements": [],
+                                "widgetType": "image"
+                              },
+                              {
+                                "id": "22cfa738",
+                                "elType": "widget",
+                                "settings": {
+                                  "title": "LE NOMBRE D’ENFANTS",
+                                  "title_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                  },
+                                  "typography_font_weight": "600",
+                                  "align": "center",
+                                  "header_size": "h3"
+                                },
+                                "elements": [],
+                                "widgetType": "heading"
+                              },
+                              {
+                                "id": "77bedd73",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<ul><li>Pour des raisons importantes de sécurité et de gestion du groupe le nombre d’enfants est limité à 10 pour les 3/6 ans et 12 pour les 7/12 ans, au-delà de ce nombre un animateur/trice supplémentaire sera nécessaire.</li><li>Une tolérance de 2 enfants supplémentaire est possible moyennant 15 euros en plus / enfants</li><li>Pour une meilleure fluidité de l’animation mieux vaut limiter le nombre d’enfants</li></ul>",
+                                  "align": "center",
+                                  "text_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_weight": "400"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true
+                          }
+                        ],
+                        "isInner": true
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "b2fca2a",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full"
+                    },
+                    "elements": [
+                      {
+                        "id": "d8bce77",
+                        "elType": "container",
+                        "settings": {
+                          "content_width": "full",
+                          "margin": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                          },
+                          "padding": {
+                            "unit": "px",
+                            "top": "30",
+                            "right": "30",
+                            "bottom": "30",
+                            "left": "30",
+                            "isLinked": true
+                          },
+                          "flex_direction": "column",
+                          "flex_justify_content": "space-between",
+                          "background_background": "classic",
+                          "background_color": "#F6F1E5",
+                          "border_radius": {
+                            "unit": "px",
+                            "top": "50",
+                            "right": "50",
+                            "bottom": "50",
+                            "left": "50",
+                            "isLinked": true
+                          },
+                          "padding_mobile": {
+                            "unit": "px",
+                            "top": "20",
+                            "right": "20",
+                            "bottom": "20",
+                            "left": "20",
+                            "isLinked": true
+                          },
+                          "css_classes": "bloc-petits-plus",
+                          "border_radius_mobile": {
+                            "unit": "px",
+                            "top": "25",
+                            "right": "25",
+                            "bottom": "25",
+                            "left": "25",
+                            "isLinked": true
+                          }
+                        },
+                        "elements": [
+                          {
+                            "id": "fc5c3d7",
+                            "elType": "widget",
+                            "settings": {
+                              "title": "LE CADEAU ALPHABABY",
+                              "title_color": "#222222",
+                              "typography_typography": "custom",
+                              "typography_font_family": "LilitaOne",
+                              "typography_font_weight": "600",
+                              "typography_text_transform": "uppercase",
+                              "typography_letter_spacing": {
+                                "unit": "px",
+                                "size": 2.5,
+                                "sizes": []
+                              },
+                              "align": "center",
+                              "_margin": {
+                                "unit": "px",
+                                "top": "20",
+                                "right": "0",
+                                "bottom": "0",
+                                "left": "0",
+                                "isLinked": false
+                              },
+                              "_padding": {
+                                "unit": "px",
+                                "top": "0",
+                                "right": "0",
+                                "bottom": "0",
+                                "left": "0",
+                                "isLinked": true
+                              }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                          },
+                          {
+                            "id": "46c71ec",
+                            "elType": "widget",
+                            "settings": {
+                              "editor": "<h3>l’invitation personnalisée <br />à imprimer chez vous !</h3>",
+                              "align": "center",
+                              "text_color": "#222222",
+                              "typography_typography": "custom",
+                              "typography_font_family": "Raleway",
+                              "typography_font_size": {
+                                "unit": "px",
+                                "size": 20,
+                                "sizes": []
+                              },
+                              "typography_font_weight": "600",
+                              "_margin": {
+                                "unit": "px",
+                                "top": "-20",
+                                "right": "0",
+                                "bottom": "0",
+                                "left": "0",
+                                "isLinked": false
+                              },
+                              "_padding": {
+                                "unit": "px",
+                                "top": "0",
+                                "right": "0",
+                                "bottom": "0",
+                                "left": "0",
+                                "isLinked": true
+                              }
+                            },
+                            "elements": [],
+                            "widgetType": "text-editor"
+                          },
+                          {
+                            "id": "8f94886",
+                            "elType": "container",
+                            "settings": {
+                              "content_width": "full"
+                            },
+                            "elements": [
+                              {
+                                "id": "d4154a3",
+                                "elType": "widget",
+                                "settings": {
+                                  "image": {
+                                    "url": "http://alphababy.fr/wp-content/uploads/2023/10/Planche_Invitation_super_heros.webp",
+                                    "id": 966,
+                                    "size": "",
+                                    "alt": "",
+                                    "source": "library"
+                                  },
+                                  "link_to": "custom",
+                                  "link": {
+                                    "url": "#",
+                                    "is_external": "",
+                                    "nofollow": "",
+                                    "custom_attributes": ""
+                                  },
+                                  "_margin": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": true
+                                  },
+                                  "_padding": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": true
+                                  }
+                                },
+                                "elements": [],
+                                "widgetType": "image"
+                              }
+                            ],
+                            "isInner": true
+                          },
+                          {
+                            "id": "c82fe12",
+                            "elType": "container",
+                            "settings": {
+                              "content_width": "full",
+                              "background_background": "classic",
+                              "background_color": "#80A681",
+                              "margin": {
+                                "unit": "px",
+                                "top": "0",
+                                "right": "0",
+                                "bottom": "0",
+                                "left": "0",
+                                "isLinked": true
+                              },
+                              "padding": {
+                                "unit": "px",
+                                "top": "0",
+                                "right": "0",
+                                "bottom": "0",
+                                "left": "0",
+                                "isLinked": true
+                              },
+                              "html_tag": "a",
+                              "link": {
+                                "url": "#",
+                                "is_external": "",
+                                "nofollow": "",
+                                "custom_attributes": ""
+                              },
+                              "border_radius": {
+                                "unit": "px",
+                                "top": "25",
+                                "right": "25",
+                                "bottom": "25",
+                                "left": "25",
+                                "isLinked": true
+                              }
+                            },
+                            "elements": [
+                              {
+                                "id": "8874632",
+                                "elType": "widget",
+                                "settings": {
+                                  "title": "Offert pour toute réservation",
+                                  "align": "center",
+                                  "title_color": "#FFFFFF",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "LilitaOne",
+                                  "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 16,
+                                    "sizes": []
+                                  },
+                                  "typography_font_weight": "600",
+                                  "typography_text_transform": "uppercase",
+                                  "typography_letter_spacing": {
+                                    "unit": "px",
+                                    "size": 2.5,
+                                    "sizes": []
+                                  },
+                                  "_padding": {
+                                    "unit": "px",
+                                    "top": "30",
+                                    "right": "30",
+                                    "bottom": "30",
+                                    "left": "30",
+                                    "isLinked": true
+                                  }
+                                },
+                                "elements": [],
+                                "widgetType": "heading"
+                              }
+                            ],
+                            "isInner": true
+                          }
+                        ],
+                        "isInner": true
+                      }
+                    ],
+                    "isInner": true
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "6ffce0e1",
+                "elType": "widget",
+                "settings": {
+                  "image": {
+                    "url": "http://alphababy.fr/wp-content/uploads/2023/10/bordure_verte_bas.webp",
+                    "id": 276,
+                    "size": "",
+                    "alt": "",
+                    "source": "library"
+                  },
+                  "image_size": "full",
+                  "_margin": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                  },
+                  "_padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                  },
+                  "_margin_mobile": {
+                    "unit": "px",
+                    "top": "-6",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": false
+                  }
+                },
+                "elements": [],
+                "widgetType": "image"
+              },
+              {
+                "id": "35a6567b",
+                "elType": "container",
+                "settings": {
+                  "background_background": "classic",
+                  "background_color": "#F6F1E5",
+                  "content_width": "full"
+                },
+                "elements": [
+                  {
+                    "id": "5cd3175b",
+                    "elType": "widget",
+                    "settings": {
+                      "title": "VOS QUESTIONS LES PLUS FRÉQUENTES,",
+                      "align": "center",
+                      "title_color": "#EE743A",
+                      "typography_typography": "custom",
+                      "typography_font_family": "LilitaOne",
+                      "typography_font_weight": "600",
+                      "typography_letter_spacing": {
+                        "unit": "px",
+                        "size": 2.5,
+                        "sizes": []
+                      },
+                      "_margin_mobile": {
+                        "unit": "px",
+                        "top": "10",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                      }
+                    },
+                    "elements": [],
+                    "widgetType": "heading"
+                  },
+                  {
+                    "id": "2567e624",
+                    "elType": "widget",
+                    "settings": {
+                      "title": "LES RÉPONSES ALPHABABY :",
+                      "align": "center",
+                      "title_color": "#222222",
+                      "typography_typography": "custom",
+                      "typography_font_family": "LilitaOne",
+                      "typography_font_weight": "600",
+                      "typography_letter_spacing": {
+                        "unit": "px",
+                        "size": 2.5,
+                        "sizes": []
+                      }
+                    },
+                    "elements": [],
+                    "widgetType": "heading"
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "2bebdcf7",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "row",
+                  "flex_gap": {
+                    "column": "0",
+                    "row": "0",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 0
+                  },
+                  "background_background": "classic",
+                  "background_color": "#F6F1E5",
+                  "css_classes": "bloc-faqs"
+                },
+                "elements": [
+                  {
+                    "id": "12b9f33a",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "width": {
+                        "unit": "%",
+                        "size": 50,
+                        "sizes": []
+                      }
+                    },
+                    "elements": [
+                      {
+                        "id": "3b2c8f6e",
+                        "elType": "widget",
+                        "widgetType": "nested-accordion",
+                        "settings": {
+                          "items": [
+                            {
+                              "item_title": "Quand réserver ?",
+                              "_id": "fee5422"
+                            },
+                            {
+                              "item_title": "Quels sont les horaires ?",
+                              "_id": "51322b3"
+                            },
+                            {
+                              "item_title": "Quel nombre d'enfants ?",
+                              "_id": "2f89210"
+                            },
+                            {
+                              "_id": "655aaaa",
+                              "item_title": "Frais de déplacement ?"
+                            },
+                            {
+                              "item_title": "Notre équipe",
+                              "_id": "360d90d"
+                            }
+                          ],
+                          "accordion_item_title_position_horizontal": "start",
+                          "accordion_item_title_icon_position": "end",
+                          "accordion_item_title_space_between": {
+                            "unit": "px",
+                            "size": 5,
+                            "sizes": []
+                          },
+                          "accordion_background_normal_background": "classic",
+                          "accordion_background_normal_color": "#EE743A",
+                          "accordion_border_radius": {
+                            "unit": "px",
+                            "top": "10",
+                            "right": "10",
+                            "bottom": "10",
+                            "left": "10",
+                            "isLinked": true
+                          },
+                          "normal_title_color": "#FFFDFD",
+                          "default_state": "all_collapsed",
+                          "accordion_background_hover_background": "classic",
+                          "accordion_background_hover_color": "#80A681",
+                          "accordion_background_active_background": "classic",
+                          "accordion_background_active_color": "#80A681",
+                          "hover_title_color": "#FFFFFF",
+                          "active_title_color": "#FFFFFF",
+                          "title_active_stroke_text_stroke_type": "yes",
+                          "content_border_border": "none"
+                        },
+                        "elements": [
+                          {
+                            "id": "2c4cbaf8",
+                            "elType": "container",
+                            "settings": {
+                              "_title": "élément N°1",
+                              "content_width": "full"
+                            },
+                            "elements": [
+                              {
+                                "id": "39827379",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<p>Un mois à l’avance est le timing idéal, surtout si vous souhaitez réserver un spectacle en particulier. La disponibilité de l’artiste ou du comédien est ainsi quasi assurée. Mais comme on ne peut pas toujours tout prévoir à l’avance et que nous souhaitons laisser la place à la spontanéité, vous pouvez aussi réserver quelques jours avant la date prévue, ou même la veille si nous sommes libres. Le plus simple est de contacter Alphababy pour le savoir !</p>",
+                                  "align": "left",
+                                  "text_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_weight": "400"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true,
+                            "isLocked": true
+                          },
+                          {
+                            "id": "4241d1f9",
+                            "elType": "container",
+                            "settings": {
+                              "_title": "élément N°2",
+                              "content_width": "full"
+                            },
+                            "elements": [
+                              {
+                                "id": "50e0b017",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<p>Choisissez un créneau de 2h30 - 3 heures durant l’après-midi ou le matin.</p><p>Alphababy est également disponible le soir à partir de 20h00 avec une majoration de 50%. Des créneaux plus courts pour les plus petits sont également possibles.</p><p>Notre animateur/trice et son éventuelle équipe arriveront environ une demie heure avant le début de votre fête pour installer les jeux, se déguiser et tout préparer.</p>",
+                                  "align": "left",
+                                  "text_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_weight": "400"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true,
+                            "isLocked": true
+                          },
+                          {
+                            "id": "70265892",
+                            "elType": "container",
+                            "settings": {
+                              "_title": "élément N°3",
+                              "content_width": "full"
+                            },
+                            "elements": [
+                              {
+                                "id": "41185fa8",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<p>Pour des raisons de sécurité et de bonne dynamique du groupe, le nombre d’enfants est limité à 10 pour les 3/6 ans et à 12 pour les 7/12 ans. Au-delà de ce nombre, un animateur/trice supplémentaire sera nécessaire et vous sera facturé.</p><p>Une tolérance de 2 enfants en plus est possible, au prix de 15 euros supplémentaires par enfant.</p>",
+                                  "align": "left",
+                                  "text_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_weight": "400"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true,
+                            "isLocked": true
+                          },
+                          {
+                            "id": "52ccb168",
+                            "elType": "container",
+                            "settings": {
+                              "_title": "Élément n° 4"
+                            },
+                            "elements": [
+                              {
+                                "id": "4897c2ff",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<p>À partir de la ZONE 3, des frais de déplacement vous seront facturés. Ils apparaîtront automatiquement dans le récapitulatif de votre réservation.</p><p>Ces frais dédommagent l’animateur pour son temps de déplacement et ses éventuelles dépenses.</p>",
+                                  "align": "left",
+                                  "text_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_weight": "400"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true,
+                            "isLocked": true
+                          },
+                          {
+                            "id": "42e29fe0",
+                            "elType": "container",
+                            "settings": {
+                              "_title": "Élément n° 4"
+                            },
+                            "elements": [
+                              {
+                                "id": "dd119e5",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<p>Tous nos animateurs sont expérimentés et ont été sélectionnés par <strong>Alphababy</strong> pour leurs compétences, leur sens du spectacle et leur goût de l’interaction avec les enfants.</p>",
+                                  "align": "left",
+                                  "text_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_weight": "400"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true,
+                            "isLocked": true
+                          }
+                        ]
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "3d2ea165",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "width": {
+                        "unit": "%",
+                        "size": 50,
+                        "sizes": []
+                      }
+                    },
+                    "elements": [
+                      {
+                        "id": "8d31365",
+                        "elType": "widget",
+                        "widgetType": "nested-accordion",
+                        "settings": {
+                          "items": [
+                            {
+                              "item_title": "Les costumes",
+                              "_id": "ccb42c1"
+                            },
+                            {
+                              "item_title": "Avant le jour j",
+                              "_id": "0683c8b"
+                            },
+                            {
+                              "item_title": "L'expertise jeux et activités",
+                              "_id": "89b53e5"
+                            },
+                            {
+                              "item_title": "A votre disposition !",
+                              "_id": "bc3d0e5"
+                            },
+                            {
+                              "item_title": "Toujours mieux faire",
+                              "_id": "745120f"
+                            }
+                          ],
+                          "accordion_item_title_position_horizontal": "start",
+                          "accordion_item_title_icon_position": "end",
+                          "accordion_item_title_space_between": {
+                            "unit": "px",
+                            "size": 5,
+                            "sizes": []
+                          },
+                          "accordion_background_normal_background": "classic",
+                          "accordion_background_normal_color": "#EE743A",
+                          "accordion_border_radius": {
+                            "unit": "px",
+                            "top": "10",
+                            "right": "10",
+                            "bottom": "10",
+                            "left": "10",
+                            "isLinked": true
+                          },
+                          "normal_title_color": "#FFFDFD",
+                          "default_state": "all_collapsed",
+                          "accordion_background_hover_background": "classic",
+                          "accordion_background_hover_color": "#80A681",
+                          "accordion_background_active_background": "classic",
+                          "accordion_background_active_color": "#80A681",
+                          "hover_title_color": "#FFFFFF",
+                          "active_title_color": "#FFFFFF",
+                          "title_active_stroke_text_stroke_type": "yes",
+                          "content_border_border": "none"
+                        },
+                        "elements": [
+                          {
+                            "id": "529ce0a6",
+                            "elType": "container",
+                            "settings": {
+                              "_title": "Élément n° 4"
+                            },
+                            "elements": [
+                              {
+                                "id": "d7f292f",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<p><strong>Alphababy</strong> n’est pas une agence de sosies ;-) Nous sélectionnons soigneusement nos costumes afin ressembler le plus possible aux héros de vos enfants, mais une ressemblance trait pour trait est impossible.</p>",
+                                  "align": "left",
+                                  "text_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_weight": "400"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true,
+                            "isLocked": true
+                          },
+                          {
+                            "id": "6a1389a4",
+                            "elType": "container",
+                            "settings": {
+                              "_title": "Élément n° 4"
+                            },
+                            "elements": [
+                              {
+                                "id": "66d7c613",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<p>Quelques jours avant la fête, l’animateur/trice pendra contact avec vous pour se présenter et échanger avec vous sur les détails de l’animation.</p><p>Posez-lui vos questions ! Selon le temps de mise en place nécessaire, son heure d’arrivée peut varier.</p><p>À tout moment vous pouvez prendre contact avec l’agence, nous sommes disponibles 7/7 !</p>",
+                                  "align": "left",
+                                  "text_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_weight": "400"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true,
+                            "isLocked": true
+                          },
+                          {
+                            "id": "3b4d6690",
+                            "elType": "container",
+                            "settings": {
+                              "_title": "Élément n° 4"
+                            },
+                            "elements": [
+                              {
+                                "id": "5dd1a96",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<p>Amusement, interactions entre les enfants eux-mêmes et avec l’animanteur, bienveillance ; nos jeux, animations et activités ont été choisis par <strong>Alphababy</strong> pour créer un climat de joie et de détente.</p><p>Basés sur le thème que vous aurez choisi, ils participent pleinement à l’esprit de la fête, à la célébration de l’anniversaire de votre enfant avec ses amis, dans un univers qui les fait rêver.</p>",
+                                  "align": "left",
+                                  "text_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_weight": "400"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true,
+                            "isLocked": true
+                          },
+                          {
+                            "id": "2a072ede",
+                            "elType": "container",
+                            "settings": {
+                              "_title": "Élément n° 4"
+                            },
+                            "elements": [
+                              {
+                                "id": "1b3aeae2",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<p>Par mail <strong>hello@alphababy.fr</strong> ou par téléphone<strong> 01 43 65 32 32</strong> n’hésitez pas à nous contacter à tout moment, nous nous faisons un devoir de répondre au plus vite à vos questions.</p>",
+                                  "align": "left",
+                                  "text_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_weight": "400"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true,
+                            "isLocked": true
+                          },
+                          {
+                            "id": "3c4ddd8e",
+                            "elType": "container",
+                            "settings": {
+                              "_title": "Élément n° 4"
+                            },
+                            "elements": [
+                              {
+                                "id": "172bf702",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<p>Parce que votre satisfaction est au cœur de notre démarche qualité, nous vous enverrons un petit questionnaire après le grand jour. Nous les étudions tous attentivement et nous en servons pour améliorer continuellement Alphababy. D’avance merci d’avoir la gentillesse d’y répondre.</p>",
+                                  "align": "left",
+                                  "text_color": "#222222",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_weight": "400"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true,
+                            "isLocked": true
+                          }
+                        ]
+                      }
+                    ],
+                    "isInner": true
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "5f26b8c8",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "column",
+          "content_width": "full",
+          "width": {
+            "unit": "%",
+            "size": 30
+          },
+          "css_classes": "bloc-droit-pc",
+          "width_tablet": {
+            "unit": "%",
+            "size": 0,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": "",
+            "sizes": []
+          },
+          "hide_tablet": "hidden-tablet",
+          "hide_mobile": "hidden-mobile"
+        },
+        "elements": [
+          {
+            "id": "794d83a",
+            "elType": "container",
+            "settings": {
+              "flex_direction": "column",
+              "flex_justify_content": "center",
+              "flex_align_items": "flex-start",
+              "content_width": "full",
+              "sticky": "top",
+              "sticky_offset": 200,
+              "sticky_effects_offset": 250,
+              "css_classes": "bloc-reservation",
+              "sticky_parent": "yes",
+              "hide_mobile": "hidden-mobile"
+            },
+            "elements": [
+              {
+                "id": "3350e07b",
+                "elType": "container",
+                "settings": {
+                  "container_type": "grid",
+                  "presetTitle": "Grille",
+                  "presetIcon": "eicon-container-grid",
+                  "content_width": "full",
+                  "grid_columns_grid": {
+                    "unit": "custom",
+                    "size": "1fr 150px",
+                    "sizes": []
+                  },
+                  "grid_columns_grid_tablet": {
+                    "unit": "custom",
+                    "size": "",
+                    "sizes": []
+                  },
+                  "grid_columns_grid_mobile": {
+                    "unit": "custom",
+                    "size": 1,
+                    "sizes": []
+                  },
+                  "grid_rows_grid": {
+                    "unit": "fr",
+                    "size": 1,
+                    "sizes": []
+                  },
+                  "grid_gaps": {
+                    "column": "0",
+                    "row": "0",
+                    "isLinked": true,
+                    "unit": "px"
+                  },
+                  "grid_align_items": "start",
+                  "margin": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": false
+                  },
+                  "padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                  },
+                  "grid_justify_items": "center",
+                  "css_classes": "bloc-tarif"
+                },
+                "elements": [
+                  {
+                    "id": "2a3c4da3",
+                    "elType": "container",
+                    "settings": {
+                      "margin": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "flex_direction": "column",
+                      "flex_justify_content": "flex-start",
+                      "flex_align_items": "flex-start",
+                      "flex_gap": {
+                        "column": "0",
+                        "row": "0",
+                        "isLinked": true,
+                        "unit": "px",
+                        "size": 0
+                      },
+                      "css_classes": "bloc-titre-tarif"
+                    },
+                    "elements": [
+                      {
+                        "id": "5219fc29",
+                        "elType": "widget",
+                        "settings": {
+                          "title": "Le tarif"
+                        },
+                        "elements": [],
+                        "widgetType": "heading"
+                      },
+                      {
+                        "id": "2b96d23",
+                        "elType": "widget",
+                        "settings": {
+                          "editor": "<p>L'anniversaire<br />pour 10 enfants/ sans options :</p>",
+                          "text_color": "#000000",
+                          "typography_typography": "custom",
+                          "typography_font_family": "Raleway",
+                          "typography_font_size": {
+                            "unit": "px",
+                            "size": 15,
+                            "sizes": []
+                          },
+                          "typography_font_weight": "500",
+                          "_element_width": "initial",
+                          "_element_custom_width": {
+                            "unit": "%",
+                            "size": 88.709
+                          },
+                          "_flex_size": "none"
+                        },
+                        "elements": [],
+                        "widgetType": "text-editor"
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "411759d2",
+                    "elType": "container",
+                    "settings": {
+                      "flex_direction": "column",
+                      "flex_justify_content": "flex-start",
+                      "flex_align_items": "flex-start",
+                      "flex_gap": {
+                        "column": "0",
+                        "row": "0",
+                        "isLinked": true,
+                        "unit": "px",
+                        "size": 0
+                      },
+                      "margin": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "css_classes": "bloc-prix"
+                    },
+                    "elements": [
+                      {
+                        "id": "540ea317",
+                        "elType": "widget",
+                        "settings": {
+                          "typography_typography": "custom",
+                          "typography_font_family": "Raleway",
+                          "typography_font_weight": "600",
+                          "typography_font_size": {
+                            "unit": "px",
+                            "size": 32,
+                            "sizes": []
+                          }
+                        },
+                        "elements": [],
+                        "widgetType": "woocommerce-product-price"
+                      }
+                    ],
+                    "isInner": true
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "611abb1e",
+                "elType": "widget",
+                "settings": {
+                  "text": "Contactez nous",
+                  "icon_align": "right",
+                  "align": "center",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 25,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "500",
+                  "align_mobile": "center",
+                  "background_color": "#80A681",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "10",
+                    "right": "10",
+                    "bottom": "10",
+                    "left": "10",
+                    "isLinked": true
+                  },
+                  "size": "xl",
+                  "selected_icon": {
+                    "value": "fab fa-rocketchat",
+                    "library": "fa-brands"
+                  },
+                  "icon_indent": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "text_padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                  },
+                  "_css_classes": "contactez-nous",
+                  "typography_font_size_tablet_extra": {
+                    "unit": "px",
+                    "size": 18,
+                    "sizes": []
+                  }
+                },
+                "elements": [],
+                "widgetType": "button"
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  }
+]

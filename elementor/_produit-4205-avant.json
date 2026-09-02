@@ -1,0 +1,3208 @@
+[
+  {
+    "id": "19aba860",
+    "elType": "container",
+    "settings": {
+      "flex_direction": "column",
+      "content_width": "full",
+      "background_background": "classic",
+      "background_image": {
+        "url": "",
+        "id": "",
+        "size": "",
+        "alt": "",
+        "source": "library"
+      },
+      "margin": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+      },
+      "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+      },
+      "margin_mobile": {
+        "unit": "px",
+        "top": "-2",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    "elements": [
+      {
+        "id": "64fd10b0",
+        "elType": "widget",
+        "settings": {
+          "image": {
+            "url": "http://alphababy.fr/wp-content/uploads/2023/10/bordure_beige.webp",
+            "id": 173,
+            "size": "",
+            "alt": "",
+            "source": "library"
+          },
+          "image_size": "full"
+        },
+        "elements": [],
+        "widgetType": "image"
+      }
+    ],
+    "isInner": false
+  },
+  {
+    "id": "39ffc434",
+    "elType": "container",
+    "settings": {
+      "flex_direction": "row",
+      "flex_gap": {
+        "unit": "px",
+        "size": 0,
+        "column": "0",
+        "row": "0"
+      },
+      "css_classes": "page-produit",
+      "width_mobile": {
+        "unit": "px",
+        "size": 1600,
+        "sizes": []
+      },
+      "flex_direction_mobile": "column",
+      "flex_justify_content_mobile": "flex-start",
+      "flex_align_items_mobile": "center",
+      "margin_mobile": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+      },
+      "padding_mobile": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+      },
+      "flex_direction_tablet": "column"
+    },
+    "elements": [
+      {
+        "id": "2ad398d6",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "column",
+          "content_width": "full",
+          "width": {
+            "unit": "%",
+            "size": 70
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          },
+          "margin_mobile": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          },
+          "padding_mobile": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          },
+          "css_classes": "bloc-gauche",
+          "width_tablet": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          },
+          "_title": "Bloc gauche"
+        },
+        "elements": [
+          {
+            "id": "5255e0b",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "_title": "Intro + images"
+            },
+            "elements": [
+              {
+                "id": "f2c18d5",
+                "elType": "container",
+                "settings": {
+                  "flex_direction": "column",
+                  "content_width": "full",
+                  "width": {
+                    "unit": "%",
+                    "size": 100
+                  },
+                  "animation": "none",
+                  "margin": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                  },
+                  "padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                  },
+                  "flex_gap": {
+                    "column": "0",
+                    "row": "0",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 0
+                  },
+                  "width_laptop": {
+                    "unit": "px",
+                    "size": 822.037
+                  },
+                  "_flex_size": "none",
+                  "_element_width_laptop": "initial"
+                },
+                "elements": [
+                  {
+                    "id": "1fd59e8",
+                    "elType": "widget",
+                    "settings": {
+                      "title": "Ajoutez votre titre ici",
+                      "header_size": "h1",
+                      "typography_typography": "custom",
+                      "typography_font_family": "LilitaOne",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 45,
+                        "sizes": []
+                      },
+                      "typography_font_weight": "500",
+                      "__dynamic__": {
+                        "title": "[elementor-tag id=\"369c5c5\" name=\"woocommerce-product-title-tag\" settings=\"%7B%7D\"]"
+                      }
+                    },
+                    "elements": [],
+                    "widgetType": "heading"
+                  },
+                  {
+                    "id": "f15050e",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "animation": "none",
+                      "_title": "texte intro"
+                    },
+                    "elements": [
+                      {
+                        "id": "3f46050",
+                        "elType": "widget",
+                        "settings": {
+                          "editor": "<p>Le soir de noël, le père noël passe chez vous pour rencontrer vos enfants et distribuer les cadeaux !</p>",
+                          "typography_typography": "custom",
+                          "typography_font_family": "LilitaOne",
+                          "typography_font_size": {
+                            "unit": "px",
+                            "size": 25,
+                            "sizes": []
+                          },
+                          "typography_font_weight": "300"
+                        },
+                        "elements": [],
+                        "widgetType": "text-editor"
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "ec8fe77",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "animation": "none",
+                      "border_radius": {
+                        "unit": "px",
+                        "top": "15",
+                        "right": "15",
+                        "bottom": "15",
+                        "left": "15",
+                        "isLinked": true
+                      },
+                      "margin": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      }
+                    },
+                    "elements": [
+                      {
+                        "id": "ef782a5",
+                        "elType": "widget",
+                        "settings": {
+                          "slides_name": "galerie entreprise",
+                          "slides": [
+                            {
+                              "image": {
+                                "url": "https://alphababy.fr/wp-content/uploads/2025/09/bandeau-pere-noel.webp",
+                                "id": 4734,
+                                "alt": "",
+                                "source": "library",
+                                "size": ""
+                              },
+                              "_id": "ccbc0a3"
+                            },
+                            {
+                              "image": {
+                                "url": "https://alphababy.fr/wp-content/uploads/2025/08/IMG_5489.webp",
+                                "id": 7986,
+                                "alt": "",
+                                "source": "library",
+                                "size": ""
+                              },
+                              "_id": "0b7dd05"
+                            },
+                            {
+                              "_id": "3e1b1a3",
+                              "image": {
+                                "url": "https://alphababy.fr/wp-content/uploads/2025/08/d01ef341-8373-49d5-95fa-cc5d79f0d299.webp",
+                                "id": 8003,
+                                "size": "",
+                                "alt": "",
+                                "source": "library"
+                              }
+                            }
+                          ],
+                          "slides_per_view": "3",
+                          "slides_to_scroll": "1",
+                          "height": {
+                            "unit": "px",
+                            "size": 558,
+                            "sizes": []
+                          },
+                          "height_mobile": {
+                            "unit": "px",
+                            "size": 250,
+                            "sizes": []
+                          },
+                          "width": {
+                            "unit": "%",
+                            "size": 100,
+                            "sizes": []
+                          },
+                          "image_fit": "contain",
+                          "slideshow_slides_per_view": "1",
+                          "centered_slides": "yes",
+                          "image_size_size": "medium",
+                          "space_between": {
+                            "unit": "px",
+                            "size": 0,
+                            "sizes": []
+                          }
+                        },
+                        "elements": [],
+                        "widgetType": "media-carousel"
+                      }
+                    ],
+                    "isInner": true
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "207a6895",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "css_classes": "bloc-infos-produits",
+              "_title": "Infos"
+            },
+            "elements": [
+              {
+                "id": "4c4e7c52",
+                "elType": "container",
+                "settings": {
+                  "margin": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                  },
+                  "padding": {
+                    "unit": "%",
+                    "top": "5",
+                    "right": "5",
+                    "bottom": "5",
+                    "left": "5",
+                    "isLinked": true
+                  },
+                  "flex_direction": "column",
+                  "flex_justify_content": "flex-start",
+                  "flex_align_items": "flex-start",
+                  "flex_gap": {
+                    "column": "20",
+                    "row": "20",
+                    "isLinked": true,
+                    "unit": "px",
+                    "size": 20
+                  },
+                  "css_classes": "bloc-titre-tarif",
+                  "content_width": "full",
+                  "background_background": "classic",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "10",
+                    "right": "10",
+                    "bottom": "10",
+                    "left": "10",
+                    "isLinked": true
+                  },
+                  "padding_tablet_extra": {
+                    "unit": "%",
+                    "top": "",
+                    "right": "",
+                    "bottom": "",
+                    "left": "",
+                    "isLinked": true
+                  },
+                  "padding_tablet": {
+                    "unit": "%",
+                    "top": "",
+                    "right": "",
+                    "bottom": "",
+                    "left": "",
+                    "isLinked": true
+                  },
+                  "padding_mobile": {
+                    "unit": "%",
+                    "top": "",
+                    "right": "",
+                    "bottom": "",
+                    "left": "",
+                    "isLinked": true
+                  },
+                  "__globals__": {
+                    "background_color": "globals/colors?id=primary"
+                  },
+                  "_title": "Tarif"
+                },
+                "elements": [
+                  {
+                    "id": "1802200d",
+                    "elType": "widget",
+                    "settings": {
+                      "title": "Le tarif",
+                      "__globals__": {
+                        "title_color": "globals/colors?id=65cf053"
+                      }
+                    },
+                    "elements": [],
+                    "widgetType": "heading"
+                  },
+                  {
+                    "id": "2314087d",
+                    "elType": "widget",
+                    "settings": {
+                      "editor": "<ul><li><b>300 TTC </b></li><li>Passage de 45 minutes </li><li>Ce tarif inclut pas les frais de déplacements </li><li>Il faut réserver 1 mois à l'avance</li></ul>",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Raleway",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 15,
+                        "sizes": []
+                      },
+                      "typography_font_weight": "500",
+                      "_element_width": "initial",
+                      "_element_custom_width": {
+                        "unit": "%",
+                        "size": 88.709
+                      },
+                      "_flex_size": "none",
+                      "__globals__": {
+                        "text_color": "globals/colors?id=65cf053"
+                      }
+                    },
+                    "elements": [],
+                    "widgetType": "text-editor"
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "f39d0d2",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "background_background": "classic",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "10",
+                    "right": "10",
+                    "bottom": "10",
+                    "left": "10",
+                    "isLinked": true
+                  },
+                  "__globals__": {
+                    "background_color": "globals/colors?id=secondary"
+                  },
+                  "_title": "Avis clients"
+                },
+                "elements": [
+                  {
+                    "id": "375106d2",
+                    "elType": "widget",
+                    "settings": {
+                      "rating_value": 6,
+                      "_margin_mobile": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "_padding_mobile": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "hide_mobile": "hidden-mobile",
+                      "_css_classes": "notation",
+                      "icon_alignment": "center"
+                    },
+                    "elements": [],
+                    "widgetType": "rating"
+                  },
+                  {
+                    "id": "d3d4a10",
+                    "elType": "widget",
+                    "settings": {
+                      "slides_name": "Diapositives",
+                      "slides": [
+                        {
+                          "content": "Un grand merci à eux puis à toute l'équipe Alpha Baby pour avoir bossé sur notre projet, sans oublier Denis, excellent photographe qui s'adapte parfaitement à nos demandes et personne très sympathique que nous aimerions retrouver sur nos prochains évents.\n ",
+                          "name": "Jennifer",
+                          "title": "Leboncoin",
+                          "image": {
+                            "url": "",
+                            "id": ""
+                          },
+                          "_id": "5a0905e"
+                        },
+                        {
+                          "content": "Madame,\n\nJe tenais à vous remercier pour la qualité de vos services.\n\nCe fut un moment absolument parfait , les comédiens sont au top!\n\nIl me tarde de retravailler à vos côtés.\n\nBien cordialement,",
+                          "name": "Virginie",
+                          "title": "OBJECTEWARE",
+                          "image": {
+                            "url": "",
+                            "id": ""
+                          },
+                          "_id": "3bb76bd"
+                        },
+                        {
+                          "content": "Bonjour,\n\nTout d'abord, je tenais à vous dire un grand merci pour l'animation du Kid's day, je n'ai eu que des retours positifs vous concernant bravo !\n\nMerci et très belles fêtes de fin d'année à vous",
+                          "name": "Damdouane",
+                          "title": "",
+                          "image": {
+                            "url": "",
+                            "id": ""
+                          },
+                          "_id": "8d2b88f"
+                        }
+                      ],
+                      "slides_per_view": "1",
+                      "slides_to_scroll": "1",
+                      "width": {
+                        "unit": "%",
+                        "size": 100,
+                        "sizes": []
+                      },
+                      "lazyload": "yes",
+                      "space_between": {
+                        "unit": "px",
+                        "size": 0,
+                        "sizes": []
+                      },
+                      "slide_border_radius": {
+                        "unit": "px",
+                        "size": 0,
+                        "sizes": []
+                      },
+                      "content_typography_typography": "custom",
+                      "content_typography_font_family": "Raleway",
+                      "content_typography_font_size": {
+                        "unit": "px",
+                        "size": 16,
+                        "sizes": []
+                      },
+                      "content_typography_font_weight": "400",
+                      "_border_border": "solid",
+                      "_border_width": {
+                        "unit": "px",
+                        "top": "2",
+                        "right": "2",
+                        "bottom": "2",
+                        "left": "2",
+                        "isLinked": true
+                      },
+                      "_border_color": "#80A681",
+                      "_border_radius": {
+                        "unit": "px",
+                        "top": "15",
+                        "right": "15",
+                        "bottom": "15",
+                        "left": "15",
+                        "isLinked": true
+                      },
+                      "__globals__": {
+                        "slide_background_color": "",
+                        "_border_color": "globals/colors?id=secondary"
+                      }
+                    },
+                    "elements": [],
+                    "widgetType": "testimonial-carousel"
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "65c9641a",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "column",
+          "content_width": "full",
+          "width": {
+            "unit": "%",
+            "size": 30
+          },
+          "css_classes": "bloc-droit-pc",
+          "width_tablet": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": "",
+            "sizes": []
+          },
+          "z_index": 0,
+          "_title": "Bloc droit"
+        },
+        "elements": [
+          {
+            "id": "399b55d0",
+            "elType": "container",
+            "settings": {
+              "flex_direction": "column",
+              "flex_justify_content": "center",
+              "flex_align_items": "flex-start",
+              "content_width": "full",
+              "sticky_offset": 200,
+              "sticky_effects_offset": 250,
+              "css_classes": "bloc-reservation",
+              "sticky_parent": "yes",
+              "background_background": "classic",
+              "__globals__": {
+                "background_color": ""
+              }
+            },
+            "elements": [
+              {
+                "id": "1379126c",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "unit": "%",
+                    "size": 100,
+                    "sizes": []
+                  },
+                  "flex_direction": "column",
+                  "css_classes": "bloc-description",
+                  "margin": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                  },
+                  "padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "bdc1151",
+                    "elType": "widget",
+                    "settings": {
+                      "text": "Appelez-nous",
+                      "align": "justify",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Raleway",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 30,
+                        "sizes": []
+                      },
+                      "typography_font_weight": "500",
+                      "align_mobile": "center",
+                      "background_color": "#80A681",
+                      "border_radius": {
+                        "unit": "px",
+                        "top": "10",
+                        "right": "10",
+                        "bottom": "10",
+                        "left": "10",
+                        "isLinked": true
+                      },
+                      "size": "xl",
+                      "selected_icon": {
+                        "value": "fas fa-phone-volume",
+                        "library": "fa-solid"
+                      },
+                      "icon_indent": {
+                        "unit": "px",
+                        "size": 15,
+                        "sizes": []
+                      },
+                      "text_padding": {
+                        "unit": "px",
+                        "top": "20",
+                        "right": "50",
+                        "bottom": "20",
+                        "left": "50",
+                        "isLinked": false
+                      },
+                      "typography_font_size_tablet_extra": {
+                        "unit": "px",
+                        "size": 18,
+                        "sizes": []
+                      },
+                      "link": {
+                        "url": "0130101910",
+                        "is_external": "",
+                        "nofollow": "",
+                        "custom_attributes": ""
+                      },
+                      "_margin": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "_padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                      }
+                    },
+                    "elements": [],
+                    "widgetType": "button"
+                  },
+                  {
+                    "id": "6bcdc7ab",
+                    "elType": "widget",
+                    "settings": {
+                      "star_color": "#EE743A",
+                      "hide_desktop": "hidden-desktop",
+                      "hide_tablet_extra": "hidden-tablet_extra",
+                      "hide_tablet": "hidden-tablet"
+                    },
+                    "elements": [],
+                    "widgetType": "woocommerce-product-rating"
+                  },
+                  {
+                    "id": "6e71ad66",
+                    "elType": "widget",
+                    "settings": {
+                      "icon_list": [
+                        {
+                          "text": "<strong>Tranche d'âge :</strong> 3-12 ans",
+                          "selected_icon": {
+                            "value": "fas fa-child",
+                            "library": "fa-solid"
+                          },
+                          "_id": "a1f22ab"
+                        },
+                        {
+                          "text": "<strong>Nombre d’enfants :</strong> A partir de 10 enfants et jusqu'à 1000 enfants",
+                          "selected_icon": {
+                            "value": "fas fa-list-ol",
+                            "library": "fa-solid"
+                          },
+                          "_id": "b1a9940"
+                        },
+                        {
+                          "_id": "09a4f52",
+                          "text": "<strong>LIEU :</strong> Intérieur ",
+                          "selected_icon": {
+                            "value": "fas fa-map-marker-alt",
+                            "library": "fa-solid"
+                          }
+                        },
+                        {
+                          "_id": "a2807a9",
+                          "text": "<strong>Zone géographique :</strong> PARIS -&nbsp;Ile &nbsp;DE FRANCE",
+                          "selected_icon": {
+                            "value": "fas fa-street-view",
+                            "library": "fa-solid"
+                          }
+                        },
+                        {
+                          "text": "<strong>Installation :</strong> 2h",
+                          "selected_icon": {
+                            "value": "fas fa-tools",
+                            "library": "fa-solid"
+                          },
+                          "_id": "fa81dfd"
+                        },
+                        {
+                          "text": "<strong>Durée de l'animation :</strong> 3h",
+                          "selected_icon": {
+                            "value": "far fa-clock",
+                            "library": "fa-regular"
+                          },
+                          "_id": "5298967"
+                        }
+                      ],
+                      "space_between": {
+                        "unit": "px",
+                        "size": 3,
+                        "sizes": []
+                      },
+                      "space_between_mobile": {
+                        "unit": "px",
+                        "size": 15,
+                        "sizes": []
+                      },
+                      "icon_align": "left",
+                      "icon_size": {
+                        "unit": "px",
+                        "size": 20,
+                        "sizes": []
+                      },
+                      "icon_size_mobile": {
+                        "unit": "px",
+                        "size": 25,
+                        "sizes": []
+                      },
+                      "text_indent": {
+                        "unit": "px",
+                        "size": 5,
+                        "sizes": []
+                      },
+                      "icon_self_align": "left",
+                      "icon_self_vertical_align": "flex-start",
+                      "icon_typography_typography": "custom",
+                      "icon_typography_font_family": "Roboto",
+                      "icon_typography_font_size_mobile": {
+                        "unit": "px",
+                        "size": 18,
+                        "sizes": []
+                      },
+                      "icon_typography_font_weight": "400",
+                      "text_color": "#000000",
+                      "_css_classes": "infos-utiles",
+                      "__globals__": {
+                        "icon_color": "globals/colors?id=primary"
+                      }
+                    },
+                    "elements": [],
+                    "widgetType": "icon-list"
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "77166d4f",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "unit": "%",
+                    "size": 100,
+                    "sizes": []
+                  },
+                  "flex_direction": "column",
+                  "css_classes": "bloc-reservation",
+                  "margin": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                  },
+                  "padding": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "2fe78b9d",
+                    "elType": "widget",
+                    "widgetType": "nested-accordion",
+                    "settings": {
+                      "items": [
+                        {
+                          "item_title": "Descriptif",
+                          "_id": "07903a3"
+                        },
+                        {
+                          "item_title": "Le programme",
+                          "_id": "a48dc23"
+                        },
+                        {
+                          "item_title": "Ce qui est inclus",
+                          "_id": "a870aa1"
+                        },
+                        {
+                          "item_title": "Ce que vous devez fournir",
+                          "_id": "7f23634"
+                        },
+                        {
+                          "item_title": "Les options",
+                          "_id": "629070c"
+                        }
+                      ],
+                      "accordion_item_title_position_horizontal": "start",
+                      "accordion_item_title_position_horizontal_mobile": "center",
+                      "accordion_item_title_icon_position": "end",
+                      "accordion_item_title_icon_position_mobile": "end",
+                      "accordion_item_title_space_between": {
+                        "unit": "px",
+                        "size": 5,
+                        "sizes": []
+                      },
+                      "accordion_background_normal_background": "classic",
+                      "accordion_background_normal_color": "#EE743A",
+                      "accordion_background_hover_background": "classic",
+                      "accordion_background_hover_color": "#80A681",
+                      "accordion_background_active_background": "classic",
+                      "accordion_background_active_color": "#80A681",
+                      "accordion_border_radius": {
+                        "unit": "px",
+                        "top": "10",
+                        "right": "10",
+                        "bottom": "10",
+                        "left": "10",
+                        "isLinked": true
+                      },
+                      "normal_title_color": "#FFFDFD",
+                      "hover_title_color": "#FFFFFF",
+                      "active_title_color": "#FFFFFF",
+                      "title_active_stroke_text_stroke_type": "yes",
+                      "content_border_border": "none",
+                      "_css_classes": "bloc-accordeon-produit inclus",
+                      "default_state": "all_collapsed"
+                    },
+                    "elements": [
+                      {
+                        "id": "71dbc415",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "élément N°1",
+                          "content_width": "full"
+                        },
+                        "elements": [
+                          {
+                            "id": "17d07872",
+                            "elType": "container",
+                            "settings": {
+                              "flex_direction": "column"
+                            },
+                            "elements": [
+                              {
+                                "id": "46263bb8",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<p>Le vrai beau père noël vient à votre domicile avec sa hotte remplit de cadeaux </p>",
+                                  "text_color": "#EE743A",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                  },
+                                  "typography_font_weight": "600",
+                                  "_css_classes": "accroche"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              },
+                              {
+                                "id": "4e3a7eda",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<p>Ce moment  privilégié entre le père noël et votre enfant sera son plus beau souvenir </p>",
+                                  "typography_typography": "custom",
+                                  "typography_font_family": "Raleway",
+                                  "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 18,
+                                    "sizes": []
+                                  },
+                                  "typography_font_weight": "600",
+                                  "_css_classes": "descriptif",
+                                  "content_width": "full"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      },
+                      {
+                        "id": "67bf3d39",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "élément N°2",
+                          "content_width": "full"
+                        },
+                        "elements": [
+                          {
+                            "id": "23298d87",
+                            "elType": "container",
+                            "settings": {
+                              "flex_direction": "column"
+                            },
+                            "elements": [
+                              {
+                                "id": "c259b8e",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<p>Le père noël arrivera à l'heure convenue par vos soins. </p><p>Il vous appellera une fois devant votre domicile, pour scénariser son entrée et créer un effet de surprise. </p><p>Le comédien est costumé avec les éléments suivants : </p><ul><li>Une tenue de père noël rouge et blanc </li><li>Ceinture, gants, lunettes et hotte</li><li>Une vraie paire de botte noire</li><li>Perruque blanche pour la barbe et les cheveux </li></ul>",
+                                  "text_color": "#222222",
+                                  "_css_classes": "liste-orange"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      },
+                      {
+                        "id": "63210ed6",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "élément N°3",
+                          "content_width": "full"
+                        },
+                        "elements": [
+                          {
+                            "id": "525be6ae",
+                            "elType": "container",
+                            "settings": {
+                              "flex_direction": "column"
+                            },
+                            "elements": [
+                              {
+                                "id": "7a06ef82",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<ul><li>Un comédien déguisé en Père Noël </li><li>Un passage de 45 minutes </li><li>Une entrée scénarisée</li><li>Une distribution de cadeaux </li></ul>",
+                                  "text_color": "#222222",
+                                  "_css_classes": "liste"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      },
+                      {
+                        "id": "7bd5ec8",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "élément N°3",
+                          "content_width": "full"
+                        },
+                        "elements": [
+                          {
+                            "id": "973f035",
+                            "elType": "container",
+                            "settings": {
+                              "flex_direction": "column"
+                            },
+                            "elements": [
+                              {
+                                "id": "3e29bba",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<ul><li>Un maximum d'information sur votre enfants, pour favroriser la discussion entre le père noël et votre enfant.</li></ul>",
+                                  "text_color": "#222222",
+                                  "_css_classes": "liste-orange"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      },
+                      {
+                        "id": "38292d18",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "élément N°3",
+                          "content_width": "full"
+                        },
+                        "elements": [
+                          {
+                            "id": "23fbd30a",
+                            "elType": "container",
+                            "settings": {
+                              "flex_direction": "column"
+                            },
+                            "elements": [
+                              {
+                                "id": "215916b3",
+                                "elType": "widget",
+                                "settings": {
+                                  "editor": "<ul><li>La mascotte de Mickey ou Minnie noël </li><li>Le passage d'un lutin de noël </li></ul>",
+                                  "text_color": "#222222",
+                                  "_css_classes": "liste-orange"
+                                },
+                                "elements": [],
+                                "widgetType": "text-editor"
+                              }
+                            ],
+                            "isInner": true
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      }
+                    ]
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "de406fb",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "margin": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": false
+                  },
+                  "padding": {
+                    "unit": "px",
+                    "top": "30",
+                    "right": "30",
+                    "bottom": "30",
+                    "left": "30",
+                    "isLinked": true
+                  },
+                  "flex_direction": "column",
+                  "flex_justify_content": "space-between",
+                  "background_background": "classic",
+                  "background_color": "#F6F1E5",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": "15",
+                    "right": "15",
+                    "bottom": "15",
+                    "left": "15",
+                    "isLinked": true
+                  },
+                  "padding_mobile": {
+                    "unit": "px",
+                    "top": "20",
+                    "right": "20",
+                    "bottom": "20",
+                    "left": "20",
+                    "isLinked": true
+                  },
+                  "css_classes": "bloc-petits-plus",
+                  "border_radius_mobile": {
+                    "unit": "px",
+                    "top": "25",
+                    "right": "25",
+                    "bottom": "25",
+                    "left": "25",
+                    "isLinked": true
+                  },
+                  "_title": "carton invitation"
+                },
+                "elements": [
+                  {
+                    "id": "e1869e1",
+                    "elType": "widget",
+                    "settings": {
+                      "title": "LE CADEAU ALPHABABY",
+                      "title_color": "#222222",
+                      "typography_typography": "custom",
+                      "typography_font_family": "LilitaOne",
+                      "typography_font_weight": "600",
+                      "typography_text_transform": "uppercase",
+                      "typography_letter_spacing": {
+                        "unit": "px",
+                        "size": 2.5,
+                        "sizes": []
+                      },
+                      "align": "center",
+                      "_margin": {
+                        "unit": "px",
+                        "top": "20",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                      },
+                      "_padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      }
+                    },
+                    "elements": [],
+                    "widgetType": "heading"
+                  },
+                  {
+                    "id": "93bb5d5",
+                    "elType": "widget",
+                    "settings": {
+                      "editor": "<h3>Une affiche à personnalisée avec le programme </h3>",
+                      "align": "center",
+                      "text_color": "#222222",
+                      "typography_typography": "custom",
+                      "typography_font_family": "Raleway",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 20,
+                        "sizes": []
+                      },
+                      "typography_font_weight": "600",
+                      "_margin": {
+                        "unit": "px",
+                        "top": "-20",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": false
+                      },
+                      "_padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      }
+                    },
+                    "elements": [],
+                    "widgetType": "text-editor"
+                  },
+                  {
+                    "id": "72f5b20",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full"
+                    },
+                    "elements": [
+                      {
+                        "id": "c867ea5",
+                        "elType": "widget",
+                        "settings": {
+                          "image": {
+                            "url": "http://alphababy.fr/wp-content/uploads/2025/08/bandeau-pere-noel-.webp",
+                            "id": 4206,
+                            "size": "",
+                            "alt": "",
+                            "source": "library"
+                          },
+                          "link_to": "custom",
+                          "link": {
+                            "url": "#",
+                            "is_external": "",
+                            "nofollow": "",
+                            "custom_attributes": ""
+                          },
+                          "_margin": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                          },
+                          "_padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                          }
+                        },
+                        "elements": [],
+                        "widgetType": "image"
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "73800f9",
+                    "elType": "container",
+                    "settings": {
+                      "content_width": "full",
+                      "background_background": "classic",
+                      "background_color": "#80A681",
+                      "margin": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "padding": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "html_tag": "a",
+                      "link": {
+                        "url": "#",
+                        "is_external": "",
+                        "nofollow": "",
+                        "custom_attributes": ""
+                      },
+                      "border_radius": {
+                        "unit": "px",
+                        "top": "15",
+                        "right": "15",
+                        "bottom": "15",
+                        "left": "15",
+                        "isLinked": true
+                      }
+                    },
+                    "elements": [
+                      {
+                        "id": "39268d0",
+                        "elType": "widget",
+                        "settings": {
+                          "title": "Offert pour toute réservation",
+                          "align": "center",
+                          "title_color": "#FFFFFF",
+                          "typography_typography": "custom",
+                          "typography_font_family": "LilitaOne",
+                          "typography_font_size": {
+                            "unit": "px",
+                            "size": 16,
+                            "sizes": []
+                          },
+                          "typography_font_weight": "600",
+                          "typography_text_transform": "uppercase",
+                          "typography_letter_spacing": {
+                            "unit": "px",
+                            "size": 2.5,
+                            "sizes": []
+                          },
+                          "_padding": {
+                            "unit": "px",
+                            "top": "30",
+                            "right": "30",
+                            "bottom": "30",
+                            "left": "30",
+                            "isLinked": true
+                          }
+                        },
+                        "elements": [],
+                        "widgetType": "heading"
+                      }
+                    ],
+                    "isInner": true
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": false
+  },
+  {
+    "id": "be6f15b",
+    "elType": "container",
+    "settings": {
+      "margin": {
+        "unit": "px",
+        "top": "100",
+        "right": "0",
+        "bottom": "100",
+        "left": "0",
+        "isLinked": false
+      },
+      "padding": {
+        "unit": "px",
+        "top": "20",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      },
+      "margin_tablet": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": true
+      },
+      "padding_laptop": {
+        "unit": "px",
+        "top": "20",
+        "right": "20",
+        "bottom": "20",
+        "left": "20",
+        "isLinked": true
+      },
+      "padding_tablet_extra": {
+        "unit": "px",
+        "top": "20",
+        "right": "20",
+        "bottom": "20",
+        "left": "20",
+        "isLinked": true
+      },
+      "padding_tablet": {
+        "unit": "px",
+        "top": "20",
+        "right": "20",
+        "bottom": "20",
+        "left": "20",
+        "isLinked": true
+      },
+      "padding_mobile": {
+        "unit": "px",
+        "top": "20",
+        "right": "20",
+        "bottom": "20",
+        "left": "20",
+        "isLinked": true
+      }
+    },
+    "elements": [
+      {
+        "id": "17f08880",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "column",
+          "margin": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          },
+          "padding": {
+            "unit": "px",
+            "top": "20",
+            "right": "20",
+            "bottom": "20",
+            "left": "20",
+            "isLinked": true
+          },
+          "_title": "Logos partenaires",
+          "margin_mobile": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          },
+          "flex_justify_content": "center",
+          "flex_align_items": "center",
+          "css_classes": "fondu-container",
+          "content_width": "full"
+        },
+        "elements": [
+          {
+            "id": "26c79067",
+            "elType": "widget",
+            "settings": {
+              "carousel_name": "Carrousel d’images",
+              "carousel": [
+                {
+                  "id": 3943,
+                  "url": "http://alphababy.fr/wp-content/uploads/2025/08/vancleff.webp"
+                },
+                {
+                  "id": 3942,
+                  "url": "http://alphababy.fr/wp-content/uploads/2025/08/sorbone.webp"
+                },
+                {
+                  "id": 3941,
+                  "url": "http://alphababy.fr/wp-content/uploads/2025/08/NETFLIX.webp"
+                },
+                {
+                  "id": 3940,
+                  "url": "http://alphababy.fr/wp-content/uploads/2025/08/ministere.webp"
+                },
+                {
+                  "id": 3939,
+                  "url": "http://alphababy.fr/wp-content/uploads/2025/08/mediamatrie.webp"
+                },
+                {
+                  "id": 3938,
+                  "url": "http://alphababy.fr/wp-content/uploads/2025/08/leboncoin.webp"
+                },
+                {
+                  "id": 3937,
+                  "url": "http://alphababy.fr/wp-content/uploads/2025/08/kfc.webp"
+                },
+                {
+                  "id": 3936,
+                  "url": "http://alphababy.fr/wp-content/uploads/2025/08/INFOVISTA.webp"
+                },
+                {
+                  "id": 3935,
+                  "url": "http://alphababy.fr/wp-content/uploads/2025/08/groupon.webp"
+                },
+                {
+                  "id": 3934,
+                  "url": "http://alphababy.fr/wp-content/uploads/2025/08/dhl.webp"
+                },
+                {
+                  "id": 3933,
+                  "url": "http://alphababy.fr/wp-content/uploads/2025/08/arcep.webp"
+                },
+                {
+                  "id": 3932,
+                  "url": "http://alphababy.fr/wp-content/uploads/2025/08/appen.webp"
+                }
+              ],
+              "navigation": "none",
+              "_css_classes": "logos",
+              "slides_to_show": "6",
+              "pause_on_hover": "",
+              "pause_on_interaction": "",
+              "autoplay_speed": "",
+              "speed": 5000,
+              "gallery_vertical_align": "center",
+              "slides_to_show_mobile": "3",
+              "image_spacing": "custom",
+              "image_spacing_custom_mobile": {
+                "unit": "px",
+                "size": 20,
+                "sizes": []
+              },
+              "slides_to_show_tablet": "5"
+            },
+            "elements": [],
+            "widgetType": "image-carousel"
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "0a59092",
+        "elType": "container",
+        "settings": {
+          "boxed_width": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          },
+          "boxed_width_tablet": {
+            "unit": "%",
+            "size": "",
+            "sizes": []
+          },
+          "boxed_width_mobile": {
+            "unit": "%",
+            "size": "",
+            "sizes": []
+          },
+          "background_background": "classic",
+          "content_width": "full",
+          "width": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          },
+          "background_hover_background": "classic",
+          "border_radius": {
+            "unit": "px",
+            "top": "5",
+            "right": "5",
+            "bottom": "5",
+            "left": "5",
+            "isLinked": true
+          },
+          "padding": {
+            "unit": "px",
+            "top": "20",
+            "right": "20",
+            "bottom": "20",
+            "left": "20",
+            "isLinked": true
+          },
+          "html_tag": "a",
+          "link": {
+            "url": "/devis/",
+            "is_external": "",
+            "nofollow": "",
+            "custom_attributes": ""
+          },
+          "min_height": {
+            "unit": "px",
+            "size": 80,
+            "sizes": []
+          },
+          "flex_direction": "column",
+          "flex_justify_content": "center",
+          "flex_align_items": "center",
+          "__globals__": {
+            "background_color": "globals/colors?id=secondary",
+            "background_hover_color": "globals/colors?id=primary"
+          },
+          "_title": "CTA"
+        },
+        "elements": [
+          {
+            "id": "aec7666",
+            "elType": "widget",
+            "settings": {
+              "title": "DEMANDEZ NOUS UN DEVIS !",
+              "header_size": "h3",
+              "align": "center",
+              "title_color": "#FFFFFF",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 30,
+                "sizes": []
+              },
+              "typography_font_weight": "600",
+              "typography_letter_spacing": {
+                "unit": "px",
+                "size": 2.5,
+                "sizes": []
+              },
+              "_background_color_stop_tablet_extra": {
+                "unit": "%",
+                "size": "",
+                "sizes": []
+              },
+              "_background_color_stop_tablet": {
+                "unit": "%",
+                "size": "",
+                "sizes": []
+              },
+              "_background_color_stop_mobile": {
+                "unit": "%",
+                "size": "",
+                "sizes": []
+              },
+              "_background_color_b_stop_tablet_extra": {
+                "unit": "%",
+                "size": "",
+                "sizes": []
+              },
+              "_background_color_b_stop_tablet": {
+                "unit": "%",
+                "size": "",
+                "sizes": []
+              },
+              "_background_color_b_stop_mobile": {
+                "unit": "%",
+                "size": "",
+                "sizes": []
+              },
+              "_background_gradient_angle_tablet_extra": {
+                "unit": "deg",
+                "size": "",
+                "sizes": []
+              },
+              "_background_gradient_angle_tablet": {
+                "unit": "deg",
+                "size": "",
+                "sizes": []
+              },
+              "_background_gradient_angle_mobile": {
+                "unit": "deg",
+                "size": "",
+                "sizes": []
+              },
+              "_background_hover_color_stop_tablet_extra": {
+                "unit": "%",
+                "size": "",
+                "sizes": []
+              },
+              "_background_hover_color_stop_tablet": {
+                "unit": "%",
+                "size": "",
+                "sizes": []
+              },
+              "_background_hover_color_stop_mobile": {
+                "unit": "%",
+                "size": "",
+                "sizes": []
+              },
+              "_background_hover_color_b_stop_tablet_extra": {
+                "unit": "%",
+                "size": "",
+                "sizes": []
+              },
+              "_background_hover_color_b_stop_tablet": {
+                "unit": "%",
+                "size": "",
+                "sizes": []
+              },
+              "_background_hover_color_b_stop_mobile": {
+                "unit": "%",
+                "size": "",
+                "sizes": []
+              },
+              "_background_hover_gradient_angle_tablet_extra": {
+                "unit": "deg",
+                "size": "",
+                "sizes": []
+              },
+              "_background_hover_gradient_angle_tablet": {
+                "unit": "deg",
+                "size": "",
+                "sizes": []
+              },
+              "_background_hover_gradient_angle_mobile": {
+                "unit": "deg",
+                "size": "",
+                "sizes": []
+              }
+            },
+            "elements": [],
+            "widgetType": "heading"
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "1bb37ff2",
+        "elType": "container",
+        "settings": {
+          "flex_direction": "column",
+          "background_background": "classic",
+          "margin": {
+            "unit": "px",
+            "top": "50",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          },
+          "padding": {
+            "unit": "px",
+            "top": "50",
+            "right": "20",
+            "bottom": "0",
+            "left": "20",
+            "isLinked": false
+          },
+          "padding_mobile": {
+            "unit": "px",
+            "top": "10",
+            "right": "10",
+            "bottom": "10",
+            "left": "10",
+            "isLinked": false
+          },
+          "content_width": "full",
+          "width_mobile": {
+            "unit": "%",
+            "size": "",
+            "sizes": []
+          },
+          "_title": "Points fort"
+        },
+        "elements": [
+          {
+            "id": "32659bf0",
+            "elType": "widget",
+            "settings": {
+              "title": "LES POINTS FORT DE CETTE ANIMATION",
+              "align": "center",
+              "title_color": "#FDCD69",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_weight": "600",
+              "typography_letter_spacing": {
+                "unit": "px",
+                "size": 2.5,
+                "sizes": []
+              }
+            },
+            "elements": [],
+            "widgetType": "heading"
+          },
+          {
+            "id": "4871a4c5",
+            "elType": "container",
+            "settings": {
+              "flex_direction": "column",
+              "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              },
+              "padding": {
+                "unit": "px",
+                "top": "40",
+                "right": "40",
+                "bottom": "40",
+                "left": "40",
+                "isLinked": true
+              },
+              "flex_align_items": "center",
+              "background_background": "classic",
+              "background_image": {
+                "url": "http://alphababy.fr/wp-content/uploads/2023/10/fond1.webp",
+                "id": 120,
+                "size": "",
+                "alt": "",
+                "source": "library"
+              },
+              "background_position": "center center",
+              "background_repeat": "no-repeat",
+              "background_size": "cover",
+              "border_radius": {
+                "unit": "px",
+                "top": "50",
+                "right": "50",
+                "bottom": "50",
+                "left": "50",
+                "isLinked": true
+              },
+              "animation": "fadeInUp",
+              "border_radius_mobile": {
+                "unit": "px",
+                "top": "25",
+                "right": "25",
+                "bottom": "25",
+                "left": "25",
+                "isLinked": true
+              },
+              "content_width": "full",
+              "width_mobile": {
+                "unit": "%",
+                "size": "",
+                "sizes": []
+              },
+              "padding_mobile": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              }
+            },
+            "elements": [
+              {
+                "id": "237be5bb",
+                "elType": "container",
+                "settings": {
+                  "flex_direction": "row",
+                  "flex_justify_content": "space-evenly",
+                  "flex_align_items": "flex-start",
+                  "content_width": "full",
+                  "width_mobile": {
+                    "unit": "%",
+                    "size": "",
+                    "sizes": []
+                  },
+                  "margin_mobile": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                  },
+                  "padding_mobile": {
+                    "unit": "px",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": true
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "38f09a00",
+                    "elType": "container",
+                    "settings": {
+                      "flex_justify_content": "flex-start",
+                      "flex_align_items": "center",
+                      "css_classes": "infos-pratiques",
+                      "margin": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "padding": {
+                        "unit": "px",
+                        "top": "20",
+                        "right": "20",
+                        "bottom": "20",
+                        "left": "20",
+                        "isLinked": true
+                      },
+                      "content_width": "full",
+                      "width_mobile": {
+                        "unit": "%",
+                        "size": 100,
+                        "sizes": []
+                      }
+                    },
+                    "elements": [
+                      {
+                        "id": "e250be9",
+                        "elType": "container",
+                        "settings": {
+                          "content_width": "full",
+                          "width": {
+                            "unit": "px",
+                            "size": 100,
+                            "sizes": []
+                          },
+                          "width_mobile": {
+                            "unit": "px",
+                            "size": 100,
+                            "sizes": []
+                          },
+                          "min_height": {
+                            "unit": "px",
+                            "size": 100,
+                            "sizes": []
+                          },
+                          "min_height_mobile": {
+                            "unit": "px",
+                            "size": 100,
+                            "sizes": []
+                          },
+                          "flex_direction": "column",
+                          "flex_justify_content": "center",
+                          "flex_align_items": "center",
+                          "background_background": "classic",
+                          "border_radius": {
+                            "unit": "px",
+                            "top": "50",
+                            "right": "50",
+                            "bottom": "50",
+                            "left": "50",
+                            "isLinked": true
+                          },
+                          "margin": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                          },
+                          "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                          },
+                          "__globals__": {
+                            "background_color": "globals/colors?id=primary"
+                          }
+                        },
+                        "elements": [
+                          {
+                            "id": "0e393c5",
+                            "elType": "widget",
+                            "settings": {
+                              "title": "1",
+                              "header_size": "div",
+                              "typography_typography": "custom",
+                              "typography_font_family": "Roboto",
+                              "typography_font_size": {
+                                "unit": "px",
+                                "size": 50,
+                                "sizes": []
+                              },
+                              "typography_font_weight": "600",
+                              "__globals__": {
+                                "title_color": "globals/colors?id=65cf053"
+                              }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                          }
+                        ],
+                        "isInner": true
+                      },
+                      {
+                        "id": "6985a6ff",
+                        "elType": "widget",
+                        "settings": {
+                          "editor": "<p>Le vrai père noël avec un costume de très belle qualité </p>",
+                          "align": "center",
+                          "text_color": "#222222",
+                          "typography_typography": "custom",
+                          "typography_font_family": "Raleway",
+                          "typography_font_weight": "500"
+                        },
+                        "elements": [],
+                        "widgetType": "text-editor"
+                      }
+                    ],
+                    "isInner": true
+                  },
+                  {
+                    "id": "146abcd0",
+                    "elType": "container",
+                    "settings": {
+                      "flex_justify_content": "flex-start",
+                      "flex_align_items": "center",
+                      "css_classes": "infos-pratiques",
+                      "margin": {
+                        "unit": "px",
+                        "top": "0",
+                        "right": "0",
+                        "bottom": "0",
+                        "left": "0",
+                        "isLinked": true
+                      },
+                      "padding": {
+                        "unit": "px",
+                        "top": "20",
+                        "right": "20",
+                        "bottom": "20",
+                        "left": "20",
+                        "isLinked": true
+                      }
+                    },
+                    "elements": [
+                      {
+                        "id": "18192b3",
+                        "elType": "container",
+                        "settings": {
+                          "content_width": "full",
+                          "width": {
+                            "unit": "px",
+                            "size": 100,
+                            "sizes": []
+                          },
+                          "width_mobile": {
+                            "unit": "px",
+                            "size": 100,
+                            "sizes": []
+                          },
+                          "min_height": {
+                            "unit": "px",
+                            "size": 100,
+                            "sizes": []
+                          },
+                          "min_height_mobile": {
+                            "unit": "px",
+                            "size": 100,
+                            "sizes": []
+                          },
+                          "flex_direction": "column",
+                          "flex_justify_content": "center",
+                          "flex_align_items": "center",
+                          "background_background": "classic",
+                          "border_radius": {
+                            "unit": "px",
+                            "top": "50",
+                            "right": "50",
+                            "bottom": "50",
+                            "left": "50",
+                            "isLinked": true
+                          },
+                          "margin": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                          },
+                          "padding": {
+                            "unit": "px",
+                            "top": "0",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": true
+                          },
+                          "__globals__": {
+                            "background_color": "globals/colors?id=primary"
+                          }
+                        },
+                        "elements": [
+                          {
+                            "id": "c65f4bf",
+                            "elType": "widget",
+                            "settings": {
+                              "title": "2",
+                              "header_size": "div",
+                              "typography_typography": "custom",
+                              "typography_font_family": "Roboto",
+                              "typography_font_size": {
+                                "unit": "px",
+                                "size": 50,
+                                "sizes": []
+                              },
+                              "typography_font_weight": "600",
+                              "__globals__": {
+                                "title_color": "globals/colors?id=65cf053"
+                              }
+                            },
+                            "elements": [],
+                            "widgetType": "heading"
+                          }
+                        ],
+                        "isInner": true
+                      },
+                      {
+                        "id": "d43ae1d",
+                        "elType": "widget",
+                        "settings": {
+                          "editor": "<p>La création d'un souvenir unique et privilégié pour votre enfant .</p>",
+                          "align": "center",
+                          "text_color": "#222222",
+                          "typography_typography": "custom",
+                          "typography_font_family": "Raleway",
+                          "typography_font_weight": "500"
+                        },
+                        "elements": [],
+                        "widgetType": "text-editor"
+                      }
+                    ],
+                    "isInner": true
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "b57d00c",
+        "elType": "container",
+        "settings": {
+          "container_type": "grid",
+          "presetTitle": "Grille",
+          "presetIcon": "eicon-container-grid",
+          "content_width": "full",
+          "grid_columns_grid": {
+            "unit": "fr",
+            "size": 4,
+            "sizes": []
+          },
+          "grid_rows_grid": {
+            "unit": "fr",
+            "size": 1,
+            "sizes": []
+          },
+          "margin": {
+            "unit": "px",
+            "top": "50",
+            "right": "0",
+            "bottom": "50",
+            "left": "0",
+            "isLinked": false
+          },
+          "_title": "avantages"
+        },
+        "elements": [
+          {
+            "id": "e04effd",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "border_border": "none",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "1",
+                "left": "1",
+                "isLinked": true
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "100",
+                "right": "100",
+                "bottom": "100",
+                "left": "100",
+                "isLinked": true
+              },
+              "border_hover_border": "solid",
+              "border_hover_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "5",
+                "left": "1",
+                "isLinked": false
+              },
+              "border_radius_hover": {
+                "unit": "px",
+                "top": "25",
+                "right": "25",
+                "bottom": "25",
+                "left": "25",
+                "isLinked": true
+              },
+              "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              },
+              "padding": {
+                "unit": "%",
+                "top": "5",
+                "right": "5",
+                "bottom": "5",
+                "left": "5",
+                "isLinked": true
+              },
+              "padding_tablet_extra": {
+                "unit": "%",
+                "top": "",
+                "right": "",
+                "bottom": "",
+                "left": "",
+                "isLinked": true
+              },
+              "padding_tablet": {
+                "unit": "%",
+                "top": "",
+                "right": "",
+                "bottom": "",
+                "left": "",
+                "isLinked": true
+              },
+              "padding_mobile": {
+                "unit": "%",
+                "top": "",
+                "right": "",
+                "bottom": "",
+                "left": "",
+                "isLinked": true
+              },
+              "_title": "box",
+              "__globals__": {
+                "border_color": "globals/colors?id=primary"
+              }
+            },
+            "elements": [
+              {
+                "id": "3161a6c",
+                "elType": "widget",
+                "settings": {
+                  "selected_icon": {
+                    "value": {
+                      "url": "http://alphababy.fr/wp-content/uploads/2025/07/experience.svg",
+                      "id": 3554
+                    },
+                    "library": "svg"
+                  },
+                  "__globals__": {
+                    "primary_color": "globals/colors?id=secondary"
+                  },
+                  "size": {
+                    "unit": "px",
+                    "size": 100,
+                    "sizes": []
+                  }
+                },
+                "elements": [],
+                "widgetType": "icon"
+              },
+              {
+                "id": "fad6785",
+                "elType": "widget",
+                "settings": {
+                  "title": "30 ans d’expériences",
+                  "header_size": "div",
+                  "align": "center",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "600"
+                },
+                "elements": [],
+                "widgetType": "heading"
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "e20d905",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "border_border": "none",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "5",
+                "left": "1",
+                "isLinked": false
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "25",
+                "right": "25",
+                "bottom": "25",
+                "left": "25",
+                "isLinked": true
+              },
+              "border_hover_border": "solid",
+              "border_hover_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "5",
+                "left": "1",
+                "isLinked": false
+              },
+              "border_radius_hover": {
+                "unit": "px",
+                "top": "25",
+                "right": "25",
+                "bottom": "25",
+                "left": "25",
+                "isLinked": true
+              },
+              "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              },
+              "padding": {
+                "unit": "%",
+                "top": "5",
+                "right": "5",
+                "bottom": "5",
+                "left": "5",
+                "isLinked": true
+              },
+              "padding_tablet_extra": {
+                "unit": "%",
+                "top": "",
+                "right": "",
+                "bottom": "",
+                "left": "",
+                "isLinked": true
+              },
+              "padding_tablet": {
+                "unit": "%",
+                "top": "",
+                "right": "",
+                "bottom": "",
+                "left": "",
+                "isLinked": true
+              },
+              "padding_mobile": {
+                "unit": "%",
+                "top": "",
+                "right": "",
+                "bottom": "",
+                "left": "",
+                "isLinked": true
+              },
+              "_title": "box",
+              "__globals__": {
+                "border_color": "globals/colors?id=primary"
+              }
+            },
+            "elements": [
+              {
+                "id": "7654e0d",
+                "elType": "widget",
+                "settings": {
+                  "selected_icon": {
+                    "value": {
+                      "url": "http://alphababy.fr/wp-content/uploads/2025/07/video-conference.svg",
+                      "id": 3826
+                    },
+                    "library": "svg"
+                  },
+                  "__globals__": {
+                    "primary_color": "globals/colors?id=secondary"
+                  },
+                  "size": {
+                    "unit": "px",
+                    "size": 100,
+                    "sizes": []
+                  }
+                },
+                "elements": [],
+                "widgetType": "icon"
+              },
+              {
+                "id": "f8af26d",
+                "elType": "widget",
+                "settings": {
+                  "title": "Une équipe de comédiens qualifié et formé par notre agence pour assurer la réussite de vos événements",
+                  "header_size": "div",
+                  "align": "center",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "600"
+                },
+                "elements": [],
+                "widgetType": "heading"
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "d6f16cb",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "border_border": "none",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "5",
+                "left": "1",
+                "isLinked": false
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "25",
+                "right": "25",
+                "bottom": "25",
+                "left": "25",
+                "isLinked": true
+              },
+              "border_hover_border": "solid",
+              "border_hover_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "5",
+                "left": "1",
+                "isLinked": false
+              },
+              "border_radius_hover": {
+                "unit": "px",
+                "top": "25",
+                "right": "25",
+                "bottom": "25",
+                "left": "25",
+                "isLinked": true
+              },
+              "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              },
+              "padding": {
+                "unit": "%",
+                "top": "5",
+                "right": "5",
+                "bottom": "5",
+                "left": "5",
+                "isLinked": true
+              },
+              "padding_tablet_extra": {
+                "unit": "%",
+                "top": "",
+                "right": "",
+                "bottom": "",
+                "left": "",
+                "isLinked": true
+              },
+              "padding_tablet": {
+                "unit": "%",
+                "top": "",
+                "right": "",
+                "bottom": "",
+                "left": "",
+                "isLinked": true
+              },
+              "padding_mobile": {
+                "unit": "%",
+                "top": "",
+                "right": "",
+                "bottom": "",
+                "left": "",
+                "isLinked": true
+              },
+              "_title": "box",
+              "__globals__": {
+                "border_color": "globals/colors?id=primary"
+              }
+            },
+            "elements": [
+              {
+                "id": "ff6c699",
+                "elType": "widget",
+                "settings": {
+                  "selected_icon": {
+                    "value": {
+                      "url": "http://alphababy.fr/wp-content/uploads/2025/07/people-conversation-1.svg",
+                      "id": 3552
+                    },
+                    "library": "svg"
+                  },
+                  "__globals__": {
+                    "primary_color": "globals/colors?id=secondary"
+                  },
+                  "size": {
+                    "unit": "px",
+                    "size": 100,
+                    "sizes": []
+                  }
+                },
+                "elements": [],
+                "widgetType": "icon"
+              },
+              {
+                "id": "ac591e8",
+                "elType": "widget",
+                "settings": {
+                  "title": "Un contact dédié à votre projet de la prise de contact jusqu’au jour J ",
+                  "header_size": "div",
+                  "align": "center",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "600"
+                },
+                "elements": [],
+                "widgetType": "heading"
+              }
+            ],
+            "isInner": true
+          },
+          {
+            "id": "236646e",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "border_border": "none",
+              "border_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "5",
+                "left": "1",
+                "isLinked": false
+              },
+              "border_radius": {
+                "unit": "px",
+                "top": "25",
+                "right": "25",
+                "bottom": "25",
+                "left": "25",
+                "isLinked": true
+              },
+              "border_hover_border": "solid",
+              "border_hover_width": {
+                "unit": "px",
+                "top": "1",
+                "right": "1",
+                "bottom": "5",
+                "left": "1",
+                "isLinked": false
+              },
+              "border_radius_hover": {
+                "unit": "px",
+                "top": "25",
+                "right": "25",
+                "bottom": "25",
+                "left": "25",
+                "isLinked": true
+              },
+              "margin": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              },
+              "padding": {
+                "unit": "%",
+                "top": "5",
+                "right": "5",
+                "bottom": "5",
+                "left": "5",
+                "isLinked": true
+              },
+              "padding_tablet_extra": {
+                "unit": "%",
+                "top": "",
+                "right": "",
+                "bottom": "",
+                "left": "",
+                "isLinked": true
+              },
+              "padding_tablet": {
+                "unit": "%",
+                "top": "",
+                "right": "",
+                "bottom": "",
+                "left": "",
+                "isLinked": true
+              },
+              "padding_mobile": {
+                "unit": "%",
+                "top": "",
+                "right": "",
+                "bottom": "",
+                "left": "",
+                "isLinked": true
+              },
+              "_title": "box",
+              "__globals__": {
+                "border_color": "globals/colors?id=primary"
+              }
+            },
+            "elements": [
+              {
+                "id": "68e803c",
+                "elType": "widget",
+                "settings": {
+                  "selected_icon": {
+                    "value": {
+                      "url": "http://alphababy.fr/wp-content/uploads/2025/07/trade-balance.svg",
+                      "id": 3539
+                    },
+                    "library": "svg"
+                  },
+                  "__globals__": {
+                    "primary_color": "globals/colors?id=secondary"
+                  },
+                  "size": {
+                    "unit": "px",
+                    "size": 100,
+                    "sizes": []
+                  }
+                },
+                "elements": [],
+                "widgetType": "icon"
+              },
+              {
+                "id": "76d5987",
+                "elType": "widget",
+                "settings": {
+                  "title": "Des prix pour tous les budgets ",
+                  "header_size": "div",
+                  "align": "center",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Raleway",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "600"
+                },
+                "elements": [],
+                "widgetType": "heading"
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      },
+      {
+        "id": "65aa2d04",
+        "elType": "container",
+        "settings": {
+          "background_background": "classic",
+          "background_color": "#F6F1E5",
+          "content_width": "full",
+          "_title": "FAQ",
+          "margin": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          },
+          "margin_tablet": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          },
+          "padding": {
+            "unit": "px",
+            "top": "50",
+            "right": "0",
+            "bottom": "50",
+            "left": "0",
+            "isLinked": false
+          },
+          "padding_tablet": {
+            "unit": "px",
+            "top": "50",
+            "right": "0",
+            "bottom": "50",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "41280d04",
+            "elType": "widget",
+            "settings": {
+              "title": "VOS QUESTIONS LES PLUS FRÉQUENTES,",
+              "align": "center",
+              "title_color": "#EE743A",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_weight": "600",
+              "typography_letter_spacing": {
+                "unit": "px",
+                "size": 2.5,
+                "sizes": []
+              },
+              "_margin_mobile": {
+                "unit": "px",
+                "top": "10",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+              }
+            },
+            "elements": [],
+            "widgetType": "heading"
+          },
+          {
+            "id": "179cbe2a",
+            "elType": "widget",
+            "settings": {
+              "title": "LES RÉPONSES ALPHABABY :",
+              "align": "center",
+              "title_color": "#222222",
+              "typography_typography": "custom",
+              "typography_font_family": "LilitaOne",
+              "typography_font_weight": "600",
+              "typography_letter_spacing": {
+                "unit": "px",
+                "size": 2.5,
+                "sizes": []
+              }
+            },
+            "elements": [],
+            "widgetType": "heading"
+          },
+          {
+            "id": "74a8421b",
+            "elType": "container",
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_gap": {
+                "column": "0",
+                "row": "0",
+                "isLinked": true,
+                "unit": "px",
+                "size": 0
+              },
+              "background_background": "classic",
+              "background_color": "#F6F1E5",
+              "css_classes": "bloc-faqs"
+            },
+            "elements": [
+              {
+                "id": "1054765",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "unit": "%",
+                    "size": 50,
+                    "sizes": []
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "5ef7dc5a",
+                    "elType": "widget",
+                    "widgetType": "nested-accordion",
+                    "settings": {
+                      "items": [
+                        {
+                          "item_title": "Combien de temps à l’avance je dois réserver ? ",
+                          "_id": "fee5422"
+                        },
+                        {
+                          "item_title": "Quel est le taux d’encadrement ? ",
+                          "_id": "4faaf36"
+                        },
+                        {
+                          "item_title": "Es ce qu’il y a une visite technique dans nos locaux avant la prestation ? ",
+                          "_id": "132e71d"
+                        },
+                        {
+                          "item_title": "Es ce que le jour J, il y a un responsable de l’événement ? ",
+                          "_id": "51322b3"
+                        }
+                      ],
+                      "accordion_item_title_position_horizontal": "start",
+                      "accordion_item_title_icon_position": "end",
+                      "accordion_item_title_space_between": {
+                        "unit": "px",
+                        "size": 5,
+                        "sizes": []
+                      },
+                      "accordion_background_normal_background": "classic",
+                      "accordion_background_normal_color": "#EE743A",
+                      "accordion_border_radius": {
+                        "unit": "px",
+                        "top": "10",
+                        "right": "10",
+                        "bottom": "10",
+                        "left": "10",
+                        "isLinked": true
+                      },
+                      "normal_title_color": "#FFFDFD",
+                      "default_state": "all_collapsed",
+                      "accordion_background_hover_background": "classic",
+                      "accordion_background_hover_color": "#80A681",
+                      "accordion_background_active_background": "classic",
+                      "accordion_background_active_color": "#80A681",
+                      "hover_title_color": "#FFFFFF",
+                      "active_title_color": "#FFFFFF",
+                      "title_active_stroke_text_stroke_type": "yes",
+                      "content_border_border": "none"
+                    },
+                    "elements": [
+                      {
+                        "id": "3ca646a6",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "élément N°1",
+                          "content_width": "full"
+                        },
+                        "elements": [
+                          {
+                            "id": "79e9a954",
+                            "elType": "widget",
+                            "settings": {
+                              "editor": "<p>Notre de planning au mois de décembre se rempli très vite nous vous conseillons de réserver au mois de septembre.</p>",
+                              "align": "left",
+                              "text_color": "#222222",
+                              "typography_typography": "custom",
+                              "typography_font_family": "Raleway",
+                              "typography_font_weight": "400"
+                            },
+                            "elements": [],
+                            "widgetType": "text-editor"
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      },
+                      {
+                        "id": "984387b",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "élément N°1",
+                          "content_width": "full"
+                        },
+                        "elements": [
+                          {
+                            "id": "a1312c6",
+                            "elType": "widget",
+                            "settings": {
+                              "editor": "<p>Nous comptabilisons 1 animateur pour 15 enfants, au-delà il faut compter un animateur supplémentaire.</p>",
+                              "align": "left",
+                              "text_color": "#222222",
+                              "typography_typography": "custom",
+                              "typography_font_family": "Raleway",
+                              "typography_font_weight": "400"
+                            },
+                            "elements": [],
+                            "widgetType": "text-editor"
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      },
+                      {
+                        "id": "60dd582",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "élément N°1",
+                          "content_width": "full"
+                        },
+                        "elements": [
+                          {
+                            "id": "7d5e80f",
+                            "elType": "widget",
+                            "settings": {
+                              "editor": "<p>Tout dépend de l’envergure de votre projet. Pour les formules clés en main, nous ne venons pas sur site avant le jour J.</p><p>En revanche pour les gros évènements crée sur mesure nous nous déplaçons pour repérer les lieux et vous présenter le projet avec l’équipe.</p>",
+                              "align": "left",
+                              "text_color": "#222222",
+                              "typography_typography": "custom",
+                              "typography_font_family": "Raleway",
+                              "typography_font_weight": "400"
+                            },
+                            "elements": [],
+                            "widgetType": "text-editor"
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      },
+                      {
+                        "id": "d201cf8",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "élément N°2",
+                          "content_width": "full"
+                        },
+                        "elements": [
+                          {
+                            "id": "2e62832d",
+                            "elType": "widget",
+                            "settings": {
+                              "editor": "<p>Oui, à partir de 60 enfants, vous avez un responsable présent le jour J. qui se chargera de veiller au bon déroulement de la journée.</p>",
+                              "align": "left",
+                              "text_color": "#222222",
+                              "typography_typography": "custom",
+                              "typography_font_family": "Raleway",
+                              "typography_font_weight": "400"
+                            },
+                            "elements": [],
+                            "widgetType": "text-editor"
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      }
+                    ]
+                  }
+                ],
+                "isInner": true
+              },
+              {
+                "id": "f150a6d",
+                "elType": "container",
+                "settings": {
+                  "content_width": "full",
+                  "width": {
+                    "unit": "%",
+                    "size": 50,
+                    "sizes": []
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "7cae5ba0",
+                    "elType": "widget",
+                    "widgetType": "nested-accordion",
+                    "settings": {
+                      "items": [
+                        {
+                          "item_title": "Est ce que l’intégralité de la prestation est à payer avant ? ",
+                          "_id": "ccb42c1"
+                        },
+                        {
+                          "item_title": "Est ce que je peux retirer des options pour diminuer le prix de la prestation ? ",
+                          "_id": "9c289e0"
+                        },
+                        {
+                          "item_title": "Quelle est votre capacité d’encadrement ? ",
+                          "_id": "70cb956"
+                        },
+                        {
+                          "item_title": "Quels sont les modalités d’annulation de ma prestation ? ",
+                          "_id": "1654f3c"
+                        }
+                      ],
+                      "accordion_item_title_position_horizontal": "start",
+                      "accordion_item_title_icon_position": "end",
+                      "accordion_item_title_space_between": {
+                        "unit": "px",
+                        "size": 5,
+                        "sizes": []
+                      },
+                      "accordion_background_normal_background": "classic",
+                      "accordion_background_normal_color": "#EE743A",
+                      "accordion_border_radius": {
+                        "unit": "px",
+                        "top": "10",
+                        "right": "10",
+                        "bottom": "10",
+                        "left": "10",
+                        "isLinked": true
+                      },
+                      "normal_title_color": "#FFFDFD",
+                      "default_state": "all_collapsed",
+                      "accordion_background_hover_background": "classic",
+                      "accordion_background_hover_color": "#80A681",
+                      "accordion_background_active_background": "classic",
+                      "accordion_background_active_color": "#80A681",
+                      "hover_title_color": "#FFFFFF",
+                      "active_title_color": "#FFFFFF",
+                      "title_active_stroke_text_stroke_type": "yes",
+                      "content_border_border": "none"
+                    },
+                    "elements": [
+                      {
+                        "id": "33e4193e",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "Élément n° 4"
+                        },
+                        "elements": [
+                          {
+                            "id": "dc16a12",
+                            "elType": "widget",
+                            "settings": {
+                              "editor": "<p>Non, le paiement se fait en deux étapes.</p><p>1<sup>ère</sup> étape versement de 70% du total de la facture, c’est le versement de cet acompte qui bloque votre réservation.</p><p>2<sup>ème</sup> étape, vous avez jusqu’à 48h00 avant la réservation pour payer le solde.</p>",
+                              "align": "left",
+                              "text_color": "#222222",
+                              "typography_typography": "custom",
+                              "typography_font_family": "Raleway",
+                              "typography_font_weight": "400"
+                            },
+                            "elements": [],
+                            "widgetType": "text-editor"
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      },
+                      {
+                        "id": "7d7c373",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "Élément n° 4"
+                        },
+                        "elements": [
+                          {
+                            "id": "38a5987",
+                            "elType": "widget",
+                            "settings": {
+                              "editor": "<p>Non, le paiement se fait en deux étapes.</p><p>1<sup>ère</sup> étape versement de 70% du total de la facture, c’est le versement de cet acompte qui bloque votre réservation.</p><p>2<sup>ème</sup> étape, vous avez jusqu’à 48h00 avant la réservation pour payer le solde.</p>",
+                              "align": "left",
+                              "text_color": "#222222",
+                              "typography_typography": "custom",
+                              "typography_font_family": "Raleway",
+                              "typography_font_weight": "400"
+                            },
+                            "elements": [],
+                            "widgetType": "text-editor"
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      },
+                      {
+                        "id": "8b09196",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "Élément n° 4"
+                        },
+                        "elements": [
+                          {
+                            "id": "101415a",
+                            "elType": "widget",
+                            "settings": {
+                              "editor": "<p>Nos formules sont adaptées à partir d’une dizaine d’enfants. Nous pouvons encadrer vos événements jusqu’à 1000 enfants, nous avons l’habitude d’organiser des projets avec beaucoup de famille, pour cela toute la prestation sera créée sur mesure.</p>",
+                              "align": "left",
+                              "text_color": "#222222",
+                              "typography_typography": "custom",
+                              "typography_font_family": "Raleway",
+                              "typography_font_weight": "400"
+                            },
+                            "elements": [],
+                            "widgetType": "text-editor"
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      },
+                      {
+                        "id": "7cb7d86",
+                        "elType": "container",
+                        "settings": {
+                          "_title": "Élément n° 4"
+                        },
+                        "elements": [
+                          {
+                            "id": "a6a84b0",
+                            "elType": "widget",
+                            "settings": {
+                              "editor": "<p>Vous pouvez annuler votre événement 45 jours avant le jour J, le remboursement de votre acompte sera effectué via virement dans un délai de 15 jours.</p><p>Tout événement annulé en dehors de ce délai implique la perte de votre acompte.</p>",
+                              "align": "left",
+                              "text_color": "#222222",
+                              "typography_typography": "custom",
+                              "typography_font_family": "Raleway",
+                              "typography_font_weight": "400"
+                            },
+                            "elements": [],
+                            "widgetType": "text-editor"
+                          }
+                        ],
+                        "isInner": true,
+                        "isLocked": true
+                      }
+                    ]
+                  }
+                ],
+                "isInner": true
+              }
+            ],
+            "isInner": true
+          }
+        ],
+        "isInner": true
+      }
+    ],
+    "isInner": true
+  }
+]

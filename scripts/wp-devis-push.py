@@ -10,6 +10,8 @@ Etapes, dans l'ordre :
   update-popup N        remet a jour le contenu du popup N
   insert-buttons N [id] insere le bloc de boutons en haut de la fiche produit,
                         avec le lien d'ouverture du popup N
+  insert-batch N f      insere le bloc sur toutes les fiches listees dans le
+                        fichier f, un ID ou une URL par ligne
   restore [id]          remet la fiche produit dans son etat sauvegarde
   verify [id]           relit la page publiee et controle le rendu
 
@@ -23,6 +25,7 @@ import os
 import re
 import ssl
 import sys
+import time
 import urllib.error
 import urllib.request
 import pathlib
@@ -357,6 +360,70 @@ def cmd_insert_buttons():
     print(f"    python3 scripts/wp-devis-push.py verify {pid}")
 
 
+def inserer_sur(pid, popup_id, essais=4):
+    """Insere le bloc sur une fiche. Rejoue en cas de blocage du pare-feu."""
+    for essai in range(essais):
+        elements, source = lire_donnees(pid)
+        if not elements:
+            return "illisible"
+        if deja_present(elements):
+            return "deja present"
+        chemin = sauvegarde_path(pid)
+        if not chemin.exists():
+            chemin.write_text(json.dumps(elements, ensure_ascii=False,
+                                         indent=2), encoding="utf-8")
+        bloc = personnaliser_bloc(charger("devis-01-boutons.json")["content"],
+                                  popup_id)
+        pos = position_insertion(elements)
+        if ecrire_donnees(pid, elements[:pos] + bloc + elements[pos:], source):
+            return "ok"
+        time.sleep(6 * (essai + 1))
+    return "echec"
+
+
+def resoudre(reference):
+    """Accepte un ID, un slug ou une URL. Renvoie l'ID du contenu."""
+    reference = reference.strip().rstrip("/")
+    if reference.isdigit():
+        return int(reference)
+    slug = reference.split("/")[-1]
+    for typ in ("product", "pages", "posts"):
+        for essai in range(3):
+            code, body = call("GET", f"/wp/v2/{typ}?slug={slug}", quiet=True)
+            if code == 200 and isinstance(body, list):
+                if body:
+                    return body[0]["id"]
+                break
+            time.sleep(4)
+    return None
+
+
+def cmd_insert_batch():
+    require_credentials()
+    if len(sys.argv) < 4 or not sys.argv[2].isdigit():
+        sys.exit("usage : wp-devis-push.py insert-batch <popup_id> "
+                 "<fichier_de_references>")
+    popup_id = sys.argv[2]
+    lignes = [l.strip() for l in pathlib.Path(sys.argv[3])
+              .read_text(encoding="utf-8").splitlines() if l.strip()]
+    resultats = {}
+    for i, ref in enumerate(lignes, 1):
+        pid = resoudre(ref)
+        if not pid:
+            resultats[ref] = "introuvable"
+        else:
+            resultats[ref] = inserer_sur(pid, popup_id)
+        print(f"  [{i}/{len(lignes)}] {ref} -> #{pid} : {resultats[ref]}")
+        time.sleep(2)
+    print("\n== Bilan ==")
+    for etat in sorted(set(resultats.values())):
+        noms = [r for r, e in resultats.items() if e == etat]
+        print(f"  {etat} : {len(noms)}")
+        if etat not in ("ok", "deja present"):
+            for n in noms:
+                print(f"     {n}")
+
+
 def cmd_restore():
     require_credentials()
     pid = produit_id()
@@ -413,6 +480,7 @@ if __name__ == "__main__":
         "update-popup": cmd_update_popup,
         "set-popup-condition": cmd_set_popup_condition,
         "insert-buttons": cmd_insert_buttons,
+        "insert-batch": cmd_insert_batch,
         "restore": cmd_restore,
         "verify": cmd_verify,
     }.get(mode, lambda: sys.exit(f"mode inconnu : {mode}"))()

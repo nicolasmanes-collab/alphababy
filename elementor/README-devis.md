@@ -5,10 +5,11 @@ Deux boutons en haut de la fiche produit : appel direct au 01 30 10 19 10, et
 partent sur **alphababy94@alphababy.fr**, et le client reçoit un accusé de
 réception.
 
-Fiche de test en ligne depuis le 02/09/2026 :
-`https://alphababy.fr/anniversaire-demon-hunter-kpop-ile-de-france/`
-(produit `#6424`, DEMON HUNTERS KPOP). Popup **#8994 « Popup - Demande de
-devis »**, affiché sur tout le site, ouvert uniquement au clic.
+En ligne depuis le 02/09/2026 sur **30 fiches produits**, dont la fiche de
+test `https://alphababy.fr/anniversaire-demon-hunter-kpop-ile-de-france/`
+(produit `#6424`). Popup **#8994 « Popup - Demande de devis »**, affiché sur
+tout le site, ouvert uniquement au clic. La liste des fiches traitées est dans
+`elementor/fiches-traitees.txt`.
 
 ## Ce que contient ce dossier
 
@@ -97,7 +98,8 @@ KPOP`, le titre du produit, pas celui du popup.
 
 Deux envois à la validation :
 
-1. **Vers l'agence**, `alphababy94@alphababy.fr`
+1. **Vers l'agence**, `alphababy94@alphababy.fr` et
+   `nicolas.manes@seo-monkey.fr`
    - Objet : `Demande de devis : DEMON HUNTERS KPOP`
    - Corps : une phrase d'introduction puis tous les champs, plus la date,
      l'heure et l'URL de la page d'où part la demande.
@@ -147,18 +149,32 @@ ou en le dépubliant.
 
 ## Généralisation aux autres fiches
 
-Le popup existe déjà, il ne reste qu'une commande par fiche :
+Le popup existe déjà, il ne reste que l'insertion du bloc. Une fiche :
 
 ```bash
 python3 scripts/wp-devis-push.py insert-buttons 8994 <produit_id>
 python3 scripts/wp-devis-push.py verify <produit_id>
 ```
 
+Plusieurs fiches d'un coup, à partir d'un fichier d'IDs ou d'URLs, une par
+ligne :
+
+```bash
+python3 scripts/wp-devis-push.py insert-batch 8994 elementor/fiches-traitees.txt
+```
+
+`insert-batch` résout les URLs en identifiants, rejoue jusqu'à 4 fois en cas de
+blocage du pare-feu et affiche un bilan. Sur le lot des 30 fiches, 2 sont
+passées en échec au premier tour et sont passées à la relance.
+
 Le script refuse d'insérer deux fois le bloc sur la même fiche, il repère la
 classe `bloc-cta-produit`.
 
 ## Contrôles faits
 
+- **Les 30 pages contrôlées une par une** sur le rendu public : bloc présent,
+  lien `tel:`, lien d'action du popup, formulaire, et nom de la prestation
+  correct dans le champ caché. 30 sur 30 conformes.
 - Rendu de la page en ligne : bloc présent, lien `tel:` correct, lien d'action
   du popup intact, popup rendu dans la page, champ `produit` rempli avec le
   titre du produit.
@@ -169,8 +185,8 @@ classe `bloc-cta-produit`.
 
 ## Reste à faire
 
-- **Envoyer une vraie demande de test** depuis la page et vérifier la réception
-  sur `alphababy94@alphababy.fr`, l'objet, le nom de la prestation et l'URL.
-  L'envoi depuis l'environnement d'exécution est bloqué par le pare-feu, ce
-  test se fait depuis un navigateur.
-- Décider de la liste des fiches à traiter ensuite.
+- Envoi de test validé le 02/09/2026 sur la fiche DEMON HUNTERS KPOP, mail bien
+  reçu. À refaire après l'ajout du second destinataire, pour vérifier que la
+  demande arrive aussi sur `nicolas.manes@seo-monkey.fr`.
+- Décider des fiches suivantes : il reste des produits du catalogue non
+  traités.

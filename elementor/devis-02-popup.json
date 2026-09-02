@@ -201,7 +201,7 @@
               "email",
               "email2"
             ],
-            "email_to": "alphababy94@alphababy.fr",
+            "email_to": "alphababy94@alphababy.fr,nicolas.manes@seo-monkey.fr",
             "email_subject": "Demande de devis : [field id=\"produit\"]",
             "email_content": "<p>Nouvelle demande de devis envoyée depuis le site.</p>[all-fields]",
             "email_content_type": "html",
