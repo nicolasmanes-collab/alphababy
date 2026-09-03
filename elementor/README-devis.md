@@ -96,16 +96,36 @@ caché `produit`, rempli par la balise dynamique « Titre de l'article ».
 Contrôlé sur la page en ligne : le champ caché renvoie bien `DEMON HUNTERS
 KPOP`, le titre du produit, pas celui du popup.
 
-Deux envois à la validation :
+Deux envois à la validation, dans cet ordre :
 
-1. **Vers l'agence**, `alphababy94@alphababy.fr` et
-   `nicolas.manes@seo-monkey.fr`
+1. **Vers l'agence**, en premier
+   - Destinataire principal : **`devis@alphababy.fr`**. C'est l'adresse
+     prioritaire, celle à laquelle la demande doit arriver en toutes
+     circonstances.
+   - En copie : `alphababy94@alphababy.fr` et `nicolas.manes@seo-monkey.fr`.
    - Objet : `Demande de devis : DEMON HUNTERS KPOP`
    - Corps : une phrase d'introduction puis tous les champs, plus la date,
      l'heure et l'URL de la page d'où part la demande.
    - `Répondre à` : l'adresse du client, pour répondre en un clic.
-2. **Vers le client**, accusé de réception avec le récapitulatif de sa demande
-   et le numéro de téléphone de l'agence.
+2. **Vers le client**, en second, accusé de réception avec le récapitulatif de
+   sa demande et le numéro de téléphone de l'agence.
+
+### Ce qui protège l'adresse prioritaire
+
+- Les trois adresses internes reçoivent **un seul message**, avec
+  `devis@alphababy.fr` en destinataire principal et les deux autres en copie.
+  Un seul envoi consommé sur le quota sortant de l'hébergement, au lieu de
+  trois. Si un serveur destinataire refuse une adresse en copie, le message
+  part quand même aux autres.
+- Cet envoi est **le premier** de la file. L'accusé de réception au client part
+  après : c'est lui qui saute en cas de quota atteint, pas la demande.
+- Filet de sécurité indépendant du mail : Elementor **enregistre chaque
+  demande** dans WordPress, dans Elementor > Envois. Même si un message se
+  perd, la demande reste consultable et exportable.
+
+Pour aller plus loin sur la fiabilité de la remise, faire partir les mails par
+SMTP authentifié plutôt que par la fonction mail de l'hébergement mutualisé.
+C'est le point faible restant, il ne dépend pas du formulaire.
 
 L'expéditeur reste l'adresse par défaut du site, pour ne pas casser
 l'authentification SPF du domaine.

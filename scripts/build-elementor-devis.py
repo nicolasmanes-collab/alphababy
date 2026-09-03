@@ -18,9 +18,13 @@ OUT = ROOT / "elementor"
 TELEPHONE = "01 30 10 19 10"
 TEL_LIEN = "tel:+33130101910"
 EMAIL_DEVIS = "alphababy94@alphababy.fr"
-# Destinataires de la demande. Elementor accepte plusieurs adresses separees
-# par une virgule.
-EMAIL_AGENCE = "alphababy94@alphababy.fr,nicolas.manes@seo-monkey.fr"
+
+# Destinataire prioritaire de la demande. C'est l'adresse a laquelle le devis
+# doit arriver en toutes circonstances, elle est seule en destinataire
+# principal du premier envoi, qui part avant tous les autres.
+EMAIL_PRIORITAIRE = "devis@alphababy.fr"
+# Les autres destinataires internes, en copie du meme envoi.
+EMAIL_COPIE = "alphababy94@alphababy.fr,nicolas.manes@seo-monkey.fr"
 
 BLANC = "globals/colors?id=65cf053"
 PRIMAIRE = "globals/colors?id=primary"
@@ -268,7 +272,8 @@ def widget_formulaire():
             "step_next_label": "Suivant",
             "step_previous_label": "Précédent",
             "submit_actions": ["email", "email2"],
-            "email_to": EMAIL_AGENCE,
+            "email_to": EMAIL_PRIORITAIRE,
+            "email_cc": EMAIL_COPIE,
             "email_subject": "Demande de devis : [field id=\"produit\"]",
             "email_content": (
                 "<p>Nouvelle demande de devis envoyée depuis le site.</p>"
